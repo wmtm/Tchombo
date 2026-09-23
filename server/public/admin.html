@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>TCHOMBO — Question Admin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root { color-scheme: light; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background: #f4f1ea; color: #1c2440; }
+  header { background: #0e1e3a; color: #fff; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { margin: 0; font-size: 18px; letter-spacing: 0.04em; }
+  main { padding: 20px; max-width: 1100px; margin: 0 auto; }
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; align-items: center; }
+  select, input, textarea { font: inherit; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; }
+  button { font: inherit; padding: 7px 14px; border-radius: 6px; border: none; cursor: pointer; background: #0e1e3a; color: #fff; }
+  button.secondary { background: #e7e2d4; color: #1c2440; }
+  button.danger { background: #b3372c; color: #fff; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; }
+  th { background: #efe9db; position: sticky; top: 0; }
+  tr.draft { background: #fff6e0; }
+  tr.inactive { opacity: 0.5; }
+  .pill { display: inline-block; padding: 1px 7px; border-radius: 20px; font-size: 11px; background: #e7e2d4; }
+  .actions button { margin-right: 4px; font-size: 12px; padding: 4px 8px; }
+  dialog { border: none; border-radius: 10px; padding: 0; width: min(560px, 92vw); }
+  dialog form { padding: 20px; display: grid; gap: 10px; }
+  dialog label { display: grid; gap: 3px; font-size: 13px; font-weight: 600; }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .dialog-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 6px; }
+  .count { font-size: 12px; color: #555; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🦤 TCHOMBO — Question Admin</h1>
+  <span class="count" id="count"></span>
+</header>
+<main>
+  <div class="toolbar">
+    <button id="addBtn">+ Add question</button>
+    <select id="categoryFilter"><option value="">All categories</option></select>
+    <select id="statusFilter">
+      <option value="">All statuses</option>
+      <option value="live">Live</option>
+      <option value="draft">Draft (needs review)</option>
+    </select>
+    <button class="secondary" id="reloadBtn">Reload</button>
+  </div>
+  <table>
+    <thead>
+      <tr><th>ID</th><th>Category</th><th>Question</th><th>Answer</th><th>Diff.</th><th>🦤</th><th>Status</th><th>Active</th><th></th></tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+</main>
+
+<dialog id="dialog">
+  <form id="form">
+    <h3 id="dialogTitle">Add question</h3>
+    <div class="row2">
+      <label>ID <input name="id" required placeholder="ENV-041" /></label>
+      <label>Category
+        <select name="category" required id="categorySelect"></select>
+      </label>
+    </div>
+    <label>Question <textarea name="question" rows="2" required></textarea></label>
+    <div class="row2">
+      <label>Answer <input name="answer" type="number" step="any" required /></label>
+      <label>Unit <input name="unit" placeholder="km, years, species…" /></label>
+    </div>
+    <div class="row2">
+      <label>Difficulty
+        <select name="difficulty" id="difficultySelect" required></select>
+      </label>
+      <label>Dodo penalty <input name="dodo_penalty" type="number" required /></label>
+    </div>
+    <label><input type="checkbox" name="allow_decimal" style="width:auto;display:inline-block" /> Allow decimal answers</label>
+    <label>Source <input name="source" required /></label>
+    <label>Source note <textarea name="source_note" rows="2"></textarea></label>
+    <div class="row2">
+      <label>Status
+        <select name="status"><option value="live">Live</option><option value="draft">Draft</option></select>
+      </label>
+      <label><input type="checkbox" name="active" checked style="width:auto;display:inline-block" /> Active</label>
+    </div>
+    <div class="dialog-actions">
+      <button type="button" class="secondary" id="cancelBtn">Cancel</button>
+      <button type="submit">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+const password = prompt("Admin password:") || "";
+const authHeader = "Basic " + btoa(":" + password);
+let META = { categories: [], difficulties: [] };
+let QUESTIONS = [];
+let editingId = null;
+
+async function api(path, opts = {}) {
+  const res = await fetch(path, {
+    ...opts,
+    headers: { ...(opts.headers || {}), Authorization: authHeader, "Content-Type": "application/json" },
+  });
+  if (res.status === 401) { alert("Wrong password."); throw new Error("unauthorized"); }
+  if (!res.ok) { const body = await res.json().catch(() => ({})); throw new Error(body.error || res.statusText); }
+  return res.status === 204 ? null : res.json();
+}
+
+function fillSelect(el, values, withEmpty) {
+  el.innerHTML = (withEmpty ? '<option value="">All</option>' : "") +
+    values.map((v) => `<option value="${v}">${v}</option>`).join("");
+}
+
+function render() {
+  const catFilter = document.getElementById("categoryFilter").value;
+  const statusFilter = document.getElementById("statusFilter").value;
+  const rows = document.getElementById("rows");
+  const filtered = QUESTIONS.filter((q) =>
+    (!catFilter || q.category === catFilter) && (!statusFilter || q.status === statusFilter)
+  );
+  document.getElementById("count").textContent = `${filtered.length} / ${QUESTIONS.length} questions`;
+  rows.innerHTML = filtered.map((q) => `
+    <tr class="${q.status === 'draft' ? 'draft' : ''} ${!q.active ? 'inactive' : ''}">
+      <td>${q.id}</td>
+      <td>${q.category}</td>
+      <td>${q.question}</td>
+      <td>${q.answer} ${q.unit || ""}</td>
+      <td>${q.difficulty}</td>
+      <td>${q.dodo_penalty}</td>
+      <td><span class="pill">${q.status}</span></td>
+      <td>${q.active ? "✅" : "—"}</td>
+      <td class="actions">
+        <button data-edit="${q.id}">Edit</button>
+        <button data-toggle="${q.id}" class="secondary">${q.active ? "Deactivate" : "Activate"}</button>
+        <button data-del="${q.id}" class="danger">Delete</button>
+      </td>
+    </tr>
+  `).join("");
+}
+
+async function load() {
+  META = await api("/admin/api/meta");
+  fillSelect(document.getElementById("categoryFilter"), META.categories, true);
+  fillSelect(document.getElementById("categorySelect"), META.categories, false);
+  fillSelect(document.getElementById("difficultySelect"), META.difficulties, false);
+  QUESTIONS = await api("/admin/api/questions");
+  render();
+}
+
+document.getElementById("categoryFilter").addEventListener("change", render);
+document.getElementById("statusFilter").addEventListener("change", render);
+document.getElementById("reloadBtn").addEventListener("click", load);
+
+const dialog = document.getElementById("dialog");
+const form = document.getElementById("form");
+
+document.getElementById("addBtn").addEventListener("click", () => {
+  editingId = null;
+  form.reset();
+  document.getElementById("dialogTitle").textContent = "Add question";
+  dialog.showModal();
+});
+document.getElementById("cancelBtn").addEventListener("click", () => dialog.close());
+
+document.getElementById("rows").addEventListener("click", async (e) => {
+  const editId = e.target.dataset.edit;
+  const toggleId = e.target.dataset.toggle;
+  const delId = e.target.dataset.del;
+  if (editId) {
+    const q = QUESTIONS.find((x) => x.id === editId);
+    editingId = editId;
+    document.getElementById("dialogTitle").textContent = "Edit " + editId;
+    for (const [key, value] of Object.entries(q)) {
+      const el = form.elements[key];
+      if (!el) continue;
+      if (el.type === "checkbox") el.checked = !!value; else el.value = value;
+    }
+    dialog.showModal();
+  } else if (toggleId) {
+    const q = QUESTIONS.find((x) => x.id === toggleId);
+    await api(`/admin/api/questions/${toggleId}`, { method: "PUT", body: JSON.stringify({ active: !q.active }) });
+    await load();
+  } else if (delId) {
+    if (confirm(`Delete question ${delId}? This can't be undone.`)) {
+      await api(`/admin/api/questions/${delId}`, { method: "DELETE" });
+      await load();
+    }
+  }
+});
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(form).entries());
+  const payload = {
+    id: data.id,
+    category: data.category,
+    question: data.question,
+    answer: Number(data.answer),
+    unit: data.unit || "",
+    allow_decimal: form.elements.allow_decimal.checked,
+    difficulty: data.difficulty,
+    dodo_penalty: Number(data.dodo_penalty),
+    source: data.source,
+    source_note: data.source_note || "",
+    status: data.status,
+    active: form.elements.active.checked,
+  };
+  try {
+    if (editingId) {
+      await api(`/admin/api/questions/${editingId}`, { method: "PUT", body: JSON.stringify(payload) });
+    } else {
+      await api(`/admin/api/questions`, { method: "POST", body: JSON.stringify(payload) });
+    }
+    dialog.close();
+    await load();
+  } catch (err) {
+    alert(err.message);
+  }
+});
+
+load().catch((err) => console.error(err));
+</script>
+</body>
+</html>

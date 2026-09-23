@@ -1,0 +1,37 @@
+import { Logo } from "../components/Logo";
+import { Button } from "../components/Button";
+import { useT } from "../lib/i18n";
+
+interface Props {
+  onCreate: () => void;
+  onJoin: () => void;
+}
+
+export function Home({ onCreate, onJoin }: Props) {
+  const t = useT();
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12">
+      <div className="w-full max-w-sm flex flex-col items-center text-center gap-3">
+        <Logo />
+        <p className="font-display text-2xl text-ink/80 mt-2">{t("app.tagline")}</p>
+        <p className="text-ink/50 text-sm leading-relaxed mt-1">{t("home.subtitle")}</p>
+
+        <div className="w-full flex flex-col gap-3 mt-8">
+          <Button variant="primary" full onClick={onCreate}>
+            {t("home.create")}
+          </Button>
+          <Button variant="secondary" full onClick={onJoin}>
+            {t("home.join")}
+          </Button>
+        </div>
+
+        <div className="mt-10 flex items-center gap-1.5 text-ink/30 text-xs">
+          <span className="w-1.5 h-1.5 rounded-full bg-coral" />
+          <span className="w-1.5 h-1.5 rounded-full bg-gold" />
+          <span className="w-1.5 h-1.5 rounded-full bg-leaf" />
+          <span className="w-1.5 h-1.5 rounded-full bg-navy" />
+        </div>
+      </div>
+    </div>
+  );
+}

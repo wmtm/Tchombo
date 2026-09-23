@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-cream text-ink font-sans antialiased;
+  background-image: radial-gradient(circle at 10% 0%, rgba(217, 164, 65, 0.10), transparent 45%),
+    radial-gradient(circle at 100% 20%, rgba(46, 110, 82, 0.10), transparent 40%);
+}
+
+.font-display {
+  font-feature-settings: "ss01";
+}
+
+/* mobile: avoid iOS double-tap zoom / tap flash on our big buttons */
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
