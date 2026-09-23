@@ -58,6 +58,9 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
             <p className="font-display text-4xl text-navy tabular-nums mt-1">
               {reveal.correctAnswer} {reveal.question.unit}
             </p>
+            {reveal.question.source_note && (
+              <p className="text-xs text-navy/50 italic leading-snug mt-1.5">{reveal.question.source_note}</p>
+            )}
           </div>
 
           <div className="h-px bg-navy/10" />

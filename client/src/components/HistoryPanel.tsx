@@ -54,6 +54,9 @@ function HistoryPanel({ history, onClose }: { history: RevealResult[]; onClose: 
                 <p className="text-sm font-semibold text-navy">
                   {t("history.answer")}: {r.correctAnswer} {r.question.unit}
                 </p>
+                {r.question.source_note && (
+                  <p className="text-xs text-navy/50 italic leading-snug">{r.question.source_note}</p>
+                )}
                 <p className="text-xs text-navy/50">
                   {t("history.outcome", { name: r.loserName, dodos: r.dodosAwarded })}
                 </p>
