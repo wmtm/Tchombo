@@ -5,6 +5,7 @@ import { Button } from "../components/Button";
 import { PlayerList } from "../components/PlayerList";
 import { CategoryPicker } from "../components/CategoryPicker";
 import { SoundToggle } from "../components/SoundToggle";
+import { LanguageToggle } from "../components/LanguageToggle";
 import { LeaveMenu } from "../components/LeaveMenu";
 import { useT } from "../lib/i18n";
 
@@ -45,6 +46,7 @@ export function Lobby({ state, myPlayerId, onStart, onRemovePlayer, onSetCategor
         <div className="flex items-center justify-between">
           <Logo size="sm" />
           <div className="flex items-center gap-2">
+            <LanguageToggle />
             <SoundToggle />
             <LeaveMenu
               onExit={onLeave}

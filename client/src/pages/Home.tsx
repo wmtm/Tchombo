@@ -1,5 +1,6 @@
 import tchomboMascot from "../assets/tchombo-mascot.png";
 import { Button } from "../components/Button";
+import { LanguageToggle } from "../components/LanguageToggle";
 import { useT } from "../lib/i18n";
 
 interface Props {
@@ -10,7 +11,10 @@ interface Props {
 export function Home({ onCreate, onJoin }: Props) {
   const t = useT();
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12">
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 relative">
+      <div className="absolute top-5 right-5">
+        <LanguageToggle />
+      </div>
       <div className="w-full max-w-sm flex flex-col items-center text-center gap-3">
         <img src={tchomboMascot} alt="TCHOMBO" className="w-52 h-52 object-contain -mb-1" />
         <p className="font-display text-2xl text-ink/80 mt-2">{t("app.tagline")}</p>

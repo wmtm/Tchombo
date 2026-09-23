@@ -1,8 +1,10 @@
 import en from "./en.json";
+import fr from "./fr.json";
 
-const dictionaries = { en } as const;
+const dictionaries = { en, fr } as const;
 export type Locale = keyof typeof dictionaries;
 export const DEFAULT_LOCALE: Locale = "en";
+export const LOCALE_LABELS: Record<Locale, string> = { en: "EN", fr: "FR" };
 
 type Vars = Record<string, string | number>;
 
