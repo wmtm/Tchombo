@@ -32,15 +32,20 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onL
   const isMyTurn = state.currentPlayerId === myPlayerId;
   const previous = state.entries[state.entries.length - 1] ?? null;
   const currentPlayer = state.players.find((p) => p.id === state.currentPlayerId);
+  const myPlayer = state.players.find((p) => p.id === myPlayerId);
+  const amIEliminated = myPlayer?.eliminated ?? false;
 
   const nextInfo = useMemo(() => {
     const order = state.turnOrder;
     const idx = order.indexOf(state.currentPlayerId ?? "");
     if (idx === -1) return null;
-    const nextId = order[(idx + 1) % order.length];
-    const nextPlayer = state.players.find((p) => p.id === nextId);
-    if (!nextPlayer) return null;
-    return { id: nextId, name: nextPlayer.name };
+    // walk forward, skipping eliminated players, same as the server's turn logic
+    for (let step = 1; step <= order.length; step++) {
+      const candidateId = order[(idx + step) % order.length];
+      const candidate = state.players.find((p) => p.id === candidateId);
+      if (candidate && !candidate.eliminated) return { id: candidateId, name: candidate.name };
+    }
+    return null;
   }, [state.currentPlayerId, state.turnOrder, state.players]);
 
   useEffect(() => {
@@ -104,10 +109,14 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onL
       <div className="max-w-sm w-full mx-auto flex-1 flex flex-col gap-5 mt-4">
         <div
           className={`rounded-xl2 px-5 py-2.5 text-center font-semibold text-sm ${
-            isMyTurn ? "bg-leaf text-white animate-pop-in" : "bg-white text-navy/60"
+            isMyTurn ? "bg-leaf text-white animate-pop-in" : amIEliminated ? "bg-navy/10 text-navy/50" : "bg-white text-navy/60"
           }`}
         >
-          {isMyTurn ? `🟢 ${t("game.yourTurn")}` : `⏳ ${t("game.waitingFor", { name: currentPlayer?.name ?? "…" })}`}
+          {isMyTurn
+            ? `🟢 ${t("game.yourTurn")}`
+            : amIEliminated
+              ? `👀 ${t("game.youAreOut")}`
+              : `⏳ ${t("game.waitingFor", { name: currentPlayer?.name ?? "…" })}`}
         </div>
 
         <div className="bg-white rounded-xl2 shadow-card p-6 flex flex-col gap-3">
@@ -165,9 +174,13 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onL
           </div>
         ) : (
           <div className="text-center text-sm text-navy/50 py-3">
-            {nextInfo?.id === myPlayerId
-              ? <span className="font-semibold text-leaf">{t("game.youAreNext")}</span>
-              : nextInfo && <span>{t("game.nextPlayer", { name: nextInfo.name })}</span>}
+            {amIEliminated ? (
+              <span>{t("game.spectatingNote")}</span>
+            ) : nextInfo?.id === myPlayerId ? (
+              <span className="font-semibold text-leaf">{t("game.youAreNext")}</span>
+            ) : (
+              nextInfo && <span>{t("game.nextPlayer", { name: nextInfo.name })}</span>
+            )}
           </div>
         )}
       </div>
@@ -186,11 +199,15 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onL
 
       <div className="max-w-sm w-full mx-auto mt-6 flex flex-wrap justify-center gap-x-4 gap-y-2">
         {state.players.map((p) => (
-          <div key={p.id} className="flex flex-col items-center gap-1">
+          <div key={p.id} className={`flex flex-col items-center gap-1 ${p.eliminated ? "opacity-40" : ""}`}>
             <span className={`text-xs font-medium truncate max-w-[3.5rem] ${p.id === state.currentPlayerId ? "text-leaf" : "text-navy/40"}`}>
               {p.name}
             </span>
-            <DodoCount count={livesRemaining(p.dodos)} size="sm" />
+            {p.eliminated ? (
+              <span className="text-[10px] uppercase tracking-wide font-bold text-coral">{t("game.out")}</span>
+            ) : (
+              <DodoCount count={livesRemaining(p.dodos)} size="sm" />
+            )}
           </div>
         ))}
       </div>

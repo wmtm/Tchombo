@@ -17,6 +17,7 @@ interface Props {
 export function GameOverScreen({ state, isHost, onRestart, onHome }: Props) {
   const t = useT();
   const loser = state.players.find((p) => p.id === state.loserOfGame);
+  const winner = state.players.find((p) => p.id === state.winnerOfGame);
   const standings = [...state.players].sort((a, b) => a.dodos - b.dodos);
 
   useEffect(() => {
@@ -38,7 +39,9 @@ export function GameOverScreen({ state, isHost, onRestart, onHome }: Props) {
           <span className="text-5xl animate-pop-in">🦤</span>
         )}
         <div>
-          <p className="font-display text-3xl text-navy">{t(`gameover.title.${reason}`)}</p>
+          <p className="font-display text-3xl text-navy">
+            {reason === "dodo_limit" && winner ? t("gameover.winnerTitle", { name: winner.name }) : t(`gameover.title.${reason}`)}
+          </p>
           {reason === "dodo_limit" && loser && (
             <p className="text-ink/60 mt-2">{t("gameover.defeated", { name: loser.name })}</p>
           )}
@@ -58,7 +61,16 @@ export function GameOverScreen({ state, isHost, onRestart, onHome }: Props) {
             {standings.map((p, i) => (
               <li key={p.id} className="flex items-center justify-between">
                 <span className="flex items-center gap-2">
-                  {i === 0 && <span className="text-xs bg-leaf-soft text-leaf px-2 py-0.5 rounded-full font-semibold">{t("gameover.survivedBest")}</span>}
+                  {p.id === state.winnerOfGame ? (
+                    <span className="text-xs bg-leaf-soft text-leaf px-2 py-0.5 rounded-full font-semibold">{t("gameover.winnerBadge")}</span>
+                  ) : (
+                    !state.winnerOfGame && i === 0 && (
+                      <span className="text-xs bg-leaf-soft text-leaf px-2 py-0.5 rounded-full font-semibold">{t("gameover.survivedBest")}</span>
+                    )
+                  )}
+                  {p.eliminated && (
+                    <span className="text-xs bg-coral/10 text-coral px-2 py-0.5 rounded-full font-semibold">{t("game.out")}</span>
+                  )}
                   <span className="font-medium text-ink">{p.name}</span>
                 </span>
                 <DodoCount count={livesRemaining(p.dodos)} />

@@ -20,7 +20,9 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
   const t = useT();
   const reveal = state.lastReveal!;
   const lastEntry = reveal.entries[reveal.entries.length - 1];
-  const loserLivesLeft = livesRemaining(state.players.find((p) => p.id === reveal.loserId)?.dodos ?? 0);
+  const loser = state.players.find((p) => p.id === reveal.loserId);
+  const loserLivesLeft = livesRemaining(loser?.dodos ?? 0);
+  const loserEliminated = loser?.eliminated ?? false;
   const [secondsLeft, setSecondsLeft] = useState(REVEAL_SECONDS);
 
   useEffect(() => {
@@ -78,13 +80,18 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
 
         <AyoMascot className="w-28 h-28 animate-pop-in" />
 
-        <div className="flex items-center gap-2.5 bg-navy text-cream rounded-full px-5 py-3 animate-pop-in">
+        <div
+          className={`flex items-center gap-2.5 rounded-full px-5 py-3 animate-pop-in ${
+            loserEliminated ? "bg-coral text-white" : "bg-navy text-cream"
+          }`}
+        >
           <AyoIcon className="w-6 h-6" />
           <span className="font-semibold">
-            {t("reveal.loses", { name: reveal.loserName })} {reveal.dodosAwarded}{" "}
-            {reveal.dodosAwarded === 1 ? t("reveal.dodo") : t("reveal.dodos")}
-            {" — "}
-            {t("reveal.livesLeft", { count: loserLivesLeft })}
+            {loserEliminated
+              ? t("reveal.eliminated", { name: reveal.loserName })
+              : `${t("reveal.loses", { name: reveal.loserName })} ${reveal.dodosAwarded} ${
+                  reveal.dodosAwarded === 1 ? t("reveal.dodo") : t("reveal.dodos")
+                } — ${t("reveal.livesLeft", { count: loserLivesLeft })}`}
           </span>
         </div>
 

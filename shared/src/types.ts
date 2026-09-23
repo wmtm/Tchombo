@@ -14,11 +14,15 @@ export type Category = (typeof CATEGORIES)[number];
 export const DIFFICULTIES = ["easy", "medium", "hard", "very_hard"] as const;
 export type Difficulty = (typeof DIFFICULTIES)[number];
 
+// Deliberately inverted from what you'd expect: missing an EASY question is more
+// punishing than missing a VERY HARD one. Everyone should reasonably know an easy
+// answer, so getting it wrong stings more; a very-hard question is a coin flip for
+// everyone, so a wrong guess there costs less.
 export const DODO_PENALTY: Record<Difficulty, number> = {
-  easy: 2,
-  medium: 3,
-  hard: 4,
-  very_hard: 5,
+  easy: 5,
+  medium: 4,
+  hard: 3,
+  very_hard: 2,
 };
 
 // Every player starts a game with this many "lives" (displayed as dodos) and
@@ -55,6 +59,9 @@ export interface Player {
   connected: boolean;
   dodos: number;
   order: number;
+  // Hit the dodo limit: can no longer take turns, but stays visible and can
+  // keep watching the rest of the game play out.
+  eliminated: boolean;
 }
 
 export interface TurnEntry {
@@ -93,6 +100,7 @@ export interface PublicGameState {
   lastReveal: RevealResult | null;
   history: RevealResult[];
   loserOfGame: string | null;
+  winnerOfGame: string | null;
   endReason: EndReason | null;
   categories: Category[];
 }

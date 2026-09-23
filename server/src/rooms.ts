@@ -1,7 +1,12 @@
 import { Game } from "@tchombo/shared";
 
-const ROOM_TTL_MS = 3 * 60 * 60 * 1000; // 3 hours of inactivity
-const SWEEP_INTERVAL_MS = 15 * 60 * 1000;
+// Games are meant to be playable asynchronously -- answer now, someone else
+// answers in an hour, you both come back tonight -- so "everyone's tab is
+// closed" is completely normal mid-game, not a sign of an abandoned room.
+// Only real long-term inactivity (nobody has touched the room in a week)
+// should free it up.
+const ROOM_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 days of inactivity
+const SWEEP_INTERVAL_MS = 60 * 60 * 1000; // hourly is plenty at this TTL
 
 interface RoomEntry {
   game: Game;
@@ -46,9 +51,7 @@ export class RoomManager {
     setInterval(() => {
       const now = Date.now();
       for (const [code, entry] of this.rooms) {
-        const allDisconnected = entry.game.players.every((p) => !p.connected);
-        const stale = now - entry.lastActivity > ROOM_TTL_MS;
-        if (stale || (allDisconnected && now - entry.lastActivity > 10 * 60 * 1000)) {
+        if (now - entry.lastActivity > ROOM_TTL_MS) {
           this.rooms.delete(code);
         }
       }

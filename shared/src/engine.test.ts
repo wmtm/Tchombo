@@ -204,12 +204,12 @@ describe("TCHOMBO resolution (RULE 5-7) and the boundary case", () => {
   });
 });
 
-describe("dodo penalties map to difficulty", () => {
+describe("dodo penalties map to difficulty (inverted: easy hurts most)", () => {
   const cases: Array<[Question["difficulty"], number]> = [
-    ["easy", 2],
-    ["medium", 3],
-    ["hard", 4],
-    ["very_hard", 5],
+    ["easy", 5],
+    ["medium", 4],
+    ["hard", 3],
+    ["very_hard", 2],
   ];
   it.each(cases)("difficulty=%s awards %i dodos", (difficulty, penalty) => {
     let game = makeGame(["A", "B"]);
@@ -249,6 +249,88 @@ describe(`dodo-limit loss condition (RULE 15, threshold=${DODOS_TO_LOSE})`, () =
     expect(livesRemaining(0)).toBe(DODOS_TO_LOSE);
     expect(livesRemaining(DODOS_TO_LOSE)).toBe(0);
     expect(livesRemaining(DODOS_TO_LOSE + 5)).toBe(0);
+  });
+});
+
+describe("elimination & game continuation (RULE 15 revisited)", () => {
+  it("always shows the reveal before ending the game -- status stays 'reveal' even when the loser hits the limit", () => {
+    let game = makeGame(["A", "B"]);
+    game = startGame(game, queuePicker([q({ answer: 10, dodo_penalty: DODOS_TO_LOSE })]));
+    game = submitNumber(game, "p0", 20); // A exceeds badly enough to hit the limit in one go
+    game = callTchombo(game, "p1");
+
+    // this used to jump straight to "finished", hiding the reveal (the actual bug)
+    expect(game.status).toBe("reveal");
+    expect(game.lastReveal).not.toBeNull();
+    expect(game.lastReveal!.correctAnswer).toBe(10);
+    expect(game.players.find((p) => p.id === "p0")!.eliminated).toBe(true);
+    // game only actually ends once the reveal has been advanced past
+    const picker = queuePicker([]);
+    game = advanceToNextQuestion(game, picker);
+    expect(game.status).toBe("finished");
+  });
+
+  it("eliminates a player without ending the game while others remain active, and skips them in turn order", () => {
+    let game = makeGame(["A", "B", "C"]);
+    const picker = queuePicker(
+      Array.from({ length: 10 }, (_, i) => q({ id: `Q${i}`, answer: 10, dodo_penalty: DODOS_TO_LOSE }))
+    );
+    game = startGame(game, picker);
+
+    game = submitNumber(game, "p0", 20); // A exceeds enough to be eliminated outright
+    game = callTchombo(game, "p1"); // B correctly calls
+    expect(game.players.find((p) => p.id === "p0")!.eliminated).toBe(true);
+
+    game = advanceToNextQuestion(game, picker);
+    expect(game.status).toBe("playing"); // game continues: B and C are still active
+    // A must never get a turn again
+    expect(game.players[game.currentPlayerIndex].id).not.toBe("p0");
+    expect(game.players.find((p) => p.id === "p0")!.eliminated).toBe(true);
+    // A is still IN the game (visible, spectating), not removed
+    expect(game.players).toHaveLength(3);
+  });
+
+  it("ends the game once only one active player remains, crowning them the winner", () => {
+    let game = makeGame(["A", "B", "C"]);
+    const picker = queuePicker(
+      Array.from({ length: 10 }, (_, i) => q({ id: `Q${i}`, answer: 10, dodo_penalty: DODOS_TO_LOSE }))
+    );
+    game = startGame(game, picker);
+
+    // Round 1: A submits big, B calls correctly -> A eliminated. Next turn is C (B, A skipped... A eliminated).
+    game = submitNumber(game, "p0", 20);
+    game = callTchombo(game, "p1");
+    game = advanceToNextQuestion(game, picker);
+    expect(game.status).toBe("playing");
+
+    // Round 2: whoever is current submits big, the next active player calls -> eliminates a 2nd player
+    const submitter = game.players[game.currentPlayerIndex].id;
+    game = submitNumber(game, submitter, 20);
+    const caller = game.players[game.currentPlayerIndex].id;
+    game = callTchombo(game, caller);
+    expect(game.status).toBe("reveal");
+
+    game = advanceToNextQuestion(game, picker);
+    expect(game.status).toBe("finished");
+    expect(game.endReason).toBe("dodo_limit");
+    expect(game.winnerOfGame).not.toBeNull();
+    const winner = game.players.find((p) => p.id === game.winnerOfGame)!;
+    expect(winner.eliminated).toBe(false);
+    // both losers are still present in the roster, just eliminated
+    expect(game.players).toHaveLength(3);
+    expect(game.players.filter((p) => p.eliminated)).toHaveLength(2);
+  });
+
+  it("exposes eliminated and winnerOfGame on the public state", () => {
+    let game = makeGame(["A", "B"]);
+    game = startGame(game, queuePicker([q({ answer: 10, dodo_penalty: DODOS_TO_LOSE })]));
+    game = submitNumber(game, "p0", 20);
+    game = callTchombo(game, "p1");
+    game = advanceToNextQuestion(game, queuePicker([]));
+
+    const publicState = toPublicState(game);
+    expect(publicState.players.find((p) => p.id === "p0")!.eliminated).toBe(true);
+    expect(publicState.winnerOfGame).toBe("p1");
   });
 });
 
@@ -336,6 +418,22 @@ describe("mid-game player removal (explicit exit, not disconnect)", () => {
     game = removePlayerMidGame(game, "p2");
     expect(game.players.find((p) => p.id === "p0")!.dodos).toBe(3); // untouched
     expect(game.players.map((p) => p.id)).toEqual(["p0", "p1", "p3"]);
+  });
+
+  it("ends the game with a winner if a voluntary exit drops ACTIVE players to 1, even with 3+ still in the roster", () => {
+    let game = makeGame(["A", "B", "C"]);
+    const picker = queuePicker([q({ id: "Q1", answer: 10, dodo_penalty: DODOS_TO_LOSE })]);
+    game = startGame(game, picker);
+    // A gets eliminated by the dodo limit
+    game = submitNumber(game, "p0", 20);
+    game = callTchombo(game, "p1");
+    expect(game.players.find((p) => p.id === "p0")!.eliminated).toBe(true);
+    // now B (still active) explicitly leaves -- only C remains active, though A is still in the roster
+    game = removePlayerMidGame(game, "p1");
+    expect(game.status).toBe("finished");
+    expect(game.endReason).toBe("dodo_limit");
+    expect(game.winnerOfGame).toBe("p2");
+    expect(game.players.map((p) => p.id)).toEqual(["p0", "p2"]); // A (eliminated) still visible
   });
 
   it("removePlayer dispatches to the lobby path before the game starts", () => {

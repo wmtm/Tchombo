@@ -6,8 +6,10 @@ A small, real-time multiplayer party game for 2–6 friends, built around factua
 questions about Mauritius and the Mascarene Islands. Players take turns naming
 increasing estimates until someone calls **TCHOMBO** on the previous player,
 betting they've gone over the true answer. Everyone starts with 15 dodos
-(displayed as life points); guess wrong and you lose some. Run out and you're
-out of the game — the game ends the moment someone hits 0.
+(displayed as life points); guess wrong and you lose some — missing an easy
+question costs more than missing a brutally hard one. Run out and you're
+eliminated: you can keep watching, but the game plays on without you until
+only one player is left standing.
 
 No accounts, no downloads, no payment — just a 4-digit room code shared over
 WhatsApp.
@@ -58,11 +60,13 @@ npm test
 
 Covers the full rule set (RULE 1–15 in the spec): turn order, strictly-increasing
 submissions, the exact-answer-is-safe boundary (including the 100 vs 100.01
-decimal edge case), correct/incorrect TCHOMBO resolution, dodo/difficulty
-mapping, starting-player rotation, the dodo-limit loss condition (15, the
-displayed "lives"), question no-repeat, reconnection, mid-game player exit
-(turn order re-indexes, host reassigns, the game ends gracefully if it drops
-below 2 players), and 2/4/6-player games.
+decimal edge case), correct/incorrect TCHOMBO resolution, the inverted
+dodo/difficulty mapping, starting-player rotation, elimination (the reveal
+always shows before anyone is knocked out, eliminated players are skipped in
+turn order but stay visible, the game continues until one player remains and
+crowns them the winner), question no-repeat, reconnection, mid-game player
+exit (turn order re-indexes, host reassigns, the game ends gracefully if too
+few active players remain), and 2/4/6-player games.
 
 ## Deploying to Render (free)
 
@@ -85,7 +89,7 @@ Questions live in `server/data/questions.json`. Each entry:
   "unit": "species",
   "allow_decimal": false,
   "difficulty": "hard",
-  "dodo_penalty": 4,
+  "dodo_penalty": 3,
   "source": "Ministry of Agro-Industry, Mauritius — biodiversity report",
   "source_note": "Figure from the ministry's national biodiversity synthesis.",
   "active": true,
@@ -93,7 +97,9 @@ Questions live in `server/data/questions.json`. Each entry:
 }
 ```
 
-- `dodo_penalty` must match `difficulty`: easy → 2, medium → 3, hard → 4, very_hard → 5.
+- `dodo_penalty` must match `difficulty` — deliberately **inverted** from what you'd
+  expect: easy → 5, medium → 4, hard → 3, very_hard → 2. Missing something everyone
+  should reasonably know stings more than missing an obscure one.
 - `status: "draft"` + `active: false` keeps a question out of live games — use this
   for anything AI-generated or not yet fact-checked, until you've reviewed it.
 - Only `active: true, status: "live"` questions are ever served to players.
