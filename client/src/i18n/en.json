@@ -36,6 +36,10 @@
   "game.tchombo": "TCHOMBO!",
   "game.confirmTchomboTitle": "Call TCHOMBO on {name}'s {value} {unit}?",
   "game.confirmTchomboBody": "You'll be betting that this number is already too high.",
+  "game.callExact": "It's exact!",
+  "game.confirmExactTitle": "Call {name}'s {value} {unit} as the exact answer?",
+  "game.confirmExactBody": "If you're right, nobody loses any dodos. If you're wrong, it plays out just like a normal TCHOMBO call.",
+  "game.confirmExactAction": "Yes, call it!",
   "game.cancel": "Cancel",
   "game.confirm": "TCHOMBO!",
   "game.inputPlaceholder": "Your estimate",
@@ -51,6 +55,8 @@
   "reveal.said": "{name} said",
   "reveal.exceeded": "{name} went over.",
   "reveal.safe": "{name} was safe — TCHOMBO failed.",
+  "reveal.exactCall": "🎯 {name} called the exact number!",
+  "reveal.noOneLoses": "No one loses any dodos!",
   "reveal.loses": "{name} loses",
   "reveal.dodo": "dodo",
   "reveal.dodos": "dodos",
@@ -97,5 +103,6 @@
   "history.title": "Question log",
   "history.empty": "No questions answered yet.",
   "history.answer": "Answer",
-  "history.outcome": "{name} lost {dodos} 🦤"
+  "history.outcome": "{name} lost {dodos} 🦤",
+  "history.outcomeExact": "🎯 {name} called it exactly — no dodos lost!"
 }

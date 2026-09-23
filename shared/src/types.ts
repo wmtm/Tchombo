@@ -76,8 +76,9 @@ export interface RevealResult {
   entries: TurnEntry[];
   callerId: string;
   callerName: string;
-  loserId: string;
-  loserName: string;
+  // null only when this was a correct "call exact" — nobody loses dodos then.
+  loserId: string | null;
+  loserName: string | null;
   loserValue: number;
   correctAnswer: number;
   callerWasCorrect: boolean;

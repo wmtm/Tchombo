@@ -20,6 +20,7 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
   const t = useT();
   const reveal = state.lastReveal!;
   const lastEntry = reveal.entries[reveal.entries.length - 1];
+  const noOneLost = reveal.loserId === null;
   const loser = state.players.find((p) => p.id === reveal.loserId);
   const loserLivesLeft = livesRemaining(loser?.dodos ?? 0);
   const loserEliminated = loser?.eliminated ?? false;
@@ -74,10 +75,12 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
             </p>
           </div>
 
-          <p className={`font-semibold ${reveal.callerWasCorrect ? "text-leaf" : "text-coral"}`}>
-            {reveal.callerWasCorrect
-              ? t("reveal.exceeded", { name: lastEntry?.playerName ?? "" })
-              : t("reveal.safe", { name: lastEntry?.playerName ?? "" })}
+          <p className={`font-semibold ${noOneLost || reveal.callerWasCorrect ? "text-leaf" : "text-coral"}`}>
+            {noOneLost
+              ? t("reveal.exactCall", { name: reveal.callerName })
+              : reveal.callerWasCorrect
+                ? t("reveal.exceeded", { name: lastEntry?.playerName ?? "" })
+                : t("reveal.safe", { name: lastEntry?.playerName ?? "" })}
           </p>
         </div>
 
@@ -85,16 +88,18 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
 
         <div
           className={`flex items-center gap-2.5 rounded-full px-5 py-3 animate-pop-in ${
-            loserEliminated ? "bg-coral text-white" : "bg-navy text-cream"
+            noOneLost ? "bg-leaf text-white" : loserEliminated ? "bg-coral text-white" : "bg-navy text-cream"
           }`}
         >
           <AyoIcon className="w-6 h-6" />
           <span className="font-semibold">
-            {loserEliminated
-              ? t("reveal.eliminated", { name: reveal.loserName })
-              : `${t("reveal.loses", { name: reveal.loserName })} ${reveal.dodosAwarded} ${
-                  reveal.dodosAwarded === 1 ? t("reveal.dodo") : t("reveal.dodos")
-                } — ${t("reveal.livesLeft", { count: loserLivesLeft })}`}
+            {noOneLost
+              ? t("reveal.noOneLoses")
+              : loserEliminated
+                ? t("reveal.eliminated", { name: reveal.loserName! })
+                : `${t("reveal.loses", { name: reveal.loserName! })} ${reveal.dodosAwarded} ${
+                    reveal.dodosAwarded === 1 ? t("reveal.dodo") : t("reveal.dodos")
+                  } — ${t("reveal.livesLeft", { count: loserLivesLeft })}`}
           </span>
         </div>
 

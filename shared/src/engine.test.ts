@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   addPlayer,
   advanceToNextQuestion,
+  callExact,
   callTchombo,
   createGame,
   Game,
@@ -201,6 +202,58 @@ describe("TCHOMBO resolution (RULE 5-7) and the boundary case", () => {
     game = startGame(game, queuePicker([q({ answer: 100 })]));
     game = submitNumber(game, "p0", 50);
     expect(() => callTchombo(game, "p2")).toThrow(GameError);
+  });
+});
+
+describe("call exact (bet the previous number is precisely the answer)", () => {
+  it("correct exact call: nobody loses any dodos", () => {
+    let game = makeGame(["A", "B"]);
+    game = startGame(game, queuePicker([q({ answer: 226, dodo_penalty: 4 })]));
+    game = submitNumber(game, "p0", 226); // exactly right
+    game = callExact(game, "p1");
+
+    expect(game.status).toBe("reveal");
+    expect(game.lastReveal!.loserId).toBeNull();
+    expect(game.lastReveal!.loserName).toBeNull();
+    expect(game.lastReveal!.dodosAwarded).toBe(0);
+    expect(game.lastReveal!.callerWasCorrect).toBe(true);
+    expect(game.players.find((p) => p.id === "p0")!.dodos).toBe(0);
+    expect(game.players.find((p) => p.id === "p1")!.dodos).toBe(0);
+  });
+
+  it("wrong exact call on a number that actually exceeded: resolves like a normal TCHOMBO (previous player pays)", () => {
+    let game = makeGame(["A", "B"]);
+    game = startGame(game, queuePicker([q({ answer: 226, dodo_penalty: 4 })]));
+    game = submitNumber(game, "p0", 250); // exceeded, not exact
+    game = callExact(game, "p1");
+
+    expect(game.lastReveal!.loserId).toBe("p0");
+    expect(game.lastReveal!.dodosAwarded).toBe(4);
+    expect(game.players.find((p) => p.id === "p0")!.dodos).toBe(4);
+  });
+
+  it("wrong exact call on a number that was merely safe (under, not exact): the caller pays, like a failed TCHOMBO", () => {
+    let game = makeGame(["A", "B"]);
+    game = startGame(game, queuePicker([q({ answer: 226, dodo_penalty: 4 })]));
+    game = submitNumber(game, "p0", 150); // safe, but not exact
+    game = callExact(game, "p1");
+
+    expect(game.lastReveal!.loserId).toBe("p1");
+    expect(game.lastReveal!.dodosAwarded).toBe(4);
+    expect(game.players.find((p) => p.id === "p1")!.dodos).toBe(4);
+  });
+
+  it("rejects call-exact when there is no previous entry yet", () => {
+    let game = makeGame(["A", "B"]);
+    game = startGame(game, queuePicker([q()]));
+    expect(() => callExact(game, "p0")).toThrow(GameError);
+  });
+
+  it("rejects call-exact from someone who isn't the current player", () => {
+    let game = makeGame(["A", "B", "C"]);
+    game = startGame(game, queuePicker([q({ answer: 100 })]));
+    game = submitNumber(game, "p0", 50);
+    expect(() => callExact(game, "p2")).toThrow(GameError);
   });
 });
 

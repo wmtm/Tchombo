@@ -36,6 +36,10 @@
   "game.tchombo": "TCHOMBO !",
   "game.confirmTchomboTitle": "Appeler TCHOMBO sur les {value} {unit} de {name} ?",
   "game.confirmTchomboBody": "Tu paries que ce nombre est déjà trop élevé.",
+  "game.callExact": "C'est exact !",
+  "game.confirmExactTitle": "Déclarer que les {value} {unit} de {name} sont la réponse exacte ?",
+  "game.confirmExactBody": "Si tu as raison, personne ne perd de dodos. Si tu as tort, ça se joue comme un TCHOMBO classique.",
+  "game.confirmExactAction": "Oui, je le déclare !",
   "game.cancel": "Annuler",
   "game.confirm": "TCHOMBO !",
   "game.inputPlaceholder": "Ton estimation",
@@ -51,6 +55,8 @@
   "reveal.said": "{name} a dit",
   "reveal.exceeded": "{name} a dépassé.",
   "reveal.safe": "{name} était dans les clous — TCHOMBO raté.",
+  "reveal.exactCall": "🎯 {name} a trouvé le nombre exact !",
+  "reveal.noOneLoses": "Personne ne perd de dodos !",
   "reveal.loses": "{name} perd",
   "reveal.dodo": "dodo",
   "reveal.dodos": "dodos",
@@ -97,5 +103,6 @@
   "history.title": "Historique des questions",
   "history.empty": "Aucune question répondue pour l'instant.",
   "history.answer": "Réponse",
-  "history.outcome": "{name} a perdu {dodos} 🦤"
+  "history.outcome": "{name} a perdu {dodos} 🦤",
+  "history.outcomeExact": "🎯 {name} a trouvé le nombre exact — aucun dodo perdu !"
 }

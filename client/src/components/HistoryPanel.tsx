@@ -57,9 +57,15 @@ function HistoryPanel({ history, onClose }: { history: RevealResult[]; onClose: 
                 {r.question.source_note && (
                   <p className="text-xs text-navy/50 italic leading-snug">{r.question.source_note}</p>
                 )}
-                <p className="text-xs text-navy/50">
-                  {t("history.outcome", { name: r.loserName, dodos: r.dodosAwarded })}
-                </p>
+                {r.loserId === null ? (
+                  <p className="text-xs text-leaf font-semibold">
+                    {t("history.outcomeExact", { name: r.callerName })}
+                  </p>
+                ) : (
+                  <p className="text-xs text-navy/50">
+                    {t("history.outcome", { name: r.loserName!, dodos: r.dodosAwarded })}
+                  </p>
+                )}
               </div>
             ))
           )}

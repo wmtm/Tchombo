@@ -17,15 +17,17 @@ interface Props {
   isHost: boolean;
   onSubmit: (value: number) => Promise<{ ok: true } | { ok: false; error: string }>;
   onTchombo: () => Promise<{ ok: true } | { ok: false; error: string }>;
+  onCallExact: () => Promise<{ ok: true } | { ok: false; error: string }>;
   onLeave: () => void;
   onRestart: () => void;
 }
 
-export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onLeave, onRestart }: Props) {
+export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onCallExact, onLeave, onRestart }: Props) {
   const t = useT();
   const [value, setValue] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [confirmOpen, setConfirmOpen] = useState(false);
+  const [confirmExactOpen, setConfirmExactOpen] = useState(false);
   const [busy, setBusy] = useState(false);
 
   const question = state.currentQuestion!;
@@ -80,6 +82,18 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onL
     setConfirmOpen(false);
     setBusy(true);
     const res = await onTchombo();
+    setBusy(false);
+    if (res.ok) {
+      sound.tchomboCall();
+    } else {
+      setError(res.error);
+    }
+  }
+
+  async function handleCallExact() {
+    setConfirmExactOpen(false);
+    setBusy(true);
+    const res = await onCallExact();
     setBusy(false);
     if (res.ok) {
       sound.tchomboCall();
@@ -171,6 +185,12 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onL
                 {t("game.tchombo")}
               </Button>
             )}
+
+            {previous && (
+              <Button variant="gold" full disabled={busy} onClick={() => setConfirmExactOpen(true)}>
+                🎯 {t("game.callExact")}
+              </Button>
+            )}
           </div>
         ) : (
           <div className="text-center text-sm text-navy/50 py-3">
@@ -194,6 +214,17 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onL
           danger
           onCancel={() => setConfirmOpen(false)}
           onConfirm={handleTchombo}
+        />
+      )}
+
+      {confirmExactOpen && previous && (
+        <ConfirmDialog
+          title={t("game.confirmExactTitle", { name: previous.playerName, value: previous.value, unit: question.unit })}
+          body={t("game.confirmExactBody")}
+          confirmLabel={t("game.confirmExactAction")}
+          cancelLabel={t("game.cancel")}
+          onCancel={() => setConfirmExactOpen(false)}
+          onConfirm={handleCallExact}
         />
       )}
 

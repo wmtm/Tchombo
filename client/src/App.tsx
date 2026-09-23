@@ -210,6 +210,12 @@ function RoomRouter({
     });
   }
 
+  function callExact() {
+    return new Promise<{ ok: true } | { ok: false; error: string }>((resolve) => {
+      socket.emit("call_exact", (res) => resolve(res ?? { ok: false, error: "No response." }));
+    });
+  }
+
   switch (state.status) {
     case "lobby":
       return (
@@ -230,6 +236,7 @@ function RoomRouter({
           isHost={isHost}
           onSubmit={submitNumber}
           onTchombo={callTchombo}
+          onCallExact={callExact}
           onLeave={onHome}
           onRestart={() => socket.emit("restart_game")}
         />

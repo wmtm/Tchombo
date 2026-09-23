@@ -19,6 +19,7 @@ export interface ClientToServerEvents {
   start_game: () => void;
   submit_number: (payload: { value: number }, ack?: (res: { ok: true } | { ok: false; error: string }) => void) => void;
   call_tchombo: (ack?: (res: { ok: true } | { ok: false; error: string }) => void) => void;
+  call_exact: (ack?: (res: { ok: true } | { ok: false; error: string }) => void) => void;
   restart_game: () => void;
   leave_room: () => void;
 }

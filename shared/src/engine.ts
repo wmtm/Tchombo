@@ -301,23 +301,11 @@ function formatValue(value: number): string {
   return Number.isInteger(value) ? String(value) : String(Math.round(value * 100) / 100);
 }
 
-export function callTchombo(game: Game, callerId: string): Game {
-  if (game.status !== "playing") {
-    throw new GameError("No active question right now.");
-  }
-  const caller = currentPlayer(game);
-  if (caller.id !== callerId) {
-    throw new GameError("It's not your turn to call TCHOMBO.");
-  }
-  if (game.entries.length === 0) {
-    throw new GameError("There's no previous answer to challenge yet.");
-  }
-  if (!game.currentQuestion) {
-    throw new GameError("No active question right now.");
-  }
-
-  const previous = game.entries[game.entries.length - 1];
-  const question = game.currentQuestion;
+// Resolves a challenge the normal TCHOMBO way: the previous player loses if
+// their number already exceeded the real answer, otherwise the challenger
+// loses for calling too early. Shared by callTchombo and by callExact's
+// fallback when a guessed-exact number turns out not to be exact after all.
+function resolveAsTchombo(game: Game, caller: Player, previous: TurnEntry, question: Question): RevealResult {
   const previousExceeded = previous.value > question.answer + EPSILON;
 
   const loserId = previousExceeded ? previous.playerId : caller.id;
@@ -349,6 +337,74 @@ export function callTchombo(game: Game, callerId: string): Game {
   if (loser.dodos >= DODOS_TO_LOSE) {
     loser.eliminated = true;
   }
+
+  return reveal;
+}
+
+export function callTchombo(game: Game, callerId: string): Game {
+  if (game.status !== "playing") {
+    throw new GameError("No active question right now.");
+  }
+  const caller = currentPlayer(game);
+  if (caller.id !== callerId) {
+    throw new GameError("It's not your turn to call TCHOMBO.");
+  }
+  if (game.entries.length === 0) {
+    throw new GameError("There's no previous answer to challenge yet.");
+  }
+  if (!game.currentQuestion) {
+    throw new GameError("No active question right now.");
+  }
+
+  const previous = game.entries[game.entries.length - 1];
+  resolveAsTchombo(game, caller, previous, game.currentQuestion);
+  return game;
+}
+
+// Bets that the previous player's number is the EXACT correct answer, not just
+// safe. Right: nobody loses any dodos. Wrong: it resolves exactly like a normal
+// failed/won TCHOMBO call (the caller pays for the wrong guess, unless the
+// previous number had actually already gone over).
+export function callExact(game: Game, callerId: string): Game {
+  if (game.status !== "playing") {
+    throw new GameError("No active question right now.");
+  }
+  const caller = currentPlayer(game);
+  if (caller.id !== callerId) {
+    throw new GameError("It's not your turn to call this.");
+  }
+  if (game.entries.length === 0) {
+    throw new GameError("There's no previous answer to challenge yet.");
+  }
+  if (!game.currentQuestion) {
+    throw new GameError("No active question right now.");
+  }
+
+  const previous = game.entries[game.entries.length - 1];
+  const question = game.currentQuestion;
+  const isExact = Math.abs(previous.value - question.answer) <= EPSILON;
+
+  if (!isExact) {
+    resolveAsTchombo(game, caller, previous, question);
+    return game;
+  }
+
+  const reveal: RevealResult = {
+    question,
+    entries: [...game.entries],
+    callerId: caller.id,
+    callerName: caller.name,
+    loserId: null,
+    loserName: null,
+    loserValue: previous.value,
+    correctAnswer: question.answer,
+    callerWasCorrect: true,
+    dodosAwarded: 0,
+  };
+
+  game.lastReveal = reveal;
+  game.history.push(reveal);
+  game.status = "reveal";
 
   return game;
 }

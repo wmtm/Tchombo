@@ -8,6 +8,7 @@ import { customAlphabet } from "nanoid";
 import {
   addPlayer,
   advanceToNextQuestion,
+  callExact,
   callTchombo,
   CATEGORIES,
   Category,
@@ -218,6 +219,22 @@ io.on("connection", (socket) => {
       if (game.status === "reveal") scheduleAutoAdvance(currentRoom);
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not call TCHOMBO.";
+      ack?.({ ok: false, error: message });
+      socket.emit("error_message", { message });
+    }
+  });
+
+  socket.on("call_exact", (ack) => {
+    if (!currentRoom || !currentPlayerId) return ack?.({ ok: false, error: "Not in a room." });
+    const game = rooms.get(currentRoom);
+    if (!game) return ack?.({ ok: false, error: "Room not found." });
+    try {
+      callExact(game, currentPlayerId);
+      broadcastState(currentRoom);
+      ack?.({ ok: true });
+      if (game.status === "reveal") scheduleAutoAdvance(currentRoom);
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Could not call it.";
       ack?.({ ok: false, error: message });
       socket.emit("error_message", { message });
     }
