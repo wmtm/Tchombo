@@ -5,6 +5,7 @@ import { Button } from "../components/Button";
 import { PlayerList } from "../components/PlayerList";
 import { CategoryPicker } from "../components/CategoryPicker";
 import { SoundToggle } from "../components/SoundToggle";
+import { LeaveButton } from "../components/LeaveButton";
 import { useT } from "../lib/i18n";
 
 interface Props {
@@ -13,9 +14,10 @@ interface Props {
   onStart: () => void;
   onRemovePlayer: (playerId: string) => void;
   onSetCategories: (categories: Category[]) => void;
+  onLeave: () => void;
 }
 
-export function Lobby({ state, myPlayerId, onStart, onRemovePlayer, onSetCategories }: Props) {
+export function Lobby({ state, myPlayerId, onStart, onRemovePlayer, onSetCategories, onLeave }: Props) {
   const t = useT();
   const [copied, setCopied] = useState(false);
   const isHost = state.hostId === myPlayerId;
@@ -42,7 +44,14 @@ export function Lobby({ state, myPlayerId, onStart, onRemovePlayer, onSetCategor
       <div className="w-full max-w-sm flex flex-col gap-6">
         <div className="flex items-center justify-between">
           <Logo size="sm" />
-          <SoundToggle />
+          <div className="flex items-center gap-2">
+            <SoundToggle />
+            <LeaveButton
+              onLeave={onLeave}
+              title={t("nav.confirmLeaveLobbyTitle")}
+              body={t("nav.confirmLeaveLobbyBody")}
+            />
+          </div>
         </div>
 
         <div className="text-center">

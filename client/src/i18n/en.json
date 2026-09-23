@@ -73,5 +73,10 @@
   "difficulty.medium": "Medium",
   "difficulty.hard": "Hard",
   "difficulty.very_hard": "Very hard",
-  "footer.madeFor": "Made for friends, not for profit."
+  "footer.madeFor": "Made for friends, not for profit.",
+  "nav.leave": "Leave game",
+  "nav.confirmLeaveLobbyTitle": "Leave the lobby?",
+  "nav.confirmLeaveLobbyBody": "You'll need the room code again to rejoin.",
+  "nav.confirmLeaveGameTitle": "Leave this game?",
+  "nav.confirmLeaveGameBody": "Your seat and dodo count stay reserved in case you rejoin, but if it's your turn the game will pause until you're back."
 }

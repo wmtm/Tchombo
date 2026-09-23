@@ -219,14 +219,21 @@ function RoomRouter({
           onStart={() => socket.emit("start_game")}
           onRemovePlayer={(playerId) => socket.emit("remove_player", { playerId })}
           onSetCategories={(categories: Category[]) => socket.emit("set_categories", { categories })}
+          onLeave={onHome}
         />
       );
     case "playing":
       return (
-        <GameScreen state={state} myPlayerId={myPlayerId} onSubmit={submitNumber} onTchombo={callTchombo} />
+        <GameScreen
+          state={state}
+          myPlayerId={myPlayerId}
+          onSubmit={submitNumber}
+          onTchombo={callTchombo}
+          onLeave={onHome}
+        />
       );
     case "reveal":
-      return <RevealScreen state={state} />;
+      return <RevealScreen state={state} onLeave={onHome} />;
     case "finished":
       return (
         <GameOverScreen

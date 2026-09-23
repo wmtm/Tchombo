@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import type { PublicGameState } from "@tchombo/shared";
 import { Button } from "../components/Button";
 import { SoundToggle } from "../components/SoundToggle";
+import { LeaveButton } from "../components/LeaveButton";
+import { ConfirmDialog } from "../components/ConfirmDialog";
 import { DodoCount } from "../components/Dodo";
 import { CATEGORY_EMOJI } from "../components/CategoryPicker";
 import { useT } from "../lib/i18n";
@@ -12,9 +14,10 @@ interface Props {
   myPlayerId: string;
   onSubmit: (value: number) => Promise<{ ok: true } | { ok: false; error: string }>;
   onTchombo: () => Promise<{ ok: true } | { ok: false; error: string }>;
+  onLeave: () => void;
 }
 
-export function GameScreen({ state, myPlayerId, onSubmit, onTchombo }: Props) {
+export function GameScreen({ state, myPlayerId, onSubmit, onTchombo, onLeave }: Props) {
   const t = useT();
   const [value, setValue] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -82,7 +85,14 @@ export function GameScreen({ state, myPlayerId, onSubmit, onTchombo }: Props) {
         <span className="text-xs font-semibold text-navy/40 uppercase tracking-widest">
           {t("game.questionNumber", { number: state.questionNumber })}
         </span>
-        <SoundToggle />
+        <div className="flex items-center gap-2">
+          <SoundToggle />
+          <LeaveButton
+            onLeave={onLeave}
+            title={t("nav.confirmLeaveGameTitle")}
+            body={t("nav.confirmLeaveGameBody")}
+          />
+        </div>
       </div>
 
       <div className="max-w-sm w-full mx-auto flex-1 flex flex-col gap-5 mt-4">
@@ -149,22 +159,15 @@ export function GameScreen({ state, myPlayerId, onSubmit, onTchombo }: Props) {
       </div>
 
       {confirmOpen && previous && (
-        <div className="fixed inset-0 bg-navy/50 backdrop-blur-sm grid place-items-center px-6 z-50">
-          <div className="bg-white rounded-xl2 shadow-card p-6 max-w-xs w-full flex flex-col gap-4 animate-pop-in">
-            <p className="font-display text-xl text-ink leading-snug">
-              {t("game.confirmTchomboTitle", { name: previous.playerName, value: previous.value, unit: question.unit })}
-            </p>
-            <p className="text-sm text-navy/50">{t("game.confirmTchomboBody")}</p>
-            <div className="flex gap-3">
-              <Button variant="secondary" full onClick={() => setConfirmOpen(false)}>
-                {t("game.cancel")}
-              </Button>
-              <Button variant="danger" full onClick={handleTchombo}>
-                {t("game.confirm")}
-              </Button>
-            </div>
-          </div>
-        </div>
+        <ConfirmDialog
+          title={t("game.confirmTchomboTitle", { name: previous.playerName, value: previous.value, unit: question.unit })}
+          body={t("game.confirmTchomboBody")}
+          confirmLabel={t("game.confirm")}
+          cancelLabel={t("game.cancel")}
+          danger
+          onCancel={() => setConfirmOpen(false)}
+          onConfirm={handleTchombo}
+        />
       )}
 
       <div className="max-w-sm w-full mx-auto mt-6 flex flex-wrap justify-center gap-x-4 gap-y-2">

@@ -1,12 +1,18 @@
 import { useEffect, useState } from "react";
 import type { PublicGameState } from "@tchombo/shared";
 import { DodoIcon } from "../components/Dodo";
+import { LeaveButton } from "../components/LeaveButton";
 import { useT } from "../lib/i18n";
 import { sound } from "../lib/sound";
 
 const REVEAL_SECONDS = 7;
 
-export function RevealScreen({ state }: { state: PublicGameState }) {
+interface Props {
+  state: PublicGameState;
+  onLeave: () => void;
+}
+
+export function RevealScreen({ state, onLeave }: Props) {
   const t = useT();
   const reveal = state.lastReveal!;
   const lastEntry = reveal.entries[reveal.entries.length - 1];
@@ -27,6 +33,13 @@ export function RevealScreen({ state }: { state: PublicGameState }) {
 
   return (
     <div className="min-h-screen px-5 py-8 flex flex-col items-center justify-center">
+      <div className="max-w-sm w-full flex justify-end -mb-2">
+        <LeaveButton
+          onLeave={onLeave}
+          title={t("nav.confirmLeaveGameTitle")}
+          body={t("nav.confirmLeaveGameBody")}
+        />
+      </div>
       <div className="max-w-sm w-full flex flex-col items-center text-center gap-6">
         <span className="font-display text-3xl tracking-wide text-coral animate-pop-in">TCHOMBO!</span>
 
