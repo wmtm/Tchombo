@@ -5,8 +5,9 @@
 A small, real-time multiplayer party game for 2–6 friends, built around factual
 questions about Mauritius and the Mascarene Islands. Players take turns naming
 increasing estimates until someone calls **TCHOMBO** on the previous player,
-betting they've gone over the true answer. Guess wrong and you collect dodos.
-First to 30 dodos loses.
+betting they've gone over the true answer. Everyone starts with 15 dodos
+(displayed as life points); guess wrong and you lose some. Run out and you're
+out of the game — the game ends the moment someone hits 0.
 
 No accounts, no downloads, no payment — just a 4-digit room code shared over
 WhatsApp.
@@ -58,8 +59,10 @@ npm test
 Covers the full rule set (RULE 1–15 in the spec): turn order, strictly-increasing
 submissions, the exact-answer-is-safe boundary (including the 100 vs 100.01
 decimal edge case), correct/incorrect TCHOMBO resolution, dodo/difficulty
-mapping, starting-player rotation, the 30-dodo loss condition, question
-no-repeat, reconnection, and 2/4/6-player games.
+mapping, starting-player rotation, the dodo-limit loss condition (15, the
+displayed "lives"), question no-repeat, reconnection, mid-game player exit
+(turn order re-indexes, host reassigns, the game ends gracefully if it drops
+below 2 players), and 2/4/6-player games.
 
 ## Deploying to Render (free)
 

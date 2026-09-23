@@ -5,7 +5,7 @@ import { Button } from "../components/Button";
 import { PlayerList } from "../components/PlayerList";
 import { CategoryPicker } from "../components/CategoryPicker";
 import { SoundToggle } from "../components/SoundToggle";
-import { LeaveButton } from "../components/LeaveButton";
+import { LeaveMenu } from "../components/LeaveMenu";
 import { useT } from "../lib/i18n";
 
 interface Props {
@@ -46,10 +46,10 @@ export function Lobby({ state, myPlayerId, onStart, onRemovePlayer, onSetCategor
           <Logo size="sm" />
           <div className="flex items-center gap-2">
             <SoundToggle />
-            <LeaveButton
-              onLeave={onLeave}
-              title={t("nav.confirmLeaveLobbyTitle")}
-              body={t("nav.confirmLeaveLobbyBody")}
+            <LeaveMenu
+              onExit={onLeave}
+              exitTitle={t("nav.confirmLeaveLobbyTitle")}
+              exitBody={t("nav.confirmLeaveLobbyBody")}
             />
           </div>
         </div>

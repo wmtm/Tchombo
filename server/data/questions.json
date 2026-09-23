@@ -212,7 +212,7 @@
   {
     "id": "HIS-016",
     "category": "history",
-    "question": "For how many years did Mahé de Labourdonnais serve as French governor of Île de France (1735–1746)?",
+    "question": "For how many years did Mahé de Labourdonnais serve as French governor of Île de France?",
     "answer": 11,
     "unit": "years",
     "allow_decimal": false,
@@ -464,7 +464,7 @@
   {
     "id": "HIS-034",
     "category": "history",
-    "question": "For how many continuous years did the British rule Mauritius, from their capture of the island in 1810 to independence in 1968?",
+    "question": "For how many continuous years did the British rule Mauritius, from their capture of the island to independence?",
     "answer": 158,
     "unit": "years",
     "allow_decimal": false,

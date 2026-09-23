@@ -1,10 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import type { PublicGameState } from "@tchombo/shared";
+import { livesRemaining } from "@tchombo/shared";
 import { Button } from "../components/Button";
 import { SoundToggle } from "../components/SoundToggle";
-import { LeaveButton } from "../components/LeaveButton";
+import { LeaveMenu } from "../components/LeaveMenu";
+import { HistoryButton } from "../components/HistoryPanel";
 import { ConfirmDialog } from "../components/ConfirmDialog";
-import { DodoCount } from "../components/Dodo";
+import { DodoCount, DodoPenaltyRow } from "../components/Dodo";
 import { CATEGORY_EMOJI } from "../components/CategoryPicker";
 import { useT } from "../lib/i18n";
 import { sound } from "../lib/sound";
@@ -12,12 +14,14 @@ import { sound } from "../lib/sound";
 interface Props {
   state: PublicGameState;
   myPlayerId: string;
+  isHost: boolean;
   onSubmit: (value: number) => Promise<{ ok: true } | { ok: false; error: string }>;
   onTchombo: () => Promise<{ ok: true } | { ok: false; error: string }>;
   onLeave: () => void;
+  onRestart: () => void;
 }
 
-export function GameScreen({ state, myPlayerId, onSubmit, onTchombo, onLeave }: Props) {
+export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onLeave, onRestart }: Props) {
   const t = useT();
   const [value, setValue] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -86,11 +90,13 @@ export function GameScreen({ state, myPlayerId, onSubmit, onTchombo, onLeave }: 
           {t("game.questionNumber", { number: state.questionNumber })}
         </span>
         <div className="flex items-center gap-2">
+          <HistoryButton history={state.history} />
           <SoundToggle />
-          <LeaveButton
-            onLeave={onLeave}
-            title={t("nav.confirmLeaveGameTitle")}
-            body={t("nav.confirmLeaveGameBody")}
+          <LeaveMenu
+            onExit={onLeave}
+            onRestart={isHost ? onRestart : undefined}
+            exitTitle={t("nav.confirmLeaveGameTitle")}
+            exitBody={t("nav.confirmLeaveGameBody")}
           />
         </div>
       </div>
@@ -105,9 +111,17 @@ export function GameScreen({ state, myPlayerId, onSubmit, onTchombo, onLeave }: 
         </div>
 
         <div className="bg-white rounded-xl2 shadow-card p-6 flex flex-col gap-3">
-          <span className="text-xs font-semibold text-leaf uppercase tracking-wide">
-            {CATEGORY_EMOJI[question.category]} {t(`category.${question.category}`)}
-          </span>
+          <div className="flex items-center justify-between gap-2">
+            <span className="text-xs font-semibold text-leaf uppercase tracking-wide">
+              {CATEGORY_EMOJI[question.category]} {t(`category.${question.category}`)}
+            </span>
+            <span className="flex items-center gap-1.5 flex-shrink-0" title={t(`difficulty.${question.difficulty}`)}>
+              <span className="text-[11px] uppercase tracking-wide text-navy/40 font-semibold">
+                {t(`difficulty.${question.difficulty}`)}
+              </span>
+              <DodoPenaltyRow count={question.dodo_penalty} />
+            </span>
+          </div>
           <p className="font-display text-xl leading-snug text-ink">{question.question}</p>
         </div>
 
@@ -176,7 +190,7 @@ export function GameScreen({ state, myPlayerId, onSubmit, onTchombo, onLeave }: 
             <span className={`text-xs font-medium truncate max-w-[3.5rem] ${p.id === state.currentPlayerId ? "text-leaf" : "text-navy/40"}`}>
               {p.name}
             </span>
-            <DodoCount count={p.dodos} size="sm" />
+            <DodoCount count={livesRemaining(p.dodos)} size="sm" />
           </div>
         ))}
       </div>

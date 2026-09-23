@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import type { PublicGameState } from "@tchombo/shared";
+import { livesRemaining } from "@tchombo/shared";
 import { DodoIcon } from "../components/Dodo";
-import { LeaveButton } from "../components/LeaveButton";
+import { LeaveMenu } from "../components/LeaveMenu";
+import { HistoryButton } from "../components/HistoryPanel";
 import { useT } from "../lib/i18n";
 import { sound } from "../lib/sound";
 
@@ -9,13 +11,16 @@ const REVEAL_SECONDS = 7;
 
 interface Props {
   state: PublicGameState;
+  isHost: boolean;
   onLeave: () => void;
+  onRestart: () => void;
 }
 
-export function RevealScreen({ state, onLeave }: Props) {
+export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
   const t = useT();
   const reveal = state.lastReveal!;
   const lastEntry = reveal.entries[reveal.entries.length - 1];
+  const loserLivesLeft = livesRemaining(state.players.find((p) => p.id === reveal.loserId)?.dodos ?? 0);
   const [secondsLeft, setSecondsLeft] = useState(REVEAL_SECONDS);
 
   useEffect(() => {
@@ -33,11 +38,13 @@ export function RevealScreen({ state, onLeave }: Props) {
 
   return (
     <div className="min-h-screen px-5 py-8 flex flex-col items-center justify-center">
-      <div className="max-w-sm w-full flex justify-end -mb-2">
-        <LeaveButton
-          onLeave={onLeave}
-          title={t("nav.confirmLeaveGameTitle")}
-          body={t("nav.confirmLeaveGameBody")}
+      <div className="max-w-sm w-full flex justify-end gap-2 -mb-2">
+        <HistoryButton history={state.history} />
+        <LeaveMenu
+          onExit={onLeave}
+          onRestart={isHost ? onRestart : undefined}
+          exitTitle={t("nav.confirmLeaveGameTitle")}
+          exitBody={t("nav.confirmLeaveGameBody")}
         />
       </div>
       <div className="max-w-sm w-full flex flex-col items-center text-center gap-6">
@@ -72,8 +79,10 @@ export function RevealScreen({ state, onLeave }: Props) {
         <div className="flex items-center gap-2.5 bg-navy text-cream rounded-full px-5 py-3 animate-pop-in">
           <DodoIcon className="w-6 h-6 text-gold" />
           <span className="font-semibold">
-            {t("reveal.collects", { name: reveal.loserName })} {reveal.dodosAwarded}{" "}
+            {t("reveal.loses", { name: reveal.loserName })} {reveal.dodosAwarded}{" "}
             {reveal.dodosAwarded === 1 ? t("reveal.dodo") : t("reveal.dodos")}
+            {" — "}
+            {t("reveal.livesLeft", { count: loserLivesLeft })}
           </span>
         </div>
 

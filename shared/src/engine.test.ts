@@ -6,14 +6,16 @@ import {
   createGame,
   Game,
   GameError,
+  removePlayer,
   removePlayerFromLobby,
+  removePlayerMidGame,
   restartGame,
   setPlayerConnected,
   startGame,
   submitNumber,
   toPublicState,
 } from "./engine.js";
-import { Question } from "./types.js";
+import { DODOS_TO_LOSE, livesRemaining, Question } from "./types.js";
 
 function q(overrides: Partial<Question> = {}): Question {
   return {
@@ -218,16 +220,16 @@ describe("dodo penalties map to difficulty", () => {
   });
 });
 
-describe("30-dodo loss condition (RULE 15)", () => {
-  it("ends the game the moment a player reaches 30 dodos", () => {
+describe(`dodo-limit loss condition (RULE 15, threshold=${DODOS_TO_LOSE})`, () => {
+  it(`ends the game the moment a player reaches ${DODOS_TO_LOSE} dodos`, () => {
     let game = makeGame(["A", "B"]);
-    const questions = Array.from({ length: 16 }, (_, i) =>
+    const questions = Array.from({ length: 20 }, (_, i) =>
       q({ id: `Q${i}`, answer: 10, difficulty: "very_hard", dodo_penalty: 5 })
     );
     const picker = queuePicker(questions);
     game = startGame(game, picker);
 
-    for (let i = 0; i < 16 && game.status !== "finished"; i++) {
+    for (let i = 0; i < 20 && game.status !== "finished"; i++) {
       const submitterId = game.players[game.currentPlayerIndex].id;
       game = submitNumber(game, submitterId, 20); // always exceeds
       const callerId = game.players[game.currentPlayerIndex].id;
@@ -237,9 +239,110 @@ describe("30-dodo loss condition (RULE 15)", () => {
     }
 
     expect(game.status).toBe("finished");
+    expect(game.endReason).toBe("dodo_limit");
     expect(game.loserOfGame).not.toBeNull();
     const loser = game.players.find((p) => p.id === game.loserOfGame)!;
-    expect(loser.dodos).toBeGreaterThanOrEqual(30);
+    expect(loser.dodos).toBeGreaterThanOrEqual(DODOS_TO_LOSE);
+  });
+
+  it("livesRemaining counts down from the threshold to 0 and never goes negative", () => {
+    expect(livesRemaining(0)).toBe(DODOS_TO_LOSE);
+    expect(livesRemaining(DODOS_TO_LOSE)).toBe(0);
+    expect(livesRemaining(DODOS_TO_LOSE + 5)).toBe(0);
+  });
+});
+
+describe("reveal history log", () => {
+  it("records every resolved question and clears on restart", () => {
+    let game = makeGame(["A", "B"]);
+    const picker = queuePicker([
+      q({ id: "Q1", answer: 10 }),
+      q({ id: "Q2", answer: 10 }),
+      q({ id: "Q3", answer: 10 }),
+    ]);
+    game = startGame(game, picker);
+
+    game = submitNumber(game, "p0", 20);
+    game = callTchombo(game, "p1");
+    expect(game.history).toHaveLength(1);
+    expect(game.history[0].correctAnswer).toBe(10);
+
+    game = advanceToNextQuestion(game, picker);
+    game = submitNumber(game, game.players[game.currentPlayerIndex].id, 20);
+    game = callTchombo(game, game.players[game.currentPlayerIndex].id);
+    expect(game.history).toHaveLength(2);
+
+    game = restartGame(game, picker);
+    expect(game.history).toHaveLength(0);
+  });
+});
+
+describe("mid-game player removal (explicit exit, not disconnect)", () => {
+  it("removing a player before the current turn shifts the pointer down but keeps the same player current", () => {
+    let game = makeGame(["A", "B", "C", "D"]);
+    game = startGame(game, queuePicker([q({ answer: 10 })]));
+    game = submitNumber(game, "p0", 5); // A submits; now it's B's (index 1) turn
+    expect(game.currentPlayerIndex).toBe(1);
+
+    // A (index 0, before the current turn) explicitly leaves
+    game = removePlayerMidGame(game, "p0");
+    expect(game.players.map((p) => p.id)).toEqual(["p1", "p2", "p3"]);
+    // B is still the current player, now at index 0
+    expect(game.players[game.currentPlayerIndex].id).toBe("p1");
+  });
+
+  it("removing the current player advances turn to whoever was next, with the game continuing", () => {
+    let game = makeGame(["A", "B", "C", "D"]);
+    game = startGame(game, queuePicker([q({ answer: 10 })]));
+    expect(game.players[game.currentPlayerIndex].id).toBe("p0"); // A's turn
+
+    game = removePlayerMidGame(game, "p0"); // A leaves mid-turn
+    expect(game.status).toBe("playing"); // game continues, not finished
+    expect(game.players.map((p) => p.id)).toEqual(["p1", "p2", "p3"]);
+    expect(game.players[game.currentPlayerIndex].id).toBe("p1"); // B is now current
+
+    // play continues normally with the remaining players
+    game = submitNumber(game, "p1", 5);
+    expect(game.players[game.currentPlayerIndex].id).toBe("p2");
+  });
+
+  it("transfers host when the host leaves mid-game", () => {
+    let game = makeGame(["A", "B", "C"]);
+    game = startGame(game, queuePicker([q({ answer: 10 })]));
+    expect(game.hostId).toBe("p0");
+    game = removePlayerMidGame(game, "p0");
+    expect(game.hostId).toBe("p1");
+    expect(game.players.find((p) => p.id === "p1")!.isHost).toBe(true);
+  });
+
+  it("ends the game gracefully (no loser, endReason set) when fewer than 2 players remain", () => {
+    let game = makeGame(["A", "B"]);
+    game = startGame(game, queuePicker([q({ answer: 10 })]));
+    game = removePlayerMidGame(game, "p1");
+    expect(game.status).toBe("finished");
+    expect(game.endReason).toBe("not_enough_players");
+    expect(game.loserOfGame).toBeNull();
+    expect(game.players).toHaveLength(1);
+  });
+
+  it("preserves dodo counts and rotation sanity for remaining players", () => {
+    let game = makeGame(["A", "B", "C", "D"]);
+    game = startGame(game, queuePicker([q({ id: "Q1", answer: 10, dodo_penalty: 3, difficulty: "medium" })]));
+    game = submitNumber(game, "p0", 20); // A exceeds
+    game = callTchombo(game, "p1"); // B correctly calls; A gets 3 dodos
+    expect(game.players.find((p) => p.id === "p0")!.dodos).toBe(3);
+
+    // C (not involved in the turn, not current) leaves during the reveal
+    game = removePlayerMidGame(game, "p2");
+    expect(game.players.find((p) => p.id === "p0")!.dodos).toBe(3); // untouched
+    expect(game.players.map((p) => p.id)).toEqual(["p0", "p1", "p3"]);
+  });
+
+  it("removePlayer dispatches to the lobby path before the game starts", () => {
+    let game = makeGame(["A", "B", "C"]);
+    game = removePlayer(game, "p1");
+    expect(game.players.map((p) => p.id)).toEqual(["p0", "p2"]);
+    expect(game.status).toBe("lobby");
   });
 });
 

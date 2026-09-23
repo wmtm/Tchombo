@@ -16,6 +16,7 @@ import {
   Game,
   makeQuestionPicker,
   removePlayerFromLobby,
+  removePlayerMidGame,
   restartGame,
   ServerToClientEvents,
   setPlayerConnected,
@@ -78,6 +79,7 @@ function scheduleAutoAdvance(roomCode: string) {
       // Ran out of questions for the selected categories: end the game gracefully.
       if (game.status === "reveal") {
         game.status = "finished";
+        game.endReason = "no_questions_left";
       }
       broadcastState(roomCode);
     }
@@ -224,7 +226,7 @@ io.on("connection", (socket) => {
   socket.on("restart_game", async () => {
     if (!currentRoom || !currentPlayerId) return;
     const game = rooms.get(currentRoom);
-    if (!game || game.hostId !== currentPlayerId || game.status !== "finished") return;
+    if (!game || game.hostId !== currentPlayerId || game.status === "lobby") return;
     try {
       const picker = await pickerFor(game);
       restartGame(game, picker);
@@ -235,21 +237,16 @@ io.on("connection", (socket) => {
   });
 
   socket.on("leave_room", () => {
-    handleDisconnect();
-  });
-
-  socket.on("disconnect", () => {
-    handleDisconnect();
-  });
-
-  function handleDisconnect() {
+    // A deliberate exit: fully remove the player so the game (lobby or in-progress)
+    // continues cleanly without them, unlike an accidental disconnect below.
     if (!currentRoom || !currentPlayerId) return;
     const game = rooms.get(currentRoom);
     if (game) {
-      // Keep the player's seat (name, order, host status, dodos) on any disconnect —
-      // including from the lobby — so a brief network drop never bumps them from the
-      // room. The host can still remove someone explicitly via remove_player.
-      setPlayerConnected(game, currentPlayerId, false);
+      if (game.status === "lobby") {
+        removePlayerFromLobby(game, currentPlayerId);
+      } else {
+        removePlayerMidGame(game, currentPlayerId);
+      }
       broadcastState(currentRoom);
     }
     // Explicit leave keeps the socket alive (unlike a real disconnect, which auto-leaves
@@ -258,7 +255,21 @@ io.on("connection", (socket) => {
     socket.leave(currentRoom);
     currentRoom = null;
     currentPlayerId = null;
-  }
+  });
+
+  socket.on("disconnect", () => {
+    // An accidental drop (closed tab, network blip): keep the player's seat (name,
+    // order, host status, dodos) so they can reconnect and resume exactly where they
+    // left off. Only an explicit leave_room removes someone for good.
+    if (!currentRoom || !currentPlayerId) return;
+    const game = rooms.get(currentRoom);
+    if (game) {
+      setPlayerConnected(game, currentPlayerId, false);
+      broadcastState(currentRoom);
+    }
+    currentRoom = null;
+    currentPlayerId = null;
+  });
 });
 
 // Once the reveal auto-advance runs out of fresh questions mid-game, callers above

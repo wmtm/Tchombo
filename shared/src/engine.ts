@@ -2,6 +2,7 @@ import {
   Category,
   DODOS_TO_LOSE,
   DODO_PENALTY,
+  EndReason,
   GameStatus,
   Player,
   PublicGameState,
@@ -29,7 +30,9 @@ export interface Game {
   entries: TurnEntry[];
   usedQuestionIds: Set<string>;
   lastReveal: RevealResult | null;
+  history: RevealResult[];
   loserOfGame: string | null;
+  endReason: EndReason | null;
   categories: Category[];
   createdAt: number;
 }
@@ -53,7 +56,9 @@ export function createGame(
     entries: [],
     usedQuestionIds: new Set(),
     lastReveal: null,
+    history: [],
     loserOfGame: null,
+    endReason: null,
     categories,
     createdAt: Date.now(),
   };
@@ -109,6 +114,60 @@ export function removePlayerFromLobby(game: Game, playerId: string): Game {
     game.hostId = game.players[0].id;
   }
   return game;
+}
+
+// Fully removes a player from a game that has already started (playing/reveal/finished),
+// unlike a disconnect (setPlayerConnected), which preserves their seat for reconnecting.
+// Re-indexes turn order and currentPlayerIndex so play continues seamlessly for the rest.
+export function removePlayerMidGame(game: Game, playerId: string): Game {
+  const idx = game.players.findIndex((p) => p.id === playerId);
+  if (idx === -1) return game;
+
+  const wasHost = game.hostId === playerId;
+
+  game.players.splice(idx, 1);
+  game.players.forEach((p, i) => (p.order = i));
+
+  if (game.players.length < 2) {
+    game.status = "finished";
+    game.endReason = "not_enough_players";
+    return game;
+  }
+
+  if (wasHost) {
+    game.players[0].isHost = true;
+    game.hostId = game.players[0].id;
+  }
+
+  // Splicing shifts every later index down by one. If the removed player was BEFORE
+  // the current turn, shift the pointer down to keep tracking the same player. If they
+  // WERE the current turn, leave the (now out-of-date) index as-is: the player who used
+  // to be next has slid into that exact slot, which is exactly who should act next.
+  if (idx < game.currentPlayerIndex) game.currentPlayerIndex -= 1;
+  if (idx < game.startingPlayerIndex) game.startingPlayerIndex -= 1;
+  game.currentPlayerIndex = wrap(game.currentPlayerIndex, game.players.length);
+  game.startingPlayerIndex = wrap(game.startingPlayerIndex, game.players.length);
+
+  return game;
+}
+
+// Removes a player from a game in any status, dispatching to the right strategy.
+export function removePlayer(game: Game, playerId: string): Game {
+  if (game.status === "lobby") return removePlayerFromLobby(game, playerId);
+  if (game.status === "finished") {
+    game.players = game.players.filter((p) => p.id !== playerId);
+    game.players.forEach((p, i) => (p.order = i));
+    if (game.hostId === playerId && game.players.length > 0) {
+      game.players[0].isHost = true;
+      game.hostId = game.players[0].id;
+    }
+    return game;
+  }
+  return removePlayerMidGame(game, playerId);
+}
+
+function wrap(index: number, length: number): number {
+  return ((index % length) + length) % length;
 }
 
 export function canStart(game: Game): boolean {
@@ -233,11 +292,13 @@ export function callTchombo(game: Game, callerId: string): Game {
   };
 
   game.lastReveal = reveal;
+  game.history.push(reveal);
   game.status = "reveal";
 
   if (loser.dodos >= DODOS_TO_LOSE) {
     game.status = "finished";
     game.loserOfGame = loser.id;
+    game.endReason = "dodo_limit";
   }
 
   return game;
@@ -263,7 +324,9 @@ export function restartGame(
   game.questionNumber = 0;
   game.startingPlayerIndex = 0;
   game.loserOfGame = null;
+  game.endReason = null;
   game.lastReveal = null;
+  game.history = [];
   game.status = "playing";
   return beginQuestion(game, pickQuestion);
 }
@@ -289,7 +352,9 @@ export function toPublicState(game: Game): PublicGameState {
     entries: game.entries,
     highestValue,
     lastReveal: game.lastReveal,
+    history: game.history,
     loserOfGame: game.loserOfGame,
+    endReason: game.endReason,
     categories: game.categories,
   };
 }

@@ -227,13 +227,17 @@ function RoomRouter({
         <GameScreen
           state={state}
           myPlayerId={myPlayerId}
+          isHost={isHost}
           onSubmit={submitNumber}
           onTchombo={callTchombo}
           onLeave={onHome}
+          onRestart={() => socket.emit("restart_game")}
         />
       );
     case "reveal":
-      return <RevealScreen state={state} onLeave={onHome} />;
+      return (
+        <RevealScreen state={state} isHost={isHost} onLeave={onHome} onRestart={() => socket.emit("restart_game")} />
+      );
     case "finished":
       return (
         <GameOverScreen

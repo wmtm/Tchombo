@@ -11,13 +11,28 @@ export function DodoIcon({ className = "w-6 h-6" }: { className?: string }) {
   );
 }
 
-export function DodoCount({ count, size = "md" }: { count: number; size?: "sm" | "md" | "lg" }) {
+// Shows remaining lives (dodos left before elimination). Turns coral once low,
+// as a quiet visual cue that someone is close to being knocked out.
+export function DodoCount({ count, size = "md", lowAt = 3 }: { count: number; size?: "sm" | "md" | "lg"; lowAt?: number }) {
   const dims = size === "sm" ? "w-4 h-4" : size === "lg" ? "w-7 h-7" : "w-5 h-5";
   const text = size === "sm" ? "text-sm" : size === "lg" ? "text-xl" : "text-base";
+  const low = count <= lowAt;
   return (
-    <span className={`inline-flex items-center gap-1.5 font-semibold ${text}`}>
-      <DodoIcon className={`${dims} text-navy/70`} />
+    <span className={`inline-flex items-center gap-1.5 font-semibold ${text} ${low ? "text-coral" : "text-ink"}`}>
+      <DodoIcon className={`${dims} ${low ? "text-coral/80" : "text-navy/70"}`} />
       {count}
+    </span>
+  );
+}
+
+// A row of small dodo icons matching a question's dodo_penalty — shows the stakes
+// (risk) of a question at a glance, before anyone answers.
+export function DodoPenaltyRow({ count, className = "" }: { count: number; className?: string }) {
+  return (
+    <span className={`inline-flex items-center gap-0.5 ${className}`}>
+      {Array.from({ length: count }, (_, i) => (
+        <DodoIcon key={i} className="w-4 h-4 text-coral" />
+      ))}
     </span>
   );
 }
