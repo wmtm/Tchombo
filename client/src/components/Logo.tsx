@@ -1,16 +1,14 @@
-import { DodoIcon } from "./Dodo";
+import tchomboIcon from "../assets/tchombo-icon.png";
 
 export function Logo({ size = "lg" }: { size?: "sm" | "lg" }) {
   const isLg = size === "lg";
   return (
-    <div className="flex items-center gap-3 select-none">
-      <div
-        className={`grid place-items-center rounded-2xl bg-navy text-gold shadow-card ${
-          isLg ? "w-14 h-14" : "w-9 h-9"
-        }`}
-      >
-        <DodoIcon className={isLg ? "w-8 h-8" : "w-5 h-5"} />
-      </div>
+    <div className="flex items-center gap-2.5 select-none">
+      <img
+        src={tchomboIcon}
+        alt=""
+        className={`object-contain flex-shrink-0 w-auto ${isLg ? "h-14" : "h-9"}`}
+      />
       <span
         className={`font-display font-semibold tracking-tight text-navy ${
           isLg ? "text-4xl" : "text-xl"

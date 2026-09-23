@@ -1,4 +1,5 @@
 import type { Player } from "@tchombo/shared";
+import { livesRemaining } from "@tchombo/shared";
 import { DodoCount } from "./Dodo";
 import { useT } from "../lib/i18n";
 
@@ -43,7 +44,7 @@ export function PlayerList({ players, myPlayerId, currentPlayerId, showDodos, ho
             )}
           </div>
           <div className="flex items-center gap-3 flex-shrink-0">
-            {showDodos && <DodoCount count={p.dodos} size="sm" />}
+            {showDodos && <DodoCount count={livesRemaining(p.dodos)} size="sm" />}
             {hostControls && p.id !== myPlayerId && (
               <button
                 onClick={() => hostControls.onRemove(p.id)}

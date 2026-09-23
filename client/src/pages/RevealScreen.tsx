@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { PublicGameState } from "@tchombo/shared";
 import { livesRemaining } from "@tchombo/shared";
-import { DodoIcon } from "../components/Dodo";
+import { AyoIcon, AyoMascot } from "../components/Dodo";
 import { LeaveMenu } from "../components/LeaveMenu";
 import { HistoryButton } from "../components/HistoryPanel";
 import { useT } from "../lib/i18n";
@@ -76,8 +76,10 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
           </p>
         </div>
 
+        <AyoMascot className="w-28 h-28 animate-pop-in" />
+
         <div className="flex items-center gap-2.5 bg-navy text-cream rounded-full px-5 py-3 animate-pop-in">
-          <DodoIcon className="w-6 h-6 text-gold" />
+          <AyoIcon className="w-6 h-6" />
           <span className="font-semibold">
             {t("reveal.loses", { name: reveal.loserName })} {reveal.dodosAwarded}{" "}
             {reveal.dodosAwarded === 1 ? t("reveal.dodo") : t("reveal.dodos")}

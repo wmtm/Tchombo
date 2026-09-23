@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import type { PublicGameState } from "@tchombo/shared";
 import { livesRemaining } from "@tchombo/shared";
-import { DodoIcon, DodoCount } from "../components/Dodo";
+import { AyoMascot, DodoCount } from "../components/Dodo";
 import { Button } from "../components/Button";
 import { HistoryButton } from "../components/HistoryPanel";
 import { useT } from "../lib/i18n";
@@ -32,7 +32,11 @@ export function GameOverScreen({ state, isHost, onRestart, onHome }: Props) {
           <HistoryButton history={state.history} />
         </div>
 
-        <DodoIcon className="w-16 h-16 text-navy animate-pop-in" />
+        {reason === "dodo_limit" ? (
+          <AyoMascot className="w-32 h-32 animate-pop-in" />
+        ) : (
+          <span className="text-5xl animate-pop-in">🦤</span>
+        )}
         <div>
           <p className="font-display text-3xl text-navy">{t(`gameover.title.${reason}`)}</p>
           {reason === "dodo_limit" && loser && (
