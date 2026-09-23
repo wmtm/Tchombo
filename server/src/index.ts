@@ -29,7 +29,7 @@ import { adminRouter } from "./admin.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = process.env.PORT ? Number(process.env.PORT) : 3001;
-const REVEAL_DELAY_MS = 6500;
+const REVEAL_DELAY_MS = process.env.REVEAL_DELAY_MS ? Number(process.env.REVEAL_DELAY_MS) : 6500;
 
 const nanoid = customAlphabet("ABCDEFGHJKLMNPQRSTUVWXYZ23456789", 10);
 
