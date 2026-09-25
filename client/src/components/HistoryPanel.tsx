@@ -16,7 +16,9 @@ export function HistoryButton({ history }: { history: RevealResult[] }) {
         className="relative grid place-items-center w-10 h-10 rounded-full bg-white/70 text-navy/60 hover:bg-white hover:text-navy transition-colors shadow-sm"
       >
         <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M4 6h16M4 12h16M4 18h10" />
+          <path d="M3 3v5h5" />
+          <path d="M3.05 13A9 9 0 1 0 6 5.3L3 8" />
+          <path d="M12 7v5l4 2" />
         </svg>
         {history.length > 0 && (
           <span className="absolute -top-1 -right-1 bg-coral text-white text-[10px] font-bold rounded-full w-4 h-4 grid place-items-center">
