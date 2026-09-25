@@ -33,6 +33,7 @@
   "game.previousAnswer": "Réponse précédente",
   "game.noAnswerYet": "Sois le premier à estimer",
   "game.increase": "Augmenter",
+  "game.guess": "Deviner",
   "game.tchombo": "TCHOMBO !",
   "game.confirmTchomboTitle": "Appeler TCHOMBO sur les {value} {unit} de {name} ?",
   "game.confirmTchomboBody": "Tu paries que ce nombre est déjà trop élevé.",

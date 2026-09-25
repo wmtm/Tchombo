@@ -4,6 +4,7 @@ import { livesRemaining } from "@tchombo/shared";
 import { AyoIcon, AyoMascot } from "../components/Dodo";
 import { LeaveMenu } from "../components/LeaveMenu";
 import { HistoryButton } from "../components/HistoryPanel";
+import { LanguageToggle } from "../components/LanguageToggle";
 import { useT, useLocale } from "../lib/i18n";
 import { localizeQuestion } from "../lib/question";
 import { sound } from "../lib/sound";
@@ -46,6 +47,7 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
     <div className="min-h-screen px-5 py-8 flex flex-col items-center justify-center">
       <div className="max-w-sm w-full flex justify-end gap-2 -mb-2">
         <HistoryButton history={state.history} />
+        <LanguageToggle />
         <LeaveMenu
           onExit={onLeave}
           onRestart={isHost ? onRestart : undefined}

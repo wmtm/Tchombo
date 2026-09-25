@@ -3,6 +3,7 @@ import type { PublicGameState } from "@tchombo/shared";
 import { livesRemaining } from "@tchombo/shared";
 import { Button } from "../components/Button";
 import { SoundToggle } from "../components/SoundToggle";
+import { LanguageToggle } from "../components/LanguageToggle";
 import { LeaveMenu } from "../components/LeaveMenu";
 import { HistoryButton } from "../components/HistoryPanel";
 import { ConfirmDialog } from "../components/ConfirmDialog";
@@ -113,6 +114,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
         </span>
         <div className="flex items-center gap-2">
           <HistoryButton history={state.history} />
+          <LanguageToggle />
           <SoundToggle />
           <LeaveMenu
             onExit={onLeave}
@@ -180,7 +182,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
             {error && <p className="text-coral text-sm font-medium text-center">{error}</p>}
 
             <Button full disabled={busy || value.trim() === ""} onClick={handleSubmit}>
-              ↑ {t("game.increase")}
+              {previous ? `↑ ${t("game.increase")}` : t("game.guess")}
             </Button>
 
             {previous && (

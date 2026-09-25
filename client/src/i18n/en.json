@@ -33,6 +33,7 @@
   "game.previousAnswer": "Previous answer",
   "game.noAnswerYet": "Be the first to estimate",
   "game.increase": "Increase",
+  "game.guess": "Guess",
   "game.tchombo": "TCHOMBO!",
   "game.confirmTchomboTitle": "Call TCHOMBO on {name}'s {value} {unit}?",
   "game.confirmTchomboBody": "You'll be betting that this number is already too high.",

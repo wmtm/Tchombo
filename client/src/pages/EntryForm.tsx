@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react";
 import { Logo } from "../components/Logo";
 import { Button } from "../components/Button";
+import { LanguageToggle } from "../components/LanguageToggle";
 import { useT } from "../lib/i18n";
 
 interface Props {
@@ -25,7 +26,10 @@ export function EntryForm({ mode, initialCode, error, busy, onBack, onSubmit }: 
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12">
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 relative">
+      <div className="absolute top-5 right-5">
+        <LanguageToggle />
+      </div>
       <form onSubmit={handleSubmit} className="w-full max-w-sm flex flex-col gap-5">
         <div className="flex justify-center mb-2">
           <Logo size="sm" />
