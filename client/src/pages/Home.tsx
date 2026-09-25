@@ -6,9 +6,10 @@ import { useT } from "../lib/i18n";
 interface Props {
   onCreate: () => void;
   onJoin: () => void;
+  onHowToPlay: () => void;
 }
 
-export function Home({ onCreate, onJoin }: Props) {
+export function Home({ onCreate, onJoin, onHowToPlay }: Props) {
   const t = useT();
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 relative">
@@ -26,6 +27,9 @@ export function Home({ onCreate, onJoin }: Props) {
           </Button>
           <Button variant="secondary" full onClick={onJoin}>
             {t("home.join")}
+          </Button>
+          <Button variant="ghost" full onClick={onHowToPlay}>
+            {t("home.howToPlay")}
           </Button>
         </div>
 

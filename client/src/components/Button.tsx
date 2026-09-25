@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from "react";
 
-type Variant = "primary" | "secondary" | "danger" | "ghost" | "gold";
+type Variant = "primary" | "secondary" | "danger" | "ghost" | "gold" | "success";
 
 const variants: Record<Variant, string> = {
   primary: "bg-navy text-cream hover:bg-navy-soft active:scale-[0.98]",
@@ -8,6 +8,7 @@ const variants: Record<Variant, string> = {
   danger: "bg-coral text-white hover:brightness-105 active:scale-[0.98]",
   ghost: "bg-transparent text-navy hover:bg-navy/5 active:scale-[0.98]",
   gold: "bg-gold text-navy hover:brightness-105 active:scale-[0.98]",
+  success: "bg-leaf text-white hover:brightness-105 active:scale-[0.98]",
 };
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {

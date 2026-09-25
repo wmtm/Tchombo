@@ -2,16 +2,18 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { Category, PublicGameState } from "@tchombo/shared";
 import { socket } from "./lib/socket";
 import { loadSession, saveSession, clearSession } from "./lib/session";
+import { hasSeenHowToPlay, markSeenHowToPlay } from "./lib/onboarding";
 import { sound } from "./lib/sound";
 import { useT } from "./lib/i18n";
 import { Home } from "./pages/Home";
+import { HowToPlay } from "./pages/HowToPlay";
 import { EntryForm } from "./pages/EntryForm";
 import { Lobby } from "./pages/Lobby";
 import { GameScreen } from "./pages/GameScreen";
 import { RevealScreen } from "./pages/RevealScreen";
 import { GameOverScreen } from "./pages/GameOverScreen";
 
-type View = "home" | "create" | "join" | "room";
+type View = "home" | "howToPlay" | "create" | "join" | "room";
 
 function parseJoinCodeFromUrl(): string | null {
   const match = window.location.pathname.match(/^\/join\/(\d{4})$/);
@@ -20,7 +22,7 @@ function parseJoinCodeFromUrl(): string | null {
 
 export default function App() {
   const t = useT();
-  const [view, setView] = useState<View>("home");
+  const [view, setView] = useState<View>(() => (hasSeenHowToPlay() ? "home" : "howToPlay"));
   const [state, setState] = useState<PublicGameState | null>(null);
   const [myPlayerId, setMyPlayerId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -142,6 +144,17 @@ export default function App() {
     );
   }
 
+  if (view === "howToPlay") {
+    return (
+      <HowToPlay
+        onDone={() => {
+          markSeenHowToPlay();
+          setView("home");
+        }}
+      />
+    );
+  }
+
   if (view === "create") {
     return (
       <EntryForm
@@ -183,6 +196,7 @@ export default function App() {
         setError(null);
         setView("join");
       }}
+      onHowToPlay={() => setView("howToPlay")}
     />
   );
 }

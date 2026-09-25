@@ -163,6 +163,11 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
         {isMyTurn ? (
           <div className="flex flex-col gap-3">
             <div className="flex flex-col gap-1">
+              {previous && (
+                <span className="text-xs font-semibold text-leaf pl-1">
+                  {t("game.mustBeHigherThan", { value: previous.value, unit: localized.unit })}
+                </span>
+              )}
               <div className="flex items-center gap-2 bg-white rounded-2xl border-2 border-navy/10 focus-within:border-gold px-4 py-3.5">
                 <input
                   autoFocus
@@ -181,7 +186,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
 
             {error && <p className="text-coral text-sm font-medium text-center">{error}</p>}
 
-            <Button full disabled={busy || value.trim() === ""} onClick={handleSubmit}>
+            <Button variant="success" full disabled={busy || value.trim() === ""} onClick={handleSubmit}>
               {previous ? `↑ ${t("game.increase")}` : t("game.guess")}
             </Button>
 
