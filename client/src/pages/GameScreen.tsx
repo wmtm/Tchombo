@@ -8,7 +8,8 @@ import { HistoryButton } from "../components/HistoryPanel";
 import { ConfirmDialog } from "../components/ConfirmDialog";
 import { DodoCount, DodoPenaltyRow } from "../components/Dodo";
 import { CATEGORY_EMOJI } from "../components/CategoryPicker";
-import { useT } from "../lib/i18n";
+import { useT, useLocale } from "../lib/i18n";
+import { localizeQuestion } from "../lib/question";
 import { sound } from "../lib/sound";
 
 interface Props {
@@ -24,6 +25,7 @@ interface Props {
 
 export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onCallExact, onLeave, onRestart }: Props) {
   const t = useT();
+  const { locale } = useLocale();
   const [value, setValue] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [confirmOpen, setConfirmOpen] = useState(false);
@@ -31,6 +33,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
   const [busy, setBusy] = useState(false);
 
   const question = state.currentQuestion!;
+  const localized = localizeQuestion(question, locale);
   const isMyTurn = state.currentPlayerId === myPlayerId;
   const previous = state.entries[state.entries.length - 1] ?? null;
   const currentPlayer = state.players.find((p) => p.id === state.currentPlayerId);
@@ -62,7 +65,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
     if (value.trim() === "" || Number.isNaN(num)) {
       setError(
         previous
-          ? t("game.mustBeHigherThan", { value: previous.value, unit: question.unit })
+          ? t("game.mustBeHigherThan", { value: previous.value, unit: localized.unit })
           : t("game.inputPlaceholder")
       );
       return;
@@ -145,13 +148,13 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
               <DodoPenaltyRow count={question.dodo_penalty} />
             </span>
           </div>
-          <p className="font-display text-xl leading-snug text-ink">{question.question}</p>
+          <p className="font-display text-xl leading-snug text-ink">{localized.text}</p>
         </div>
 
         <div className="bg-navy/5 rounded-xl2 px-5 py-3.5 flex items-center justify-between">
           <span className="text-sm text-navy/50">{t("game.previousAnswer")}</span>
           <span className="font-display text-lg text-navy tabular-nums">
-            {previous ? `${previous.value} ${question.unit}` : t("game.noAnswerYet")}
+            {previous ? `${previous.value} ${localized.unit}` : t("game.noAnswerYet")}
           </span>
         </div>
 
@@ -167,7 +170,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
                   placeholder={t("game.inputPlaceholder")}
                   className="flex-1 min-w-0 text-3xl font-display tabular-nums focus:outline-none bg-transparent"
                 />
-                <span className="text-navy/40 font-semibold flex-shrink-0">{question.unit}</span>
+                <span className="text-navy/40 font-semibold flex-shrink-0">{localized.unit}</span>
               </div>
               <span className="text-xs italic text-navy/40 pl-1">
                 {question.allow_decimal ? t("game.decimalsAllowed") : t("game.wholeNumbersOnly")}
@@ -207,7 +210,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
 
       {confirmOpen && previous && (
         <ConfirmDialog
-          title={t("game.confirmTchomboTitle", { name: previous.playerName, value: previous.value, unit: question.unit })}
+          title={t("game.confirmTchomboTitle", { name: previous.playerName, value: previous.value, unit: localized.unit })}
           body={t("game.confirmTchomboBody")}
           confirmLabel={t("game.confirm")}
           cancelLabel={t("game.cancel")}
@@ -219,7 +222,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
 
       {confirmExactOpen && previous && (
         <ConfirmDialog
-          title={t("game.confirmExactTitle", { name: previous.playerName, value: previous.value, unit: question.unit })}
+          title={t("game.confirmExactTitle", { name: previous.playerName, value: previous.value, unit: localized.unit })}
           body={t("game.confirmExactBody")}
           confirmLabel={t("game.confirmExactAction")}
           cancelLabel={t("game.cancel")}

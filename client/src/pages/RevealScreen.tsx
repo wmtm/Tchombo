@@ -4,7 +4,8 @@ import { livesRemaining } from "@tchombo/shared";
 import { AyoIcon, AyoMascot } from "../components/Dodo";
 import { LeaveMenu } from "../components/LeaveMenu";
 import { HistoryButton } from "../components/HistoryPanel";
-import { useT } from "../lib/i18n";
+import { useT, useLocale } from "../lib/i18n";
+import { localizeQuestion } from "../lib/question";
 import { sound } from "../lib/sound";
 
 const REVEAL_SECONDS = 7;
@@ -18,7 +19,9 @@ interface Props {
 
 export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
   const t = useT();
+  const { locale } = useLocale();
   const reveal = state.lastReveal!;
+  const localizedUnit = localizeQuestion(reveal.question, locale).unit;
   const lastEntry = reveal.entries[reveal.entries.length - 1];
   const noOneLost = reveal.loserId === null;
   const loser = state.players.find((p) => p.id === reveal.loserId);
@@ -57,7 +60,7 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
           <div>
             <p className="text-xs uppercase tracking-widest text-navy/40 font-semibold">{t("reveal.correctAnswer")}</p>
             <p className="font-display text-4xl text-navy tabular-nums mt-1">
-              {reveal.correctAnswer} {reveal.question.unit}
+              {reveal.correctAnswer} {localizedUnit}
             </p>
             {reveal.question.source_note && (
               <p className="text-xs text-navy/50 italic leading-snug mt-1.5">{reveal.question.source_note}</p>
@@ -71,7 +74,7 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
               {t("reveal.said", { name: lastEntry?.playerName ?? "" })}
             </p>
             <p className="font-display text-2xl text-ink tabular-nums mt-1">
-              {lastEntry?.playerName}: {reveal.loserValue} {reveal.question.unit}
+              {lastEntry?.playerName}: {reveal.loserValue} {localizedUnit}
             </p>
           </div>
 

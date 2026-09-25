@@ -1,7 +1,8 @@
 import { useState } from "react";
 import type { RevealResult } from "@tchombo/shared";
 import { CATEGORY_EMOJI } from "./CategoryPicker";
-import { useT } from "../lib/i18n";
+import { useT, useLocale } from "../lib/i18n";
+import { localizeQuestion } from "../lib/question";
 
 export function HistoryButton({ history }: { history: RevealResult[] }) {
   const t = useT();
@@ -30,6 +31,7 @@ export function HistoryButton({ history }: { history: RevealResult[] }) {
 
 function HistoryPanel({ history, onClose }: { history: RevealResult[]; onClose: () => void }) {
   const t = useT();
+  const { locale } = useLocale();
   const reversed = [...history].reverse();
 
   return (
@@ -45,14 +47,16 @@ function HistoryPanel({ history, onClose }: { history: RevealResult[]; onClose: 
           {reversed.length === 0 ? (
             <p className="text-sm text-navy/40 text-center py-8">{t("history.empty")}</p>
           ) : (
-            reversed.map((r, i) => (
+            reversed.map((r, i) => {
+              const localized = localizeQuestion(r.question, locale);
+              return (
               <div key={i} className="rounded-xl bg-navy/5 p-3.5 flex flex-col gap-1.5">
                 <span className="text-[11px] font-semibold text-leaf uppercase tracking-wide">
                   {CATEGORY_EMOJI[r.question.category]} {t(`category.${r.question.category}`)}
                 </span>
-                <p className="text-sm text-ink leading-snug">{r.question.question}</p>
+                <p className="text-sm text-ink leading-snug">{localized.text}</p>
                 <p className="text-sm font-semibold text-navy">
-                  {t("history.answer")}: {r.correctAnswer} {r.question.unit}
+                  {t("history.answer")}: {r.correctAnswer} {localized.unit}
                 </p>
                 {r.question.source_note && (
                   <p className="text-xs text-navy/50 italic leading-snug">{r.question.source_note}</p>
@@ -67,7 +71,8 @@ function HistoryPanel({ history, onClose }: { history: RevealResult[]; onClose: 
                   </p>
                 )}
               </div>
-            ))
+              );
+            })
           )}
         </div>
       </div>

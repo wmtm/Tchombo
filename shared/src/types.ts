@@ -40,8 +40,12 @@ export interface Question {
   id: string;
   category: Category;
   question: string;
+  // Optional French translation of `question`/`unit`. Falls back to the English
+  // text when missing, so older questions keep working untranslated.
+  question_fr?: string;
   answer: number;
   unit: string;
+  unit_fr?: string;
   allow_decimal: boolean;
   difficulty: Difficulty;
   dodo_penalty: number;
