@@ -16,18 +16,57 @@ function getContext(): AudioContext | null {
   return ctx;
 }
 
-// Strict mobile browsers (notably iOS Safari) only ever let an AudioContext start
-// if it's created/resumed synchronously inside a real user gesture -- one that
-// happens later, e.g. from an async socket callback after a button click, is
-// silently ignored and the context is stuck suspended forever. The explicit
-// sound.unlock() calls on Create/Join cover a fresh player, but someone who
-// reconnects or rejoins an in-progress game (closing and reopening the tab)
-// never hits either of those, so they'd get no sound at all. Catch that by
-// unlocking on the very first tap/key anywhere in the app, regardless of how
-// the player got here.
+// A one-sample silent WAV, used only to switch the page's audio session into
+// the "playback" category on iOS Safari -- see primeMobileAudio() below.
+const SILENT_WAV =
+  "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=";
+
+// Two separate mobile-browser quirks stack on top of each other here, and
+// either one alone is enough to leave a phone completely silent even though
+// the identical code plays fine on desktop:
+//
+// 1. Autoplay policy: an AudioContext only ever starts if it's created and
+//    actually played through synchronously inside a real user gesture. Just
+//    calling resume() (what we used to do) can leave the context reporting
+//    "running" without ever truly having been primed on strict browsers --
+//    you have to start a real (even silent) buffer through it during the
+//    gesture, which is what the createBuffer/start(0) below does.
+// 2. iOS's ring/silent switch: Safari's default Web Audio output uses the
+//    "ambient" audio session category, which the silent switch mutes --
+//    unlike the "playback" category. The only documented way to switch a
+//    page into "playback" is to actually play an HTML5 <audio>/<video>
+//    element at least once; after that, later Web Audio output on the same
+//    page inherits the same category and ignores the silent switch too.
+//
+// Both only work inside a genuine user gesture, and neither the fresh
+// Create/Join flow nor a reconnecting/rejoining player is guaranteed to hit
+// an explicit sound.unlock() call, so this listens for the very first tap or
+// keypress anywhere in the app and does both unconditionally.
+function primeMobileAudio() {
+  const audio = getContext();
+  if (audio) {
+    try {
+      const buffer = audio.createBuffer(1, 1, audio.sampleRate);
+      const source = audio.createBufferSource();
+      source.buffer = buffer;
+      source.connect(audio.destination);
+      source.start(0);
+    } catch {
+      // best-effort priming; playback below still runs without it
+    }
+  }
+  try {
+    const el = new Audio(SILENT_WAV);
+    el.volume = 0.01;
+    el.play().catch(() => {});
+  } catch {
+    // Audio element unsupported/blocked -- nothing more we can do here
+  }
+}
+
 if (typeof window !== "undefined") {
   const unlockOnFirstInteraction = () => {
-    getContext();
+    primeMobileAudio();
     window.removeEventListener("pointerdown", unlockOnFirstInteraction);
     window.removeEventListener("keydown", unlockOnFirstInteraction);
   };
@@ -145,7 +184,7 @@ const JUDGMENT_REACTIONS: GlideTone[][] = [
 
 export const sound = {
   unlock() {
-    getContext();
+    primeMobileAudio();
   },
   turn() {
     playTones([{ freq: 720, start: 0, duration: 0.09, type: "sine", gain: 0.12 }, { freq: 980, start: 0.08, duration: 0.12, type: "sine", gain: 0.12 }]);

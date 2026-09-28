@@ -54,6 +54,9 @@ export interface Question {
   dodo_penalty: number;
   source: string;
   source_note: string;
+  // Optional French translation of `source_note`, same fallback rule as
+  // question_fr/unit_fr above.
+  source_note_fr?: string;
   active: boolean;
   status: "live" | "draft";
 }

@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { RevealResult } from "@tchombo/shared";
 import { CATEGORY_EMOJI } from "./CategoryPicker";
 import { useT, useLocale } from "../lib/i18n";
-import { localizeQuestion } from "../lib/question";
+import { localizeQuestion, localizeSourceNote } from "../lib/question";
 
 export function HistoryButton({ history }: { history: RevealResult[] }) {
   const t = useT();
@@ -61,7 +61,7 @@ function HistoryPanel({ history, onClose }: { history: RevealResult[]; onClose: 
                   {t("history.answer")}: {r.correctAnswer} {localized.unit}
                 </p>
                 {r.question.source_note && (
-                  <p className="text-xs text-navy/50 italic leading-snug">{r.question.source_note}</p>
+                  <p className="text-xs text-navy/50 italic leading-snug">{localizeSourceNote(r.question, locale)}</p>
                 )}
                 {r.loserId === null ? (
                   <p className="text-xs text-leaf font-semibold">

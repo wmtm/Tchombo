@@ -6,7 +6,7 @@ import { LeaveMenu } from "../components/LeaveMenu";
 import { HistoryButton } from "../components/HistoryPanel";
 import { LanguageToggle } from "../components/LanguageToggle";
 import { useT, useLocale } from "../lib/i18n";
-import { localizeQuestion } from "../lib/question";
+import { localizeQuestion, localizeSourceNote } from "../lib/question";
 import { sound } from "../lib/sound";
 
 const REVEAL_SECONDS = 7;
@@ -65,7 +65,7 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
               {reveal.correctAnswer} {localizedUnit}
             </p>
             {reveal.question.source_note && (
-              <p className="text-xs text-navy/50 italic leading-snug mt-1.5">{reveal.question.source_note}</p>
+              <p className="text-xs text-navy/50 italic leading-snug mt-1.5">{localizeSourceNote(reveal.question, locale)}</p>
             )}
           </div>
 
