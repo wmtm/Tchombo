@@ -5,9 +5,12 @@ import { AyoIcon, AyoMascot } from "../components/Dodo";
 import { LeaveMenu } from "../components/LeaveMenu";
 import { HistoryButton } from "../components/HistoryPanel";
 import { LanguageToggle } from "../components/LanguageToggle";
+import { CountdownRing } from "../components/CountdownRing";
+import { Confetti } from "../components/Confetti";
 import { useT, useLocale } from "../lib/i18n";
 import { localizeQuestion, localizeSourceNote } from "../lib/question";
 import { sound } from "../lib/sound";
+import { useCountUp } from "../lib/useCountUp";
 
 const REVEAL_SECONDS = 7;
 
@@ -29,6 +32,7 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
   const loserLivesLeft = livesRemaining(loser?.dodos ?? 0);
   const loserEliminated = loser?.eliminated ?? false;
   const [secondsLeft, setSecondsLeft] = useState(REVEAL_SECONDS);
+  const animatedAnswer = useCountUp(reveal.correctAnswer, 700, reveal);
 
   useEffect(() => {
     sound.tchomboCall();
@@ -44,7 +48,8 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
   }, [reveal]);
 
   return (
-    <div className="min-h-screen px-5 py-8 flex flex-col items-center justify-center">
+    <div className="min-h-screen px-5 py-8 flex flex-col items-center justify-center animate-float-up">
+      {noOneLost && <Confetti />}
       <div className="max-w-sm w-full flex justify-end gap-2 -mb-2">
         <HistoryButton history={state.history} />
         <LanguageToggle />
@@ -62,7 +67,7 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
           <div>
             <p className="text-xs uppercase tracking-widest text-navy/40 font-semibold">{t("reveal.correctAnswer")}</p>
             <p className="font-display text-4xl text-navy tabular-nums mt-1">
-              {reveal.correctAnswer} {localizedUnit}
+              {animatedAnswer} {localizedUnit}
             </p>
             {reveal.question.source_note && (
               <p className="text-xs text-navy/50 italic leading-snug mt-1.5">{localizeSourceNote(reveal.question, locale)}</p>
@@ -108,7 +113,10 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
           </span>
         </div>
 
-        <p className="text-navy/40 text-sm">{t("reveal.nextQuestionIn", { seconds: secondsLeft })}</p>
+        <div className="flex items-center gap-2 text-navy/40 text-sm">
+          <CountdownRing secondsLeft={secondsLeft} totalSeconds={REVEAL_SECONDS} />
+          <span>{t("reveal.nextQuestionIn", { seconds: secondsLeft })}</span>
+        </div>
       </div>
     </div>
   );

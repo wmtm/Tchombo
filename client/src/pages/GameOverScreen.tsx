@@ -5,6 +5,7 @@ import { AyoMascot, DodoCount } from "../components/Dodo";
 import { Button } from "../components/Button";
 import { HistoryButton } from "../components/HistoryPanel";
 import { LanguageToggle } from "../components/LanguageToggle";
+import { Confetti } from "../components/Confetti";
 import { useT } from "../lib/i18n";
 import { sound } from "../lib/sound";
 
@@ -28,7 +29,8 @@ export function GameOverScreen({ state, isHost, onRestart, onHome }: Props) {
   const reason = state.endReason ?? "dodo_limit";
 
   return (
-    <div className="min-h-screen px-5 py-10 flex flex-col items-center justify-center">
+    <div className="min-h-screen px-5 py-10 flex flex-col items-center justify-center animate-float-up">
+      {reason === "dodo_limit" && winner && <Confetti />}
       <div className="max-w-sm w-full flex flex-col items-center text-center gap-6">
         <div className="w-full flex justify-end gap-2 -mb-4">
           <HistoryButton history={state.history} />

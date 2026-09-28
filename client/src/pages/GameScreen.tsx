@@ -106,7 +106,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
 
   return (
     <div
-      className={`min-h-screen px-5 py-6 flex flex-col transition-shadow duration-300 ${
+      className={`min-h-screen px-5 py-6 flex flex-col animate-float-up transition-shadow duration-300 ${
         isMyTurn ? "ring-4 ring-inset ring-leaf" : ""
       }`}
     >
@@ -128,18 +128,26 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
       </div>
 
       <div className="max-w-sm w-full mx-auto flex flex-wrap justify-center gap-x-4 gap-y-2 mt-4">
-        {state.players.map((p) => (
-          <div key={p.id} className={`flex flex-col items-center gap-1 ${p.eliminated ? "opacity-40" : ""}`}>
-            <span className={`text-xs font-medium truncate max-w-[3.5rem] ${p.id === state.currentPlayerId ? "text-leaf" : "text-navy/40"}`}>
-              {p.name}
-            </span>
-            {p.eliminated ? (
-              <span className="text-[10px] uppercase tracking-wide font-bold text-coral">{t("game.out")}</span>
-            ) : (
-              <DodoCount count={livesRemaining(p.dodos)} size="sm" />
-            )}
-          </div>
-        ))}
+        {state.players.map((p) => {
+          const isCurrent = p.id === state.currentPlayerId;
+          return (
+            <div key={p.id} className={`flex flex-col items-center gap-1 transition-opacity duration-300 ${p.eliminated ? "opacity-40" : ""}`}>
+              <span
+                key={isCurrent ? `current-${state.currentPlayerId}` : "idle"}
+                className={`text-xs font-medium truncate max-w-[4.5rem] px-2 py-0.5 rounded-full transition-colors duration-300 ${
+                  isCurrent ? "text-white bg-leaf animate-pop-in" : "text-navy/40"
+                }`}
+              >
+                {p.name}
+              </span>
+              {p.eliminated ? (
+                <span className="text-[10px] uppercase tracking-wide font-bold text-coral">{t("game.out")}</span>
+              ) : (
+                <DodoCount count={livesRemaining(p.dodos)} size="sm" />
+              )}
+            </div>
+          );
+        })}
       </div>
 
       <div className="max-w-sm w-full mx-auto flex-1 flex flex-col gap-5 mt-4">

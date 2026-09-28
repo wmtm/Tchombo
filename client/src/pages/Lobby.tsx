@@ -41,7 +41,7 @@ export function Lobby({ state, myPlayerId, onStart, onRemovePlayer, onSetCategor
   }
 
   return (
-    <div className="min-h-screen px-5 py-8 flex flex-col items-center">
+    <div className="min-h-screen px-5 py-8 flex flex-col items-center animate-float-up">
       <div className="w-full max-w-sm flex flex-col gap-6">
         <div className="flex items-center justify-between">
           <Logo size="sm" />

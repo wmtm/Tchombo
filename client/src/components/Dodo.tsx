@@ -25,7 +25,10 @@ export function DodoCount({ count, size = "md", lowAt = 3 }: { count: number; si
   return (
     <span className={`inline-flex items-center gap-1.5 font-semibold ${text} ${low ? "text-coral" : "text-ink"}`}>
       <AyoIcon className={dims} />
-      {count}
+      {/* key={count} remounts on every change, retriggering the bump animation */}
+      <span key={count} className="inline-block tabular-nums animate-bump">
+        {count}
+      </span>
     </span>
   );
 }

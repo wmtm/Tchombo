@@ -53,11 +53,27 @@ export default {
           "0%": { transform: "translateY(6px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
+        "bump": {
+          "0%": { transform: "scale(1)" },
+          "40%": { transform: "scale(1.35)" },
+          "100%": { transform: "scale(1)" },
+        },
+        "ripple": {
+          "0%": { transform: "scale(0)", opacity: "0.45" },
+          "100%": { transform: "scale(1)", opacity: "0" },
+        },
+        "confetti-fall": {
+          "0%": { transform: "translateY(-10vh) rotate(0deg)", opacity: "1" },
+          "100%": { transform: "translateY(105vh) rotate(720deg)", opacity: "0.9" },
+        },
       },
       animation: {
         "pop-in": "pop-in 0.28s cubic-bezier(0.2, 0.9, 0.3, 1.2)",
         "shake": "shake 0.4s ease-in-out",
         "float-up": "float-up 0.3s ease-out",
+        "bump": "bump 0.4s cubic-bezier(0.3, 0.8, 0.4, 1.2)",
+        "ripple": "ripple 0.5s ease-out forwards",
+        "confetti-fall": "confetti-fall 2.2s linear forwards",
       },
     },
   },
