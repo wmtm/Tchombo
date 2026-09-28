@@ -1,4 +1,5 @@
 import tchomboMascot from "../assets/tchombo-mascot.png";
+import blacksheepLogo from "../assets/blacksheep-logo.png";
 import { Button } from "../components/Button";
 import { LanguageToggle } from "../components/LanguageToggle";
 import { useT } from "../lib/i18n";
@@ -39,6 +40,16 @@ export function Home({ onCreate, onJoin, onHowToPlay }: Props) {
           <span className="w-1.5 h-1.5 rounded-full bg-leaf" />
           <span className="w-1.5 h-1.5 rounded-full bg-navy" />
         </div>
+
+        <a
+          href="https://wmtm.github.io/Blacksheep/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 flex items-center gap-2 text-ink/40 text-xs hover:text-ink/70 transition-colors"
+        >
+          <img src={blacksheepLogo} alt="" className="w-5 h-5 rounded-md" />
+          {t("footer.madeBy")}
+        </a>
       </div>
     </div>
   );
