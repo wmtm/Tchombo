@@ -75,7 +75,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
     const res = await onSubmit(num);
     setBusy(false);
     if (res.ok) {
-      sound.submit();
+      sound.judge();
       setValue("");
     } else {
       setError(res.error);
@@ -107,7 +107,11 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
   }
 
   return (
-    <div className="min-h-screen px-5 py-6 flex flex-col">
+    <div
+      className={`min-h-screen px-5 py-6 flex flex-col transition-shadow duration-300 ${
+        isMyTurn ? "ring-4 ring-inset ring-leaf" : ""
+      }`}
+    >
       <div className="flex items-center justify-between max-w-sm w-full mx-auto">
         <span className="text-xs font-semibold text-navy/40 uppercase tracking-widest">
           {t("game.questionNumber", { number: state.questionNumber })}
@@ -123,6 +127,21 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
             exitBody={t("nav.confirmLeaveGameBody")}
           />
         </div>
+      </div>
+
+      <div className="max-w-sm w-full mx-auto flex flex-wrap justify-center gap-x-4 gap-y-2 mt-4">
+        {state.players.map((p) => (
+          <div key={p.id} className={`flex flex-col items-center gap-1 ${p.eliminated ? "opacity-40" : ""}`}>
+            <span className={`text-xs font-medium truncate max-w-[3.5rem] ${p.id === state.currentPlayerId ? "text-leaf" : "text-navy/40"}`}>
+              {p.name}
+            </span>
+            {p.eliminated ? (
+              <span className="text-[10px] uppercase tracking-wide font-bold text-coral">{t("game.out")}</span>
+            ) : (
+              <DodoCount count={livesRemaining(p.dodos)} size="sm" />
+            )}
+          </div>
+        ))}
       </div>
 
       <div className="max-w-sm w-full mx-auto flex-1 flex flex-col gap-5 mt-4">
@@ -153,12 +172,17 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
           <p className="font-display text-xl leading-snug text-ink">{localized.text}</p>
         </div>
 
-        <div className="bg-navy/5 rounded-xl2 px-5 py-3.5 flex items-center justify-between">
-          <span className="text-sm text-navy/50">{t("game.previousAnswer")}</span>
-          <span className="font-display text-lg text-navy tabular-nums">
-            {previous ? `${previous.value} ${localized.unit}` : t("game.noAnswerYet")}
-          </span>
-        </div>
+        {/* No previous guess yet: only the player about to answer needs this box
+            (as an instruction). Everyone else just sees nothing here until a
+            first number is on the board. */}
+        {(previous || isMyTurn) && (
+          <div className="bg-navy/5 rounded-xl2 px-5 py-3.5 flex items-center justify-between">
+            <span className="text-sm text-navy/50">{t("game.previousAnswer")}</span>
+            <span className="font-display text-lg text-navy tabular-nums">
+              {previous ? `${previous.value} ${localized.unit}` : t("game.noAnswerYet")}
+            </span>
+          </div>
+        )}
 
         {isMyTurn ? (
           <div className="flex flex-col gap-3">
@@ -237,21 +261,6 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
           onConfirm={handleCallExact}
         />
       )}
-
-      <div className="max-w-sm w-full mx-auto mt-6 flex flex-wrap justify-center gap-x-4 gap-y-2">
-        {state.players.map((p) => (
-          <div key={p.id} className={`flex flex-col items-center gap-1 ${p.eliminated ? "opacity-40" : ""}`}>
-            <span className={`text-xs font-medium truncate max-w-[3.5rem] ${p.id === state.currentPlayerId ? "text-leaf" : "text-navy/40"}`}>
-              {p.name}
-            </span>
-            {p.eliminated ? (
-              <span className="text-[10px] uppercase tracking-wide font-bold text-coral">{t("game.out")}</span>
-            ) : (
-              <DodoCount count={livesRemaining(p.dodos)} size="sm" />
-            )}
-          </div>
-        ))}
-      </div>
     </div>
   );
 }

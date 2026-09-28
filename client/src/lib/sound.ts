@@ -60,6 +60,70 @@ function playTones(tones: Tone[]) {
   }
 }
 
+// Like a Tone, but its pitch can glide from `freq` to `glideTo` over the note's
+// duration -- needed for the wordless vocal-ish inflections below (a skeptical
+// "hmmm" dip, a surprised "ooooh" rise) that a flat frequency can't fake.
+interface GlideTone extends Tone {
+  glideTo?: number;
+}
+
+function playGlideTones(tones: GlideTone[]) {
+  if (!isSoundEnabled()) return;
+  const audio = getContext();
+  if (!audio) return;
+  const now = audio.currentTime;
+
+  for (const tone of tones) {
+    const osc = audio.createOscillator();
+    const gainNode = audio.createGain();
+    osc.type = tone.type ?? "sine";
+    const t0 = now + tone.start;
+    const t1 = t0 + tone.duration;
+    osc.frequency.setValueAtTime(tone.freq, t0);
+    if (tone.glideTo !== undefined) {
+      osc.frequency.linearRampToValueAtTime(tone.glideTo, t1);
+    }
+
+    const peak = tone.gain ?? 0.15;
+    gainNode.gain.setValueAtTime(0, t0);
+    gainNode.gain.linearRampToValueAtTime(peak, t0 + Math.min(0.015, tone.duration / 4));
+    gainNode.gain.exponentialRampToValueAtTime(0.0001, t1);
+
+    osc.connect(gainNode);
+    gainNode.connect(audio.destination);
+    osc.start(t0);
+    osc.stop(t1 + 0.02);
+  }
+}
+
+// Wordless, comedic "judging" reactions played only on the submitting player's
+// own device right after they lock in a guess. Deliberately meaningless -- the
+// pattern is picked at random and has nothing to do with whether the guess is
+// good, so nobody can read anything into which one plays.
+const JUDGMENT_REACTIONS: GlideTone[][] = [
+  // skeptical "hmmm" -- a slow downward dip
+  [{ freq: 340, glideTo: 230, start: 0, duration: 0.38, type: "sine", gain: 0.13 }],
+  // bright "aha!" -- a quick upward blip
+  [{ freq: 420, glideTo: 760, start: 0, duration: 0.14, type: "triangle", gain: 0.15 }],
+  // nodding "uh-huh" -- two short notes
+  [
+    { freq: 360, start: 0, duration: 0.1, type: "sine", gain: 0.13 },
+    { freq: 300, start: 0.12, duration: 0.12, type: "sine", gain: 0.13 },
+  ],
+  // impressed "ooooh" -- a slow rise
+  [{ freq: 260, glideTo: 520, start: 0, duration: 0.5, type: "sine", gain: 0.12 }],
+  // comedic "uh-oh" -- a falling third
+  [
+    { freq: 500, start: 0, duration: 0.12, type: "sine", gain: 0.14 },
+    { freq: 330, start: 0.17, duration: 0.18, type: "sine", gain: 0.14 },
+  ],
+  // disapproving "tsk-tsk" -- two dry staccato clicks
+  [
+    { freq: 650, start: 0, duration: 0.05, type: "square", gain: 0.08 },
+    { freq: 650, start: 0.11, duration: 0.05, type: "square", gain: 0.08 },
+  ],
+];
+
 export const sound = {
   unlock() {
     getContext();
@@ -67,8 +131,10 @@ export const sound = {
   turn() {
     playTones([{ freq: 720, start: 0, duration: 0.09, type: "sine", gain: 0.12 }, { freq: 980, start: 0.08, duration: 0.12, type: "sine", gain: 0.12 }]);
   },
-  submit() {
-    playTones([{ freq: 520, start: 0, duration: 0.07, type: "triangle", gain: 0.14 }]);
+  // A random wordless "judging" reaction to your own guess -- see JUDGMENT_REACTIONS.
+  judge() {
+    const pattern = JUDGMENT_REACTIONS[Math.floor(Math.random() * JUDGMENT_REACTIONS.length)];
+    playGlideTones(pattern);
   },
   tchomboCall() {
     playTones([
