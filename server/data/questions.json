@@ -1266,17 +1266,17 @@
   {
     "id": "CUL-001",
     "category": "culture_music",
-    "question": "How many traditional instruments are said to classically accompany Mauritian sega music (ravanne, maravanne and triangle)?",
+    "question": "How many traditional instruments are said to classically accompany Mauritian sega music?",
     "answer": 3,
     "unit": "instruments",
     "allow_decimal": false,
     "difficulty": "easy",
     "dodo_penalty": 5,
     "source": "Government of Mauritius — Explore Mauritius",
-    "source_note": "Figure given on the Government of Mauritius's 'Explore Mauritius' tourism information page.",
+    "source_note": "Figure given on the Government of Mauritius's 'Explore Mauritius' tourism information page. The three are the ravanne, the maravanne and the triangle.",
     "active": true,
     "status": "live",
-    "question_fr": "À ton avis, combien d'instruments traditionnels accompagnent classiquement la musique séga mauricienne (ravanne, maravanne et triangle) ?",
+    "question_fr": "À ton avis, combien d'instruments traditionnels accompagnent classiquement la musique séga mauricienne ?",
     "unit_fr": "instruments"
   },
   {
@@ -2082,7 +2082,7 @@
   {
     "id": "GEO-018",
     "category": "geography",
-    "question": "How many islands make up the Mascarene archipelago (Mauritius, Réunion and Rodrigues)?",
+    "question": "How many principal islands make up the Mascarene archipelago, the volcanic island group that Mauritius belongs to?",
     "answer": 3,
     "unit": "islands",
     "allow_decimal": false,
@@ -2092,7 +2092,7 @@
     "source_note": "Mauritius, Réunion and Rodrigues are the three principal islands conventionally classified together as the Mascarene archipelago.",
     "active": true,
     "status": "live",
-    "question_fr": "Combien d'îles composent l'archipel des Mascareignes (Maurice, la Réunion et Rodrigues) ?",
+    "question_fr": "Combien d'îles principales composent l'archipel des Mascareignes, le groupe d'îles volcaniques auquel appartient Maurice ?",
     "unit_fr": "îles"
   },
   {
@@ -3682,17 +3682,17 @@
   {
     "id": "RND-011",
     "category": "random_facts",
-    "question": "By 1755, decay had forced Oxford's museum to destroy most of the last dodo specimen with surviving soft tissue — how many body parts (the head and both legs) were saved and catalogued?",
+    "question": "By 1755, decay had forced Oxford's museum to destroy most of the last dodo specimen with surviving soft tissue — how many body parts were saved and catalogued?",
     "answer": 3,
     "unit": "parts",
     "allow_decimal": false,
     "difficulty": "very_hard",
     "dodo_penalty": 2,
     "source": "Oxford University Museum of Natural History — 'The Oxford Dodo'",
-    "source_note": "This is the only dodo specimen in the world to preserve any original soft tissue at all; the popular story that it was rescued from a bonfire is a later, debunked legend.",
+    "source_note": "This is the only dodo specimen in the world to preserve any original soft tissue at all; the popular story that it was rescued from a bonfire is a later, debunked legend. The head and both legs were what survived.",
     "active": true,
     "status": "live",
-    "question_fr": "En 1755, la décomposition a contraint le musée d'Oxford à détruire la majeure partie du dernier spécimen de dodo ayant conservé des tissus mous — combien de parties du corps (la tête et les deux pattes) ont été sauvées et cataloguées ?",
+    "question_fr": "En 1755, la décomposition a contraint le musée d'Oxford à détruire la majeure partie du dernier spécimen de dodo ayant conservé des tissus mous — combien de parties du corps ont été sauvées et cataloguées ?",
     "unit_fr": "parties"
   },
   {

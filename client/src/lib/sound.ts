@@ -16,6 +16,25 @@ function getContext(): AudioContext | null {
   return ctx;
 }
 
+// Strict mobile browsers (notably iOS Safari) only ever let an AudioContext start
+// if it's created/resumed synchronously inside a real user gesture -- one that
+// happens later, e.g. from an async socket callback after a button click, is
+// silently ignored and the context is stuck suspended forever. The explicit
+// sound.unlock() calls on Create/Join cover a fresh player, but someone who
+// reconnects or rejoins an in-progress game (closing and reopening the tab)
+// never hits either of those, so they'd get no sound at all. Catch that by
+// unlocking on the very first tap/key anywhere in the app, regardless of how
+// the player got here.
+if (typeof window !== "undefined") {
+  const unlockOnFirstInteraction = () => {
+    getContext();
+    window.removeEventListener("pointerdown", unlockOnFirstInteraction);
+    window.removeEventListener("keydown", unlockOnFirstInteraction);
+  };
+  window.addEventListener("pointerdown", unlockOnFirstInteraction, { once: true });
+  window.addEventListener("keydown", unlockOnFirstInteraction, { once: true });
+}
+
 export function isSoundEnabled(): boolean {
   if (typeof window === "undefined") return true;
   const stored = window.localStorage.getItem(STORAGE_KEY);
