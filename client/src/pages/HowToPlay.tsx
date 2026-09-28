@@ -1,4 +1,4 @@
-import { Logo } from "../components/Logo";
+import tchomboMascot from "../assets/tchombo-mascot.png";
 import { Button } from "../components/Button";
 import { LanguageToggle } from "../components/LanguageToggle";
 import { useT } from "../lib/i18n";
@@ -24,7 +24,7 @@ export function HowToPlay({ onDone }: Props) {
         <LanguageToggle />
       </div>
       <div className="w-full max-w-sm flex flex-col items-center gap-6">
-        <Logo size="sm" />
+        <img src={tchomboMascot} alt="TCHOMBO" className="w-32 h-32 object-contain" />
 
         <div className="text-center">
           <p className="font-display text-3xl text-ink">{t("howto.title")}</p>
