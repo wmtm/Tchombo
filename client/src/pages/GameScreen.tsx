@@ -29,7 +29,6 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
   const { locale } = useLocale();
   const [value, setValue] = useState("");
   const [error, setError] = useState<string | null>(null);
-  const [confirmOpen, setConfirmOpen] = useState(false);
   const [confirmExactOpen, setConfirmExactOpen] = useState(false);
   const [busy, setBusy] = useState(false);
 
@@ -83,7 +82,6 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
   }
 
   async function handleTchombo() {
-    setConfirmOpen(false);
     setBusy(true);
     const res = await onTchombo();
     setBusy(false);
@@ -215,7 +213,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
             </Button>
 
             {previous && (
-              <Button variant="danger" full disabled={busy} onClick={() => setConfirmOpen(true)}>
+              <Button variant="danger" full disabled={busy} onClick={handleTchombo}>
                 {t("game.tchombo")}
               </Button>
             )}
@@ -238,18 +236,6 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
           </div>
         )}
       </div>
-
-      {confirmOpen && previous && (
-        <ConfirmDialog
-          title={t("game.confirmTchomboTitle", { name: previous.playerName, value: previous.value, unit: localized.unit })}
-          body={t("game.confirmTchomboBody")}
-          confirmLabel={t("game.confirm")}
-          cancelLabel={t("game.cancel")}
-          danger
-          onCancel={() => setConfirmOpen(false)}
-          onConfirm={handleTchombo}
-        />
-      )}
 
       {confirmExactOpen && previous && (
         <ConfirmDialog
