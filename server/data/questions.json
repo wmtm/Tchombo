@@ -11,7 +11,9 @@
     "source": "National Archives Department",
     "source_note": "Cited in the National Archives Department's chronology of Dutch/French/British rule.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année les Néerlandais ont-ils débarqué pour la première fois sur l'île et l'ont-ils baptisée « Mauritius », en l'honneur du prince Maurice de Nassau ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-002",
@@ -25,7 +27,9 @@
     "source": "IIASA — The Demographic Discontinuities of Mauritius (Lutz & Wils)",
     "source_note": "This historical demographic working paper gives 63,821 as the island's population on the eve of the 1810 British takeover, a tiny fraction of today's population.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À combien estimait-on la population de Maurice en 1810, juste avant la conquête britannique ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "HIS-003",
@@ -39,7 +43,9 @@
     "source": "National Archives Department",
     "source_note": "Given in the National Archives Department's official chronology of Mauritius's Dutch, French and British colonial periods (https://nationalarchives.govmu.org/nationalarchives/?page_id=1390).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année les Néerlandais ont-ils définitivement abandonné Maurice, mettant fin à leurs tentatives de colonisation ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-004",
@@ -53,7 +59,9 @@
     "source": "National Archives Department",
     "source_note": "Given in the National Archives Department's official chronology of Mauritius's Dutch, French and British colonial periods (https://nationalarchives.govmu.org/nationalarchives/?page_id=1390).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année les Français ont-ils officiellement pris possession de Maurice, la rebaptisant Île de France ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-005",
@@ -67,7 +75,9 @@
     "source": "National Archives Department",
     "source_note": "Given in the National Archives Department's official chronology of Mauritius's Dutch, French and British colonial periods (https://nationalarchives.govmu.org/nationalarchives/?page_id=1390).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année Mahé de Labourdonnais a-t-il fondé Port-Louis comme principal port de l'île ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-006",
@@ -81,7 +91,9 @@
     "source": "Britannica / Royal Museums Greenwich",
     "source_note": "All four frigates of Commodore Pym's squadron were lost: two captured by the French and two scuttled to avoid capture.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Lors de la bataille de Grand Port (1810) — la seule victoire navale française inscrite sur l'Arc de Triomphe — combien de frégates britanniques l'escadre française a-t-elle capturées ou forcées à se saborder ?",
+    "unit_fr": "frégates"
   },
   {
     "id": "HIS-007",
@@ -95,7 +107,9 @@
     "source": "National Archives Department",
     "source_note": "Given in the National Archives Department's official chronology of Mauritius's Dutch, French and British colonial periods (https://nationalarchives.govmu.org/nationalarchives/?page_id=1390).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année la bataille navale de Grand Port a-t-elle opposé les forces françaises et britanniques au large de Maurice ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-008",
@@ -109,7 +123,9 @@
     "source": "Bank of England working paper — The collection of slavery compensation, 1835–43 / UK Parliament Hansard",
     "source_note": "Mauritius received roughly £2.1 million of the £20 million total compensation fund set up under the Slave Compensation Act 1837.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de livres sterling les propriétaires d'esclaves de Maurice ont-ils reçues du gouvernement britannique en compensation, après l'abolition de l'esclavage en 1835 ?",
+    "unit_fr": "£"
   },
   {
     "id": "HIS-009",
@@ -123,7 +139,9 @@
     "source": "National Archives Department",
     "source_note": "Given in the National Archives Department's official chronology of Mauritius's Dutch, French and British colonial periods (https://nationalarchives.govmu.org/nationalarchives/?page_id=1390).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année l'esclavage a-t-il été officiellement aboli à Maurice ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-010",
@@ -137,7 +155,9 @@
     "source": "National Archives Department",
     "source_note": "Given in the National Archives Department's official chronology of Mauritius's Dutch, French and British colonial periods (https://nationalarchives.govmu.org/nationalarchives/?page_id=1390).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année Maurice a-t-elle obtenu son indépendance vis-à-vis de la Grande-Bretagne ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-011",
@@ -151,7 +171,9 @@
     "source": "National Archives Department",
     "source_note": "Given in the National Archives Department's official chronology of Mauritius's Dutch, French and British colonial periods (https://nationalarchives.govmu.org/nationalarchives/?page_id=1390).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année Maurice est-elle devenue une République au sein du Commonwealth ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-012",
@@ -165,7 +187,9 @@
     "source": "Wikipedia / National Postal Museum (Smithsonian)",
     "source_note": "500 of each of the one-penny orange-red and two-penny deep blue designs were printed from a single engraved plate in September 1847.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'exemplaires de chacun des deux célèbres timbres mauriciens « Post Office » de 1847 ont été imprimés à l'origine ?",
+    "unit_fr": "timbres"
   },
   {
     "id": "HIS-013",
@@ -179,7 +203,9 @@
     "source": "National Postal Museum (Smithsonian) / philatelic scholarship",
     "source_note": "As documented in philatelic records, only 27 of the original 1,000 printed stamps (both values combined) are known to still exist.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de timbres mauriciens « Post Office » de 1847 — parmi les plus rares et les plus précieux au monde — sont connus pour avoir survécu jusqu'à aujourd'hui ?",
+    "unit_fr": "timbres"
   },
   {
     "id": "HIS-014",
@@ -193,7 +219,9 @@
     "source": "Martello Towers historical survey / Wikipedia",
     "source_note": "Built in the 1830s at Tamarin, L'Harmonie, la Preneuse, Fort Victoria and on Tonnelier Island, as part of a worldwide British Martello tower building programme.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de tours Martello les Britanniques ont-ils construites sur la côte ouest de Maurice pour se prémunir contre une éventuelle contre-invasion française ?",
+    "unit_fr": "tours"
   },
   {
     "id": "HIS-015",
@@ -207,7 +235,9 @@
     "source": "Government of Mauritius — More History",
     "source_note": "Figure given on the Government of Mauritius's 'More History' page on the island's colonial-era economic development (https://ode.govmu.org/more-history).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année les premières sucreries ont-elles été installées à Maurice ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-016",
@@ -221,7 +251,9 @@
     "source": "Government of Mauritius — More History",
     "source_note": "Figure given on the Government of Mauritius's 'More History' page on the island's colonial-era economic development (https://ode.govmu.org/more-history).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Pendant combien d'années Mahé de Labourdonnais a-t-il exercé la fonction de gouverneur français de l'Île de France ?",
+    "unit_fr": "ans"
   },
   {
     "id": "HIS-017",
@@ -235,7 +267,9 @@
     "source": "Martello Towers historical survey / Wikipedia",
     "source_note": "Of the five original towers, two (including Cunningham's Tower on Tonnelier Island) had disappeared by the early 20th century, leaving three still standing.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Parmi les tours Martello construites par les Britanniques sur la côte ouest de Maurice, combien sont encore debout aujourd'hui ?",
+    "unit_fr": "tours"
   },
   {
     "id": "HIS-018",
@@ -249,7 +283,9 @@
     "source": "National Archives Department",
     "source_note": "Given in the National Archives Department's dedicated history of rail transport in Mauritius (https://nationalarchives.govmu.org/nationalarchives/?page_id=2284).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année le tout dernier train de voyageurs a-t-il circulé à Maurice (le 31 mars) ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-019",
@@ -263,7 +299,9 @@
     "source": "Wikipedia (Battle of Grand Port) / naval history accounts",
     "source_note": "British losses across Commodore Pym's squadron are recorded as 105 killed and 163 wounded during the 20–27 August 1810 engagement.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de marins et de soldats britanniques ont été tués lors de la bataille de Grand Port, seule victoire navale française inscrite sur l'Arc de Triomphe ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "HIS-020",
@@ -277,7 +315,9 @@
     "source": "National Assembly of Mauritius — Railway history document",
     "source_note": "Official National Assembly archive PDF on the history of Mauritius's railways.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de kilomètres mesurait la ligne nord de l'ancien réseau ferroviaire de Maurice ?",
+    "unit_fr": "km"
   },
   {
     "id": "HIS-021",
@@ -291,7 +331,9 @@
     "source": "UNESCO World Heritage Centre",
     "source_note": "Figure given in UNESCO's official World Heritage listing for the Aapravasi Ghat (https://whc.unesco.org/en/list/1227).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année le dépôt d'immigration de l'Aapravasi Ghat, à Port-Louis, a-t-il été construit ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-022",
@@ -305,7 +347,9 @@
     "source": "UNESCO World Heritage Centre",
     "source_note": "Figure given in UNESCO's official World Heritage listing for the Aapravasi Ghat (https://whc.unesco.org/en/list/1227).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année l'Aapravasi Ghat a-t-il été inscrit au patrimoine mondial de l'UNESCO ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-023",
@@ -319,7 +363,9 @@
     "source": "UNESCO World Heritage Centre",
     "source_note": "UNESCO states ‘more than 462,000’ indentured labourers passed through the depot; 462,000 is the documented minimum.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon l'UNESCO, au moins combien de travailleurs sous contrat sont passés par le dépôt d'immigration de l'Aapravasi Ghat entre 1834 et 1920 ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "HIS-024",
@@ -333,7 +379,9 @@
     "source": "Le Mauricien / Aapravasi Ghat Trust Fund",
     "source_note": "Widely documented as 36 ‘Hill Coolies’ who signed the first five-year labour contracts in Calcutta in September 1834.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de travailleurs sous contrat comptait le tout premier groupe débarqué à l'Aapravasi Ghat le 2 novembre 1834, à bord du navire Atlas ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "HIS-025",
@@ -347,7 +395,9 @@
     "source": "UNESCO World Heritage Centre",
     "source_note": "Figure given in UNESCO's official World Heritage listing for the Aapravasi Ghat (https://whc.unesco.org/en/list/1227).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année a officiellement débuté la période reconnue de l'immigration indienne sous contrat vers Maurice ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-026",
@@ -361,7 +411,9 @@
     "source": "Wikipedia (Battle of Grand Port) / naval history accounts",
     "source_note": "French losses are recorded as around 37 killed and 112 wounded, far lighter than the British side's casualties in the same battle.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de marins et de soldats français ont été tués lors de la bataille de Grand Port en 1810 ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "HIS-027",
@@ -375,7 +427,9 @@
     "source": "UNESCO World Heritage Centre",
     "source_note": "Figure given in UNESCO's official World Heritage listing for the Aapravasi Ghat (https://whc.unesco.org/en/list/1227).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la superficie, en mètres carrés, du site du patrimoine mondial de l'UNESCO de l'Aapravasi Ghat lui-même ?",
+    "unit_fr": "m²"
   },
   {
     "id": "HIS-028",
@@ -389,7 +443,9 @@
     "source": "Ministry of Education — Culture / UNESCO",
     "source_note": "Figure given on the Ministry of Education's page describing Mauritius's UNESCO-recognised cultural heritage (https://education.govmu.org/Pages/Education%20Sectors/Culture.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année le paysage culturel du Morne a-t-il été inscrit au patrimoine mondial de l'UNESCO ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-029",
@@ -403,7 +459,9 @@
     "source": "IIASA — The Demographic Discontinuities of Mauritius (Lutz & Wils)",
     "source_note": "Despite Britain's legal prohibition on the slave trade after 1810, this historical demographic study records over 6,000 slaves being smuggled into the colony during that decade.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Au moins combien d'esclaves ont été introduits clandestinement à Maurice au cours de la décennie qui a suivi l'interdiction britannique de la traite négrière ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "HIS-030",
@@ -417,7 +475,9 @@
     "source": "Ministry of Education — Culture / UNESCO",
     "source_note": "Figure given on the Ministry of Education's page describing Mauritius's UNESCO-recognised cultural heritage (https://education.govmu.org/Pages/Education%20Sectors/Culture.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de sites mauriciens sont actuellement inscrits sur la liste du patrimoine mondial de l'UNESCO ?",
+    "unit_fr": "sites"
   },
   {
     "id": "HIS-031",
@@ -431,7 +491,9 @@
     "source": "National Parks and Conservation Service",
     "source_note": "Figure given in the National Parks and Conservation Service's official list of protected areas (https://npcs.govmu.org/Pages/About%20Us/Parks-and-Other-Reserve-Areas.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année le parc national des Gorges de Rivière Noire a-t-il été officiellement créé ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-032",
@@ -445,7 +507,9 @@
     "source": "Historical demographic sources on Indian indentured immigration to Mauritius",
     "source_note": "More than 100,000 Indians arrived during this single decade alone, part of the much larger indentured immigration wave recorded at Aapravasi Ghat.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Plus de combien de travailleurs sous contrat indiens sont arrivés à Maurice au cours de la seule décennie 1850 (1851-1861) ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "HIS-033",
@@ -459,7 +523,9 @@
     "source": "The Yale Globalist — 'Chinese Mauritians: Paradise Island's Next Dodo?'",
     "source_note": "This figure comes from a journalistic secondary source rather than an official archival count, so it is kept as draft pending a primary-source confirmation.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Plus de combien d'immigrants chinois, sous contrat ou libres, sont arrivés à Maurice entre 1895 et 1900 seulement ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "HIS-034",
@@ -473,7 +539,9 @@
     "source": "National Archives Department",
     "source_note": "A single, often-cited summary figure covering the entire British colonial era in Mauritius.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Pendant combien d'années consécutives les Britanniques ont-ils gouverné Maurice, de la prise de l'île jusqu'à l'indépendance ?",
+    "unit_fr": "ans"
   },
   {
     "id": "HIS-035",
@@ -487,7 +555,9 @@
     "source": "Government of Mauritius / National Archives",
     "source_note": "Born 18 September 1900 at Belle Rive, Flacq District.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année Sir Seewoosagur Ramgoolam, premier Premier ministre de Maurice et « Père de la Nation », est-il né ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-036",
@@ -501,7 +571,9 @@
     "source": "Government of Mauritius / National Archives",
     "source_note": "He died on 15 December 1985 in Port Louis.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année Sir Seewoosagur Ramgoolam est-il mort ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-037",
@@ -515,7 +587,9 @@
     "source": "National Archives of the UK / Elections in Mauritius",
     "source_note": "The 9 March 1959 general election was the first with universal suffrage in Mauritius.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année les premières élections générales mauriciennes se sont-elles tenues au suffrage universel intégral, supprimant toutes les conditions d'alphabétisation et de propriété ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-038",
@@ -529,7 +603,9 @@
     "source": "Historical records of Réunion",
     "source_note": "Decreed on 23 March 1793; the island later reverted to other names before permanently becoming 'La Réunion' in 1848.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année la Convention nationale française a-t-elle officiellement rebaptisé l'Île Bourbon (aujourd'hui La Réunion) « La Réunion » ?",
+    "unit_fr": ""
   },
   {
     "id": "HIS-039",
@@ -543,7 +619,9 @@
     "source": "Historical accounts of the Leguat expedition",
     "source_note": "Leguat and seven companions were marooned on Rodrigues on 16 May 1691, after a larger group of volunteers had set out from Amsterdam.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quand le réfugié huguenot François Leguat et son groupe ont été abandonnés en 1691 sur l'île alors inhabitée de Rodrigues pour y fonder une colonie, combien de compagnons (en plus de Leguat lui-même) y ont été laissés ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "HIS-040",
@@ -557,7 +635,9 @@
     "source": "National Archives Department",
     "source_note": "Official National Archives records for Mauritius's rail history give the passenger railway's operating life as 92 years.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Pendant combien d'années, de son ouverture à son tout dernier trajet, le chemin de fer voyageurs de Maurice a-t-il fonctionné avant de fermer définitivement ?",
+    "unit_fr": "ans"
   },
   {
     "id": "ENV-001",
@@ -571,7 +651,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien Maurice compte-t-elle d'espèces de plantes indigènes (natives) ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-002",
@@ -585,7 +667,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces de plantes sont endémiques à Maurice uniquement (qu'on ne trouve nulle part ailleurs sur Terre) ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-003",
@@ -599,7 +683,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces de plantes sont endémiques à l'ensemble des Mascareignes tout en étant présentes à Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-004",
@@ -613,7 +699,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon les données officielles, combien d'espèces de reptiles étaient autrefois présentes à Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-005",
@@ -627,7 +715,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "D'après ce décompte officiel, combien d'espèces de reptiles subsistent à Maurice aujourd'hui ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-006",
@@ -641,7 +731,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Parmi les espèces de reptiles qui subsistent à Maurice aujourd'hui, combien sont endémiques à Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-007",
@@ -655,7 +747,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces de reptiles endémiques de Maurice sont aujourd'hui confinées aux îlots au large, ayant disparu de l'île principale ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-008",
@@ -669,7 +763,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces de reptiles sont confinées spécifiquement à l'Île Ronde (Round Island), au large de la côte nord de Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-009",
@@ -683,7 +779,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces d'oiseaux terrestres endémiques subsistent à Maurice aujourd'hui ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-010",
@@ -697,7 +795,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces de roussettes (chauves-souris frugivores) existe-t-il en République de Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-011",
@@ -711,7 +811,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Official figure given as 'approximately 200'.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Environ combien d'espèces, sous-espèces et variétés de fougères et de plantes apparentées ont été recensées à Maurice ?",
+    "unit_fr": "taxons"
   },
   {
     "id": "ENV-012",
@@ -725,7 +827,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces de fougères et de plantes apparentées sont endémiques à Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-013",
@@ -739,7 +843,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces de fougères et de plantes apparentées sont aujourd'hui considérées comme éteintes à Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-014",
@@ -753,7 +859,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de taxons de « plantes inférieures » (plantes non à fleurs) ont été recensés à Maurice ?",
+    "unit_fr": "taxons"
   },
   {
     "id": "ENV-015",
@@ -767,7 +875,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de genres de mousses ont été recensés à Maurice ?",
+    "unit_fr": "genres"
   },
   {
     "id": "ENV-016",
@@ -781,7 +891,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity (https://chm.govmu.org/status-and-threats/terrestrial/).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de genres d'hépatiques ont été recensés à Maurice ?",
+    "unit_fr": "genres"
   },
   {
     "id": "ENV-017",
@@ -795,7 +907,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Official figure given as 'approximately 25%'.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Environ quel pourcentage du territoire terrestre de Maurice est couvert de forêt, tous types confondus ?",
+    "unit_fr": "%"
   },
   {
     "id": "ENV-018",
@@ -809,7 +923,9 @@
     "source": "Government of Mauritius — National Clearing-House Mechanism",
     "source_note": "Official figure given as 'approximately 2%'.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Environ quel pourcentage du territoire terrestre de Maurice est couvert de forêt indigène (native) de bonne qualité ?",
+    "unit_fr": "%"
   },
   {
     "id": "ENV-019",
@@ -823,7 +939,9 @@
     "source": "Ministry of Agro-Industry — Biodiversity report",
     "source_note": "Figure given in the Ministry of Agro-Industry's official biodiversity synthesis report (https://agriculture.govmu.org/Documents/Report/Book%20Final.pdf).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces de poissons d'eau douce figurent dans un rapport officiel de synthèse sur la biodiversité mauricienne ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-020",
@@ -837,7 +955,9 @@
     "source": "Ministry of Agro-Industry — Biodiversity report",
     "source_note": "Figure given in the Ministry of Agro-Industry's official biodiversity synthesis report (https://agriculture.govmu.org/Documents/Report/Book%20Final.pdf).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Parmi ces espèces de poissons d'eau douce, combien sont natives de Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-021",
@@ -851,7 +971,9 @@
     "source": "Ministry of Agro-Industry — Biodiversity report",
     "source_note": "Figure given in the Ministry of Agro-Industry's official biodiversity synthesis report (https://agriculture.govmu.org/Documents/Report/Book%20Final.pdf).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces de coraux scléractiniaires (coraux durs) ont été recensées autour de Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-022",
@@ -865,7 +987,9 @@
     "source": "Ministry of Agro-Industry — Biodiversity report",
     "source_note": "Figure given in the Ministry of Agro-Industry's official biodiversity synthesis report (https://agriculture.govmu.org/Documents/Report/Book%20Final.pdf).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de types distincts de récifs coralliens sont recensés dans cette synthèse officielle sur la biodiversité mauricienne ?",
+    "unit_fr": "types"
   },
   {
     "id": "ENV-023",
@@ -879,7 +1003,9 @@
     "source": "Ministry of Agro-Industry — Biodiversity report",
     "source_note": "Official figure given as 'approximately 90'.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Environ combien de rivières et de cours d'eau sont recensés à Maurice dans cette synthèse officielle sur la biodiversité ?",
+    "unit_fr": "cours d'eau"
   },
   {
     "id": "ENV-024",
@@ -893,7 +1019,9 @@
     "source": "Government of Mauritius — Offshore Islets",
     "source_note": "Figure given on the Government of Mauritius's official page describing the country's offshore islets (https://ode.govmu.org/offshore-islets).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'îlots au large sont officiellement recensés autour de l'île principale de Maurice ?",
+    "unit_fr": "îlots"
   },
   {
     "id": "ENV-025",
@@ -907,7 +1035,9 @@
     "source": "Government of Mauritius — Offshore Islets",
     "source_note": "Figure given on the Government of Mauritius's official page describing the country's offshore islets (https://ode.govmu.org/offshore-islets).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Parmi les îlots au large de Maurice, combien ont été déclarés parcs nationaux ou réserves naturelles ?",
+    "unit_fr": "îlots"
   },
   {
     "id": "ENV-026",
@@ -921,7 +1051,9 @@
     "source": "Government of Mauritius — Offshore Islets",
     "source_note": "Figure given on the Government of Mauritius's official page describing the country's offshore islets (https://ode.govmu.org/offshore-islets).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de sites humides classés Ramsar compte l'île principale de Maurice ?",
+    "unit_fr": "sites"
   },
   {
     "id": "ENV-027",
@@ -935,7 +1067,9 @@
     "source": "Government of Mauritius — Offshore Islets",
     "source_note": "Figure given on the Government of Mauritius's official page describing the country's offshore islets (https://ode.govmu.org/offshore-islets).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de parcs marins compte Maurice ?",
+    "unit_fr": "parcs"
   },
   {
     "id": "ENV-028",
@@ -949,7 +1083,9 @@
     "source": "Government of Mauritius — Offshore Islets",
     "source_note": "Figure given on the Government of Mauritius's official page describing the country's offshore islets (https://ode.govmu.org/offshore-islets).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de réserves de pêche ont été proclamées autour de l'île principale de Maurice ?",
+    "unit_fr": "réserves"
   },
   {
     "id": "ENV-029",
@@ -963,7 +1099,9 @@
     "source": "National Parks and Conservation Service",
     "source_note": "Figure given in the National Parks and Conservation Service's official list of protected areas (https://npcs.govmu.org/Pages/About%20Us/Parks-and-Other-Reserve-Areas.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de parcs nationaux terrestres compte Maurice ?",
+    "unit_fr": "parcs"
   },
   {
     "id": "ENV-030",
@@ -977,7 +1115,9 @@
     "source": "Government of Mauritius — Explore Mauritius",
     "source_note": "Figure given on the Government of Mauritius's 'Explore Mauritius' tourism information page (https://govmu.org/EN/Pages/exploremauritius.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'hectares couvre le parc national des Gorges de Rivière Noire ?",
+    "unit_fr": "ha"
   },
   {
     "id": "ENV-031",
@@ -991,7 +1131,9 @@
     "source": "Government of Mauritius — Offshore Islets",
     "source_note": "Official figure given as 'approximately 401 ha'.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Environ combien d'hectares de zones humides côtières sont recensés pour l'île principale de Maurice ?",
+    "unit_fr": "ha"
   },
   {
     "id": "ENV-032",
@@ -1005,7 +1147,9 @@
     "source": "Government of Mauritius — Offshore Islets",
     "source_note": "Figure given on the Government of Mauritius's official page describing the country's offshore islets (https://ode.govmu.org/offshore-islets).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon les données officielles, combien d'îlots compte Rodrigues ?",
+    "unit_fr": "îlots"
   },
   {
     "id": "ENV-033",
@@ -1019,7 +1163,9 @@
     "source": "Government of Mauritius — Offshore Islets",
     "source_note": "Sum of the two official figures published on the same government page.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En additionnant les chiffres officiels d'îlots de Maurice et de Rodrigues, combien cela fait-il au total ?",
+    "unit_fr": "îlots"
   },
   {
     "id": "ENV-034",
@@ -1033,7 +1179,9 @@
     "source": "Government of Mauritius — Tourism Sector overview",
     "source_note": "Figure given in the official Tourism Sector overview published by the Government of Mauritius (https://tourism.govmu.org/Pages/Tourist%20Sector/newoverview.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon un aperçu officiel de l'office du tourisme, combien d'espèces d'oiseaux indigènes étaient historiquement connues à Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-035",
@@ -1047,7 +1195,9 @@
     "source": "Government of Mauritius — Tourism Sector overview",
     "source_note": "Figure given in the official Tourism Sector overview published by the Government of Mauritius (https://tourism.govmu.org/Pages/Tourist%20Sector/newoverview.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon cet aperçu touristique officiel, combien d'espèces de serpents non venimeux trouve-t-on à Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-036",
@@ -1061,7 +1211,9 @@
     "source": "Government of Mauritius — Tourism Sector overview",
     "source_note": "Figure given in the official Tourism Sector overview published by the Government of Mauritius (https://tourism.govmu.org/Pages/Tourist%20Sector/newoverview.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon cet aperçu touristique officiel, environ combien d'espèces d'insectes et de papillons trouve-t-on à Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-037",
@@ -1075,7 +1227,9 @@
     "source": "Government of Mauritius — Tourism Sector overview",
     "source_note": "Figure given in the official Tourism Sector overview published by the Government of Mauritius (https://tourism.govmu.org/Pages/Tourist%20Sector/newoverview.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces de papillons sont décrites comme propres aux îles mauriciennes dans cet aperçu officiel ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "ENV-038",
@@ -1089,7 +1243,9 @@
     "source": "Zoological Society of London (ZSL)",
     "source_note": "Only four known Mauritius kestrels remained in 1974, two in the wild and two in captivity, before a famous conservation recovery.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En 1974, le faucon crécerelle de Maurice — alors l'oiseau le plus rare au monde — a atteint son plus bas niveau de population jamais enregistré. Combien d'individus restait-il, en comptant ceux à l'état sauvage et en captivité ?",
+    "unit_fr": "oiseaux"
   },
   {
     "id": "ENV-039",
@@ -1103,7 +1259,9 @@
     "source": "Durrell Wildlife Conservation Trust / ZSL",
     "source_note": "The pink pigeon's wild population hit an all-time low of 9 known birds in 1990.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À son plus bas niveau enregistré en 1990, combien de pigeons roses sauvages restait-il à Maurice avant qu'un programme de conservation ne sauve l'espèce du bord de l'extinction ?",
+    "unit_fr": "oiseaux"
   },
   {
     "id": "ENV-040",
@@ -1117,7 +1275,9 @@
     "source": "Historical cyclone records (Mauritius Meteorological Services / meteorological literature)",
     "source_note": "Recorded at Mon Désert during Cyclone Gervaise, still the highest gust on record for Mauritius.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la rafale de vent la plus forte, en km/h, jamais officiellement enregistrée à Maurice, atteinte lors du cyclone Gervaise en février 1975 ?",
+    "unit_fr": "km/h"
   },
   {
     "id": "CUL-001",
@@ -1131,7 +1291,9 @@
     "source": "Government of Mauritius — Explore Mauritius",
     "source_note": "Figure given on the Government of Mauritius's 'Explore Mauritius' tourism information page (https://govmu.org/EN/Pages/exploremauritius.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, combien d'instruments traditionnels accompagnent classiquement la musique séga mauricienne (ravanne, maravanne et triangle) ?",
+    "unit_fr": "instruments"
   },
   {
     "id": "CUL-002",
@@ -1145,7 +1307,9 @@
     "source": "Ministry of Education — Culture / UNESCO",
     "source_note": "Figure given on the Ministry of Education's page describing Mauritius's UNESCO-recognised cultural heritage (https://education.govmu.org/Pages/Education%20Sectors/Culture.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année le séga traditionnel mauricien a-t-il été inscrit sur la Liste représentative du patrimoine culturel immatériel de l'humanité de l'UNESCO ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-003",
@@ -1159,7 +1323,9 @@
     "source": "Bibliographical and iconographical catalogue of 'Paul et Virginie' editions (1963), cited in literary scholarship",
     "source_note": "Roughly half of the cataloged editions were translations into other languages, reflecting the novel's status as one of the most-reprinted French novels ever.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, un catalogue bibliographique de 1963 a recensé plus de combien d'éditions de 'Paul et Virginie', le célèbre roman de Bernardin de Saint-Pierre qui se déroule sur l'Île de France ?",
+    "unit_fr": "éditions"
   },
   {
     "id": "CUL-004",
@@ -1173,7 +1339,9 @@
     "source": "Ministry of Education — Culture / UNESCO",
     "source_note": "Figure given on the Ministry of Education's page describing Mauritius's UNESCO-recognised cultural heritage (https://education.govmu.org/Pages/Education%20Sectors/Culture.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année le Séga Tambour Rodrigues a-t-il été inscrit sur la liste du patrimoine culturel immatériel de l'UNESCO ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-005",
@@ -1187,7 +1355,9 @@
     "source": "Literary scholarship on Malcolm de Chazal's 'Sens-Plastique'",
     "source_note": "Multiple literary sources describe the collection as containing 'over 2,000' short aphoristic entries.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, l'œuvre célèbre de Malcolm de Chazal, 'Sens-Plastique', est composée d'environ combien d'aphorismes, d'axiomes et d'allégories ?",
+    "unit_fr": "aphorismes"
   },
   {
     "id": "CUL-006",
@@ -1201,7 +1371,9 @@
     "source": "Ministry of Education — Culture / UNESCO",
     "source_note": "Figure given on the Ministry of Education's page describing Mauritius's UNESCO-recognised cultural heritage (https://education.govmu.org/Pages/Education%20Sectors/Culture.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, combien d'éléments culturels mauriciens le ministère de l'Éducation recense-t-il sur la Liste représentative du patrimoine culturel immatériel de l'UNESCO ?",
+    "unit_fr": "éléments"
   },
   {
     "id": "CUL-007",
@@ -1215,7 +1387,9 @@
     "source": "Bibliothèque nationale de France (BnF)",
     "source_note": "One of the most-reprinted French novels ever, first published in 1788.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année le roman de Bernardin de Saint-Pierre 'Paul et Virginie', qui se déroule sur l'Île de France (Maurice), a-t-il été publié pour la première fois ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-008",
@@ -1229,7 +1403,9 @@
     "source": "Biographical record (widely documented)",
     "source_note": "Born 10 August 1960.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année Joseph Réginald Topize, dit Kaya — le créateur du seggae — est-il né ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-009",
@@ -1243,7 +1419,9 @@
     "source": "Biographical record (widely documented)",
     "source_note": "He died on 21 February 1999.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année le musicien mauricien Kaya est-il mort en garde à vue, un événement qui a déclenché des émeutes dans toute l'île ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-010",
@@ -1257,7 +1435,9 @@
     "source": "The Nobel Prize (NobelPrize.org)",
     "source_note": "Awarded the 2008 Nobel Prize in Literature.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année l'écrivain franco-mauricien J.M.G. Le Clézio, qui a grandi avec des liens familiaux profonds avec Maurice, a-t-il reçu le prix Nobel de littérature ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-011",
@@ -1271,7 +1451,9 @@
     "source": "Government tourism sources / widely documented",
     "source_note": "Completed in 2007, a replica of the Sursagar Lake Shiva statue in Vadodara, India.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, quelle est la hauteur, en mètres, de la statue de Shiva Mangal Mahadev à Ganga Talao (Grand Bassin) — la plus haute statue de Maurice ?",
+    "unit_fr": "m"
   },
   {
     "id": "CUL-012",
@@ -1285,7 +1467,9 @@
     "source": "Constitution of Mauritius",
     "source_note": "English is designated the sole official language of the National Assembly.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, combien de langues la Constitution désigne-t-elle comme langue officielle de l'Assemblée nationale de Maurice ?",
+    "unit_fr": "langue"
   },
   {
     "id": "CUL-013",
@@ -1299,7 +1483,9 @@
     "source": "2011 Population Census of Mauritius",
     "source_note": "Creole home-language use rose from 35.6% in 1944 to 86.5% in 2011.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, d'après le recensement de 2011, quel pourcentage de la population mauricienne a déclaré le créole mauricien (kreol morisien) comme langue parlée à la maison ?",
+    "unit_fr": "%"
   },
   {
     "id": "CUL-014",
@@ -1313,7 +1499,9 @@
     "source": "2011 Population Census of Mauritius",
     "source_note": "Down from around 40% as recently as 1972, reflecting a major generational language shift.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, d'après le recensement de 2011, quel pourcentage de la population mauricienne a déclaré le bhojpuri comme langue parlée à la maison ?",
+    "unit_fr": "%"
   },
   {
     "id": "CUL-015",
@@ -1327,7 +1515,9 @@
     "source": "2011 Population Census of Mauritius",
     "source_note": "French remains dominant in the media but is a home language for a small minority.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, d'après le recensement de 2011, quel pourcentage de la population mauricienne a déclaré le français comme langue parlée à la maison ?",
+    "unit_fr": "%"
   },
   {
     "id": "CUL-016",
@@ -1341,7 +1531,9 @@
     "source": "Biographical record (widely documented)",
     "source_note": "Born 22 April 1900 in Quartier Militaire.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année Jean Alphonse Ravaton, plus connu sous le nom de 'Ti Frère' — le 'Roi du séga mauricien' — est-il né ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-017",
@@ -1355,7 +1547,9 @@
     "source": "Auction house press coverage (2021)",
     "source_note": "One of the three surviving 1847 Mauritius 'Ball Cover' envelopes sold for approximately €8.1 million (about US$9.6 million).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, en 2021, une enveloppe affranchie d'un timbre mauricien 'Post Office' du XIXe siècle s'est vendue chez un commissaire-priseur allemand pour environ combien de millions d'euros — un record mondial pour une pièce philatélique ?",
+    "unit_fr": "million €"
   },
   {
     "id": "CUL-018",
@@ -1369,7 +1563,9 @@
     "source": "African rum trade export statistics (2024)",
     "source_note": "Mauritius accounted for roughly 62% of all African rum exports that year.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, combien de millions de litres de rhum Maurice a-t-elle exportés en 2024, ce qui en fait le premier exportateur de rhum d'Afrique ?",
+    "unit_fr": "millions de litres"
   },
   {
     "id": "CUL-019",
@@ -1383,7 +1579,9 @@
     "source": "Festival International Kreol / government tourism sources",
     "source_note": "The festival celebrating Creole culture across the Indian Ocean was launched in 2006.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année le Festival International Kreol a-t-il eu lieu pour la première fois à Maurice ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-020",
@@ -1397,7 +1595,9 @@
     "source": "Historical record (High Commission of India, Mauritius / Mauritius Times)",
     "source_note": "Gandhi's ship docked at Port Louis from 29 October to 15 November 1901.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année le Mahatma Gandhi a-t-il fait une escale de deux semaines à Maurice en rentrant d'Afrique du Sud — une visite qui a inspiré la création du journal Hindustani ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-021",
@@ -1411,7 +1611,9 @@
     "source": "Historical record (widely documented)",
     "source_note": "Inaugurated on 11 June 1822 under Governor Sir Robert Farquhar.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année le Théâtre de Port-Louis — le plus ancien théâtre de l'océan Indien — a-t-il été construit et inauguré ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-022",
@@ -1425,7 +1627,9 @@
     "source": "Baker, P. & Hookoomsing, V. — Diksyoner Kreol Morisien / Dictionary of Mauritian Creole (1987)",
     "source_note": "This foundational reference dictionary is described in academic linguistic sources as containing some 15,000 individual headwords, excluding compounds.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, combien de mots contient environ le célèbre 'Dictionary of Mauritian Creole' de Baker & Hookoomsing ?",
+    "unit_fr": "mots"
   },
   {
     "id": "CUL-023",
@@ -1439,7 +1643,9 @@
     "source": "Mauritius Broadcasting Corporation",
     "source_note": "Established 8 June 1964 under the MBC Ordinance.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année la Mauritius Broadcasting Corporation (MBC) a-t-elle été créée en tant qu'organisme public ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-024",
@@ -1453,7 +1659,9 @@
     "source": "Domaine de Labourdonnais estate information",
     "source_note": "Tourism and estate sources give figures of roughly 500–540 hectares depending on how the surrounding agricultural land is counted, so this is kept as draft pending a single authoritative figure.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "À ton avis, combien d'hectares couvre le domaine historique de Labourdonnais, qui abrite le Château de Labourdonnais du XIXe siècle ?",
+    "unit_fr": "ha"
   },
   {
     "id": "CUL-025",
@@ -1467,7 +1675,9 @@
     "source": "UNESCO Intangible Cultural Heritage documentation on maloya",
     "source_note": "The kayamb (a rattle), roulèr (a large drum) and bobre (a musical bow) are consistently described as maloya's three foundational instruments.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, combien d'instruments traditionnels essentiels — le kayamb, le roulèr et le bobre — forment la base rythmique du maloya réunionnais ?",
+    "unit_fr": "instruments"
   },
   {
     "id": "CUL-026",
@@ -1481,7 +1691,9 @@
     "source": "My China Roots — historical overview of the Chinese in Mauritius",
     "source_note": "Sourced from a specialist genealogy/heritage publication rather than a primary archival record, so kept as draft pending independent confirmation.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "À ton avis, plus de combien de travailleurs sous contrat chinois sont arrivés à Maurice entre 1840 et 1843, lors d'une des premières vagues d'immigration chinoise engagée ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "CUL-027",
@@ -1495,7 +1707,9 @@
     "source": "UNESCO World Heritage Centre — Le Morne Cultural Landscape official maps and nomination documents",
     "source_note": "The core zone covers 349.6 hectares (3.496 km²), distinct from the much larger 2,405-hectare buffer zone around it.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, combien d'hectares couvre la zone centrale protégée du site du patrimoine mondial de l'UNESCO du Morne culturel ?",
+    "unit_fr": "ha"
   },
   {
     "id": "CUL-028",
@@ -1509,7 +1723,9 @@
     "source": "Academic literary sources (postcolonial literature studies)",
     "source_note": "First performed in London and translated into English in 1999.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année le dramaturge mauricien Dev Virahsawmy a-t-il écrit 'Toufann', sa célèbre réécriture en créole de 'La Tempête' de Shakespeare ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-029",
@@ -1523,7 +1739,9 @@
     "source": "Biographical record (widely documented)",
     "source_note": "Born 12 September 1902.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année l'écrivain et peintre mauricien Malcolm de Chazal, auteur de 'Sens-Plastique', est-il né ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-030",
@@ -1537,7 +1755,9 @@
     "source": "Mauritius Ministry of Education / academic sources on language policy in Mauritius",
     "source_note": "Arabic, Bhojpuri, Hindi, Mandarin, Marathi, Sanskrit, Tamil, Telugu and Urdu are all offered as optional ancestral languages.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, combien de langues ancestrales ('orientales') les élèves mauriciens peuvent-ils choisir d'étudier en option à l'école primaire ?",
+    "unit_fr": "langues"
   },
   {
     "id": "CUL-031",
@@ -1551,7 +1771,9 @@
     "source": "L'Aventure du Sucre / Beau Plan estate",
     "source_note": "Opened in the former Beau Plan sugar factory building.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année le musée L'Aventure du Sucre, qui retrace l'histoire de l'industrie sucrière mauricienne, a-t-il été inauguré à Beau Plan ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-032",
@@ -1565,7 +1787,9 @@
     "source": "Author biographical/bibliographical sources",
     "source_note": "Sources describe her body of work as eight novels plus short stories and poetry; since she remains an active writer, this count may already be out of date, so it is kept as draft.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "À ton avis, combien de romans l'auteure mauricienne renommée Ananda Devi a-t-elle publiés ?",
+    "unit_fr": "romans"
   },
   {
     "id": "CUL-033",
@@ -1579,7 +1803,9 @@
     "source": "Government tourism sources / widely documented",
     "source_note": "Estimates commonly range from 250,000 to 400,000; 250,000 is used here as the documented lower bound.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, au moins combien de pèlerins marchent chaque année jusqu'à Ganga Talao (Grand Bassin) pour le festival Maha Shivaratree, le plus grand pèlerinage hindou hors de l'Inde ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "CUL-034",
@@ -1593,7 +1819,9 @@
     "source": "Widely documented Mauritian festival guides",
     "source_note": "A ten-day preparatory fasting period precedes the main day of the festival.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, combien de jours de jeûne les fidèles observent-ils traditionnellement avant de porter le cavadee lors de la fête de Thaipoosam Cavadee ?",
+    "unit_fr": "jours"
   },
   {
     "id": "CUL-035",
@@ -1607,7 +1835,9 @@
     "source": "Rum trade industry sources (rumgeography.com)",
     "source_note": "Figure from specialist rum trade sources rather than an official government count; kept as draft pending a fully authoritative source.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "À ton avis, combien de distilleries de rhum sont environ en activité à Maurice aujourd'hui, contre une quarantaine au XIXe siècle ?",
+    "unit_fr": "distilleries"
   },
   {
     "id": "CUL-036",
@@ -1621,7 +1851,9 @@
     "source": "UNESCO Intangible Cultural Heritage",
     "source_note": "Inscribed on 1 October 2009.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année le maloya, la musique et la danse traditionnelles de La Réunion nées dans les plantations sucrières de l'île, a-t-il été inscrit sur la liste du patrimoine culturel immatériel de l'UNESCO ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-037",
@@ -1635,7 +1867,9 @@
     "source": "Sakifo Musik Festival",
     "source_note": "Held annually in Saint-Pierre, Réunion, since 2004.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon toi, en quelle année le Sakifo Musik Festival de La Réunion, aujourd'hui l'un des plus grands festivals de musique de l'océan Indien, a-t-il eu lieu pour la première fois ?",
+    "unit_fr": ""
   },
   {
     "id": "CUL-038",
@@ -1649,7 +1883,9 @@
     "source": "Historical record (widely documented)",
     "source_note": "Built in 1822 in the style of classic London theatres.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, combien de places compte le Théâtre municipal de Port-Louis, le plus ancien théâtre de l'océan Indien, sur ses trois niveaux ?",
+    "unit_fr": "places"
   },
   {
     "id": "CUL-039",
@@ -1663,7 +1899,9 @@
     "source": "National Library of Mauritius (natlibmu.govmu.org)",
     "source_note": "The library's own published breakdown lists 83,400 books, alongside periodicals and newspapers, within its wider holdings.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, combien de livres la Bibliothèque nationale de Maurice possède-t-elle dans ses collections, selon ses propres chiffres publiés ?",
+    "unit_fr": "livres"
   },
   {
     "id": "CUL-040",
@@ -1677,7 +1915,9 @@
     "source": "Radical Translations project / literary-historical bibliography",
     "source_note": "Scholarship on the novel's reception records at least 17 distinct printings of this early English translation across England, France, Germany, Ireland and America in just four years.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À ton avis, la traduction anglaise pionnière de 'Paul et Virginie' par Helen Maria Williams a été réimprimée sous au moins combien de formes imprimées différentes entre 1795 et 1799 seulement ?",
+    "unit_fr": "éditions"
   },
   {
     "id": "GEO-001",
@@ -1691,7 +1931,9 @@
     "source": "Government of Mauritius — Explore Mauritius",
     "source_note": "Figure given on the Government of Mauritius's 'Explore Mauritius' tourism information page (https://govmu.org/EN/Pages/exploremauritius.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la hauteur, en mètres, du Piton de la Petite Rivière Noire, le point culminant de Maurice ?",
+    "unit_fr": "m"
   },
   {
     "id": "GEO-002",
@@ -1705,7 +1947,9 @@
     "source": "Statistics Mauritius / World Bank",
     "source_note": "Total area of the Republic including all outer island dependencies.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la superficie totale, en km², de la République de Maurice, y compris Rodrigues, Agaléga et Saint-Brandon ?",
+    "unit_fr": "km²"
   },
   {
     "id": "GEO-003",
@@ -1719,7 +1963,9 @@
     "source": "Geographic distance calculations (geodatos.net)",
     "source_note": "Sources give a range of roughly 224-231 km depending on the exact coastal reference points used; kept as draft pending a single authoritative figure.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quelle est la distance maritime la plus courte, en km, entre les côtes de Maurice et de la Réunion ?",
+    "unit_fr": "km"
   },
   {
     "id": "GEO-004",
@@ -1733,7 +1979,9 @@
     "source": "Various geographic sources",
     "source_note": "Sources vary noticeably (560–619 km depending on measurement method); kept as draft pending a single authoritative figure.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quelle est la distance approximative à vol d'oiseau, en km, entre Maurice et Rodrigues ?",
+    "unit_fr": "km"
   },
   {
     "id": "GEO-005",
@@ -1747,7 +1995,9 @@
     "source": "French geographic survey (IGN) / widely documented",
     "source_note": "An extinct volcano, far taller than any peak in Mauritius.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la hauteur, en mètres, du Piton des Neiges à la Réunion, le point culminant de tout l'océan Indien ?",
+    "unit_fr": "m"
   },
   {
     "id": "GEO-006",
@@ -1761,7 +2011,9 @@
     "source": "French geographic survey (IGN) / widely documented",
     "source_note": "One of the most active volcanoes in the world.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la hauteur, en mètres, du Piton de la Fournaise, le volcan actif de la Réunion ?",
+    "unit_fr": "m"
   },
   {
     "id": "GEO-007",
@@ -1775,7 +2027,9 @@
     "source": "UNESCO / widely documented geographic sources",
     "source_note": "Height figure of 556 m for this basaltic monolith is consistent across UNESCO and general encyclopedic geographic sources.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la hauteur, en mètres, du Morne Brabant, le monolithe basaltique au cœur du paysage culturel du Morne, classé au patrimoine mondial de l'UNESCO ?",
+    "unit_fr": "m"
   },
   {
     "id": "GEO-008",
@@ -1789,7 +2043,9 @@
     "source": "Widely documented geographic sources",
     "source_note": "The 605 m crater-rim elevation above sea level is consistently cited across Mauritian geographic sources describing Curepipe's dormant volcano.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À quelle altitude, en mètres au-dessus du niveau de la mer, se trouve le bord du cratère du volcan endormi de Trou aux Cerfs, à Curepipe ?",
+    "unit_fr": "m"
   },
   {
     "id": "GEO-009",
@@ -1803,7 +2059,9 @@
     "source": "Widely documented geographic sources",
     "source_note": "Sources give a range of roughly 300–350 m; kept as draft pending a single authoritative figure.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quel est approximativement le diamètre, en mètres, du cratère du volcan endormi de Trou aux Cerfs, à Curepipe ?",
+    "unit_fr": "m"
   },
   {
     "id": "GEO-010",
@@ -1817,7 +2075,9 @@
     "source": "Statistics Mauritius / Geography of Mauritius",
     "source_note": "Commonly cited as approximately 1,864.8 km² (rounded to 1,865 km²) for the main island alone, distinct from the Republic's total area of 2,040 km² which also includes Rodrigues and the outer islands.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la superficie, en km², de l'île Maurice seule (sans Rodrigues ni les îles éparses) ?",
+    "unit_fr": "km²"
   },
   {
     "id": "GEO-011",
@@ -1831,7 +2091,9 @@
     "source": "CIA World Factbook",
     "source_note": "The CIA World Factbook figure (177 km) differs considerably from some other tourism sources (up to ~330 km); kept as draft pending reconciliation.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quelle est la longueur totale du littoral de l'île Maurice, en km ?",
+    "unit_fr": "km"
   },
   {
     "id": "GEO-012",
@@ -1845,7 +2107,9 @@
     "source": "Government of Mauritius — Ocean Economy sources",
     "source_note": "Approximately 2.3 million km², including roughly 400,000 km² jointly managed with Seychelles on the Mascarene Plateau.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de kilomètres carrés couvre approximativement la Zone économique exclusive (ZEE) de Maurice, l'une des plus vastes zones maritimes au monde pour un territoire aussi petit ?",
+    "unit_fr": "km²"
   },
   {
     "id": "GEO-013",
@@ -1859,7 +2123,9 @@
     "source": "Various geographic sources",
     "source_note": "Sources range from roughly 1,000 to 1,122 km; kept as draft pending a single authoritative figure.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "À combien de kilomètres, environ, les îles Agaléga se trouvent-elles au nord de l'île Maurice ?",
+    "unit_fr": "km"
   },
   {
     "id": "GEO-014",
@@ -1873,7 +2139,9 @@
     "source": "Widely documented geographic sources",
     "source_note": "The approximately 430 km figure, northeast of Mauritius, is consistently cited across geographic and tourism sources describing the Cargados Carajos archipelago.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À combien de kilomètres se trouve Saint-Brandon (les bancs de Cargados Carajos) au nord-est de l'île Maurice ?",
+    "unit_fr": "km"
   },
   {
     "id": "GEO-015",
@@ -1887,7 +2155,9 @@
     "source": "INSEE / French geographic sources",
     "source_note": "The commonly cited INSEE/French administrative-geography figure for Réunion's total land area.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la superficie, en km², de l'île de la Réunion ?",
+    "unit_fr": "km²"
   },
   {
     "id": "GEO-016",
@@ -1901,7 +2171,9 @@
     "source": "Rodrigues Tourism Office",
     "source_note": "Also commonly cited as approximately 104 km² in other sources.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la superficie, en km², de l'île Rodrigues ?",
+    "unit_fr": "km²"
   },
   {
     "id": "GEO-017",
@@ -1915,7 +2187,9 @@
     "source": "Widely documented time zone data (UTC+4, no daylight saving)",
     "source_note": "Mauritius observes Mauritius Standard Time (UTC+4) year-round with no daylight saving, per widely documented international time zone data.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "De combien d'heures l'heure de Maurice est-elle en avance sur l'UTC ?",
+    "unit_fr": "heures"
   },
   {
     "id": "GEO-018",
@@ -1929,7 +2203,9 @@
     "source": "Widely documented geographic classification",
     "source_note": "Mauritius, Réunion and Rodrigues are the three principal islands conventionally classified together as the Mascarene archipelago.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'îles composent l'archipel des Mascareignes (Maurice, la Réunion et Rodrigues) ?",
+    "unit_fr": "îles"
   },
   {
     "id": "GEO-019",
@@ -1943,7 +2219,9 @@
     "source": "Widely documented geographic sources",
     "source_note": "Some sources cite a slightly lower figure of 389 m.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la hauteur, en mètres, du Mont Limon, le point culminant de Rodrigues ?",
+    "unit_fr": "m"
   },
   {
     "id": "GEO-020",
@@ -1957,7 +2235,9 @@
     "source": "Geographic distance calculations",
     "source_note": "Sources converge in a range of roughly 1,057–1,134 km.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est, environ, la distance la plus courte, en km, entre Maurice et Madagascar ?",
+    "unit_fr": "km"
   },
   {
     "id": "GEO-021",
@@ -1971,7 +2251,9 @@
     "source": "Blue Bay Marine Park Management Plan (govmu.org-affiliated)",
     "source_note": "Declared a marine park in October 1997.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'hectares couvre le parc marin de Blue Bay, sur la côte sud-est de Maurice ?",
+    "unit_fr": "ha"
   },
   {
     "id": "GEO-022",
@@ -1985,7 +2267,9 @@
     "source": "Widely documented geographic sources",
     "source_note": "The 87-hectare figure for this privately-managed lagoon islet is the size most consistently cited across current tourism and geographic sources.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'hectares couvre l'Île aux Cerfs, l'îlot lagunaire le plus visité de Maurice ?",
+    "unit_fr": "ha"
   },
   {
     "id": "GEO-023",
@@ -1999,7 +2283,9 @@
     "source": "Widely documented geographic sources",
     "source_note": "Approximately 45 km is the maximum east-west width commonly cited in geographic overviews of Mauritius.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À son point le plus large, l'île Maurice mesure environ combien de kilomètres ?",
+    "unit_fr": "km"
   },
   {
     "id": "GEO-024",
@@ -2013,7 +2299,9 @@
     "source": "Widely documented geographic sources",
     "source_note": "The 550 m elevation for this crater lake is the figure most consistently cited across geographic sources describing Grand Bassin.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À quelle altitude, en mètres au-dessus du niveau de la mer, se trouve le lac sacré de cratère de Ganga Talao (Grand Bassin) ?",
+    "unit_fr": "m"
   },
   {
     "id": "GEO-025",
@@ -2027,7 +2315,9 @@
     "source": "Widely documented geographic sources",
     "source_note": "Exactly 8 m shorter than Piton de la Petite Rivière Noire.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la hauteur, en mètres, du Pieter Both, le deuxième plus haut sommet de Maurice, célèbre pour le rocher en équilibre à son sommet ?",
+    "unit_fr": "m"
   },
   {
     "id": "GEO-026",
@@ -2041,7 +2331,9 @@
     "source": "Government of Mauritius — Explore Mauritius",
     "source_note": "Given on the French-language version of the Government of Mauritius's 'Explore Mauritius' page, describing the mountain ranges bordering the central plateau (https://www.govmu.org/FR/Pages/exploremtius.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de chaînes de montagnes bordent le plateau central de Maurice, selon la description géographique officielle du gouvernement ?",
+    "unit_fr": "chaînes"
   },
   {
     "id": "GEO-027",
@@ -2055,7 +2347,9 @@
     "source": "National Parks and Conservation Service",
     "source_note": "Figure given in the National Parks and Conservation Service's official list of protected areas (https://npcs.govmu.org/Pages/About%20Us/Parks-and-Other-Reserve-Areas.aspx).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'îlots protégés de Maurice sont spécifiquement classés « parcs nationaux d'îlot » ?",
+    "unit_fr": "îlots"
   },
   {
     "id": "GEO-028",
@@ -2069,7 +2363,9 @@
     "source": "Widely documented geographic sources (Britannica / Wikipedia)",
     "source_note": "The combined land area of North and South Agaléga Island is commonly cited as approximately 25 km² in geographic references.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de kilomètres carrés couvrent, ensemble, les deux îles Agaléga ?",
+    "unit_fr": "km²"
   },
   {
     "id": "GEO-029",
@@ -2083,7 +2379,9 @@
     "source": "Key Biodiversity Areas database / Mauritian Wildlife Foundation",
     "source_note": "Sources disagree (169 ha vs. 219 ha in different publications); kept as draft pending reconciliation.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Combien d'hectares couvre Round Island, la réserve naturelle sans prédateurs au nord de Maurice ?",
+    "unit_fr": "ha"
   },
   {
     "id": "GEO-030",
@@ -2097,7 +2395,9 @@
     "source": "Key Biodiversity Areas database",
     "source_note": "The Key Biodiversity Areas database describes Round Island as lying 22.5 km north of mainland Mauritius.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À combien de kilomètres au nord de l'île Maurice se trouve Round Island ?",
+    "unit_fr": "km"
   },
   {
     "id": "GEO-031",
@@ -2111,7 +2411,9 @@
     "source": "Widely documented geographic classification (Parc national de la Réunion)",
     "source_note": "Mafate, Salazie and Cilaos are the three natural cirques universally recognised in descriptions of Réunion's mountainous interior, including by the Parc national de la Réunion.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de cirques naturels (immenses amphithéâtres volcaniques) compte l'île de la Réunion — Mafate, Salazie et Cilaos ?",
+    "unit_fr": "cirques"
   },
   {
     "id": "GEO-032",
@@ -2125,7 +2427,9 @@
     "source": "Widely documented geographic sources",
     "source_note": "Sources range from roughly 61 to 67 km; kept as draft pending a single authoritative figure.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quelle est, environ, la plus grande longueur de l'île Maurice, en kilomètres ?",
+    "unit_fr": "km"
   },
   {
     "id": "GEO-033",
@@ -2139,7 +2443,9 @@
     "source": "Widely documented geographic sources",
     "source_note": "Sources vary considerably, from roughly 250 to 300 m; kept as draft pending a single authoritative figure.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quelle est, environ, la hauteur en mètres des chutes de Tamarind (les « 7 Cascades »), la plus haute cascade de Maurice ?",
+    "unit_fr": "m"
   },
   {
     "id": "GEO-034",
@@ -2153,7 +2459,9 @@
     "source": "Government of Mauritius — Ocean Economy sources",
     "source_note": "Mauritius and Seychelles jointly manage roughly 400,000 km² of extended continental shelf.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Avec combien d'autres pays Maurice gère-t-elle conjointement une zone étendue de plateau continental sur le plateau des Mascareignes ?",
+    "unit_fr": "pays"
   },
   {
     "id": "GEO-035",
@@ -2167,7 +2475,9 @@
     "source": "INSEE / French administrative geography",
     "source_note": "Saint-Denis, Saint-Paul, Saint-Benoît and Saint-Pierre.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'arrondissements (districts administratifs) compte l'île de la Réunion ?",
+    "unit_fr": "arrondissements"
   },
   {
     "id": "GEO-036",
@@ -2181,7 +2491,9 @@
     "source": "Widely documented geographic sources",
     "source_note": "Sources vary between roughly 80 and 100 m; kept as draft pending a single authoritative figure.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quelle est, environ, la profondeur en mètres du cratère du volcan endormi de Trou aux Cerfs, à Curepipe ?",
+    "unit_fr": "m"
   },
   {
     "id": "GEO-037",
@@ -2195,7 +2507,9 @@
     "source": "Mauritian Wildlife Foundation / National Parks and Conservation Service",
     "source_note": "One of the oldest formally protected nature reserves in Mauritius.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année Round Island, au large de la côte nord de Maurice, a-t-elle été déclarée réserve naturelle ?",
+    "unit_fr": ""
   },
   {
     "id": "GEO-038",
@@ -2209,7 +2523,9 @@
     "source": "Widely documented geographic coordinates",
     "source_note": "Mauritius sits at approximately 20°S, 57°E.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À combien de degrés de latitude sud se situe environ l'île Maurice ?",
+    "unit_fr": "°S"
   },
   {
     "id": "GEO-039",
@@ -2223,7 +2539,9 @@
     "source": "Widely documented geographic coordinates",
     "source_note": "Mauritius sits at approximately 20°S, 57°E.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À combien de degrés de longitude est se situe environ l'île Maurice ?",
+    "unit_fr": "°E"
   },
   {
     "id": "GEO-040",
@@ -2237,7 +2555,9 @@
     "source": "Saint Brandon Sanctuary / geographic sources",
     "source_note": "A striking contrast between the archipelago's tiny total land area and its many islets; kept as draft pending a fully authoritative figure.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quelle est la superficie, en km², de Saint-Brandon (les bancs de Cargados Carajos), répartie sur environ 38 minuscules îlots ?",
+    "unit_fr": "km²"
   },
   {
     "id": "LIFE-001",
@@ -2251,7 +2571,9 @@
     "source": "Statistics Mauritius",
     "source_note": "Official mid-year population estimate at 1 July 2025.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon Statistics Mauritius, quelle était l'estimation officielle de la population résidente de Maurice à la mi-année 2025 ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "LIFE-002",
@@ -2265,7 +2587,9 @@
     "source": "Statistics Mauritius (2022 Population Census)",
     "source_note": "21,330 males and 22,320 females.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle était la population de Rodrigues selon le recensement de 2022 ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "LIFE-003",
@@ -2279,7 +2603,9 @@
     "source": "Statistics Mauritius",
     "source_note": "Up from 1,295,410 in 2023.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'arrivées de touristes Maurice a-t-elle enregistrées en 2024, selon Statistics Mauritius ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "LIFE-004",
@@ -2293,7 +2619,9 @@
     "source": "CEIC / Mauritius Chamber of Agriculture sugar statistics",
     "source_note": "Figure from CEIC economic data, compiled from Mauritius Chamber of Agriculture sugar industry statistics for the 2023 crop year.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de tonnes de sucre Maurice a-t-elle produites en 2023 ?",
+    "unit_fr": "tonnes"
   },
   {
     "id": "LIFE-005",
@@ -2307,7 +2635,9 @@
     "source": "CEIC economic data",
     "source_note": "Sources give slightly different peak-year figures (706,839 t in 1986 vs. 719,000 t in 1973); kept as draft pending reconciliation.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quel a été le pic historique de production annuelle de sucre à Maurice, en tonnes, atteint au milieu des années 1980 ?",
+    "unit_fr": "tonnes"
   },
   {
     "id": "LIFE-006",
@@ -2321,7 +2651,9 @@
     "source": "Statistics Mauritius / Districts of Mauritius",
     "source_note": "Flacq, Grand Port, Moka, Pamplemousses, Plaines Wilhems, Port Louis, Rivière du Rempart, Rivière Noire and Savanne.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En combien de districts administratifs l'île Maurice (partie continentale) est-elle divisée ?",
+    "unit_fr": "districts"
   },
   {
     "id": "LIFE-007",
@@ -2335,7 +2667,9 @@
     "source": "National Assembly of Mauritius",
     "source_note": "62 directly elected plus 4 'best loser' seats for minority representation.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de sièges compte l'Assemblée nationale de Maurice ?",
+    "unit_fr": "sièges"
   },
   {
     "id": "LIFE-008",
@@ -2349,7 +2683,9 @@
     "source": "Government of Mauritius public holiday calendar",
     "source_note": "Reflecting the island's multi-ethnic, multi-religious calendar.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de jours fériés officiels Maurice célèbre-t-elle chaque année ?",
+    "unit_fr": "jours fériés"
   },
   {
     "id": "LIFE-009",
@@ -2363,7 +2699,9 @@
     "source": "Sir Seewoosagur Ramgoolam Botanical Garden",
     "source_note": "The garden's founding by French botanist Pierre Poivre in 1770 is the date given in the garden's own historical records, distinct from the earlier 1736 'Mon Plaisir' vegetable garden on the same site.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année le jardin botanique Sir Seewoosagur Ramgoolam de Pamplemousses — le plus ancien jardin botanique de l'hémisphère Sud — a-t-il été fondé par Pierre Poivre ?",
+    "unit_fr": ""
   },
   {
     "id": "LIFE-010",
@@ -2377,7 +2715,9 @@
     "source": "Sir Seewoosagur Ramgoolam Botanical Garden",
     "source_note": "Other publications cite 37 ha depending on whether outbuildings/nurseries are included; kept as draft pending reconciliation.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Combien d'hectares couvre le jardin botanique SSR de Pamplemousses, selon les chiffres officiels du jardin ?",
+    "unit_fr": "ha"
   },
   {
     "id": "LIFE-011",
@@ -2391,7 +2731,9 @@
     "source": "SKYbrary Aviation Safety / airport data",
     "source_note": "Runway length as published in SKYbrary's aviation safety profile of Sir Seewoosagur Ramgoolam International Airport (ICAO: FIMP).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la longueur, en mètres, de la piste principale de l'aéroport international Sir Seewoosagur Ramgoolam ?",
+    "unit_fr": "m"
   },
   {
     "id": "LIFE-012",
@@ -2405,7 +2747,9 @@
     "source": "Government road infrastructure statistics",
     "source_note": "Of which 1,140 km are main roads and 104 km are motorway.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle était la longueur totale, en km, du réseau routier de Maurice en 2019 ?",
+    "unit_fr": "km"
   },
   {
     "id": "LIFE-013",
@@ -2419,7 +2763,9 @@
     "source": "Government road infrastructure statistics",
     "source_note": "Figure from the same government road-infrastructure breakdown (2019) that also gives the 2,772 km total road network figure.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de kilomètres d'autoroute (voie express) compte Maurice ?",
+    "unit_fr": "km"
   },
   {
     "id": "LIFE-014",
@@ -2433,7 +2779,9 @@
     "source": "World Bank (World Development Indicators)",
     "source_note": "Up from 79.87% in 1990.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quel était le taux d'alphabétisation des adultes (15 ans et plus) à Maurice en 2023, selon les données de la Banque mondiale ?",
+    "unit_fr": "%"
   },
   {
     "id": "LIFE-015",
@@ -2447,7 +2795,9 @@
     "source": "World Bank (World Development Indicators)",
     "source_note": "World Bank World Development Indicators figure for life expectancy at birth in Mauritius for 2023.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle était l'espérance de vie moyenne à la naissance à Maurice en 2023, selon les données de la Banque mondiale ?",
+    "unit_fr": "ans"
   },
   {
     "id": "LIFE-016",
@@ -2461,7 +2811,9 @@
     "source": "Low-Carbon Power / IRENA statistical profile of Mauritius",
     "source_note": "574.4 GWh out of a total generation of roughly 3,265 GWh.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quel pourcentage de l'électricité de Maurice était produit à partir de sources renouvelables en 2023 ?",
+    "unit_fr": "%"
   },
   {
     "id": "LIFE-017",
@@ -2475,7 +2827,9 @@
     "source": "Government of Mauritius — Renewable Energy Roadmap 2030",
     "source_note": "Target set out in the Government of Mauritius's official Renewable Energy Roadmap 2030 for the electricity sector.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À quel pourcentage la feuille de route officielle sur les énergies renouvelables de Maurice vise-t-elle à alimenter le pays en électricité d'origine renouvelable d'ici 2030 ?",
+    "unit_fr": "%"
   },
   {
     "id": "LIFE-018",
@@ -2489,7 +2843,9 @@
     "source": "Statistics Mauritius (2022 Population Census)",
     "source_note": "Quatre Bornes ranks fifth among Mauritian towns by population.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle était la population de Quatre Bornes, cinquième ville de Maurice par la taille, selon le recensement de 2022 ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "LIFE-019",
@@ -2503,7 +2859,9 @@
     "source": "Statistics Mauritius / Ministry of Education enrolment data",
     "source_note": "Made up of 51,025 boys and 54,296 girls, with just over half attending private (aided and unaided) schools.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'élèves étaient inscrits dans les écoles secondaires mauriciennes en 2020 ?",
+    "unit_fr": "élèves"
   },
   {
     "id": "LIFE-020",
@@ -2517,7 +2875,9 @@
     "source": "Phoenix Beverages",
     "source_note": "One source describes the launch date in a way that conflicts with Mauritius's actual 1968 independence date, so kept as draft pending a cleaner primary source.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "En quelle année la Phoenix Beer, première bière brassée localement à Maurice, a-t-elle été lancée auprès du public ?",
+    "unit_fr": ""
   },
   {
     "id": "LIFE-021",
@@ -2531,7 +2891,9 @@
     "source": "Skyscraper Center / architectural records",
     "source_note": "A 22-storey commercial office tower.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la hauteur, en mètres, de la Bank of Mauritius Tower à Port-Louis — le plus haut bâtiment de Maurice (mesurée jusqu'à son sommet) ?",
+    "unit_fr": "m"
   },
   {
     "id": "LIFE-022",
@@ -2545,7 +2907,9 @@
     "source": "Casela Nature Parks",
     "source_note": "The 350-hectare figure is the area given in Casela Nature Parks' own description of its west-coast site.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'hectares couvre Casela Nature Parks, sur la côte ouest de Maurice ?",
+    "unit_fr": "ha"
   },
   {
     "id": "LIFE-023",
@@ -2559,7 +2923,9 @@
     "source": "City population statistics",
     "source_note": "Different sources give figures ranging from about 140,400 to 148,800 depending on the exact boundary used; kept as draft pending reconciliation.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quelle est la population de Port-Louis, la capitale de Maurice, selon les estimations récentes ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "LIFE-024",
@@ -2573,7 +2939,9 @@
     "source": "Chamarel 7 Coloured Earth Geopark",
     "source_note": "The visibly coloured sand formation itself is a much smaller ~0.75 ha within this area.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'hectares couvre au total le géoparc des Terres colorées de Chamarel ?",
+    "unit_fr": "ha"
   },
   {
     "id": "LIFE-025",
@@ -2587,7 +2955,9 @@
     "source": "Rodrigues Regional Assembly election records",
     "source_note": "The Rodrigues Regional Assembly has consisted of 18 elected seats since its creation, as recorded in Regional Assembly election results.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de sièges compte l'Assemblée régionale de Rodrigues ?",
+    "unit_fr": "sièges"
   },
   {
     "id": "LIFE-026",
@@ -2601,7 +2971,9 @@
     "source": "Rodrigues Regional Assembly Act",
     "source_note": "The Assembly's inaugural session was held on 12 October 2002.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année Rodrigues a-t-elle obtenu son statut autonome au sein de la République de Maurice, avec la tenue de sa première séance d'Assemblée régionale ?",
+    "unit_fr": ""
   },
   {
     "id": "LIFE-027",
@@ -2615,7 +2987,9 @@
     "source": "Metro Express Ltd",
     "source_note": "Metro Express Ltd's first operational phase, between Rose Hill and Port Louis, opened to the public in 2019.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année la première phase de la ligne de tramway Metro Express de Maurice a-t-elle été ouverte au public ?",
+    "unit_fr": ""
   },
   {
     "id": "LIFE-028",
@@ -2629,7 +3003,9 @@
     "source": "Metro Express Ltd / infrastructure press coverage",
     "source_note": "The project has since been extended in further phases, so the total operating length has grown beyond this original figure; kept as draft for that reason.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quelle était la longueur, en kilomètres, de la première phase initialement prévue de la ligne Metro Express de Maurice, entre Port-Louis et Curepipe ?",
+    "unit_fr": "km"
   },
   {
     "id": "LIFE-029",
@@ -2643,7 +3019,9 @@
     "source": "Government of Mauritius",
     "source_note": "Red, blue, yellow and green — known as 'The Four Bands'.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de couleurs compte le drapeau de Maurice ?",
+    "unit_fr": "couleurs"
   },
   {
     "id": "LIFE-030",
@@ -2657,7 +3035,9 @@
     "source": "Bank of Mauritius",
     "source_note": "Standard decimal subdivision of the Mauritian rupee, as defined by the Bank of Mauritius.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de cents y a-t-il dans une roupie mauricienne ?",
+    "unit_fr": "cents"
   },
   {
     "id": "LIFE-031",
@@ -2671,7 +3051,9 @@
     "source": "Mauritius Commercial Bank",
     "source_note": "Founded 1 September 1838 by James Blyth.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année la Mauritius Commercial Bank (MCB) a-t-elle été fondée — la plus ancienne banque de la région de l'océan Indien encore active sous son nom d'origine ?",
+    "unit_fr": ""
   },
   {
     "id": "LIFE-032",
@@ -2685,7 +3067,9 @@
     "source": "Bank of Mauritius / monetary history sources",
     "source_note": "The Mauritian rupee was introduced in 1877, replacing the earlier Mauritian dollar, per monetary-history sources documenting Mauritius's currency evolution.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année la roupie mauricienne a-t-elle été introduite, remplaçant l'ancien dollar mauricien ?",
+    "unit_fr": ""
   },
   {
     "id": "LIFE-033",
@@ -2699,7 +3083,9 @@
     "source": "Bank of Mauritius / monetary history sources",
     "source_note": "The 1877 conversion rate at which the new Mauritian rupee replaced the Mauritian dollar, per monetary-history sources.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Lorsque la roupie mauricienne a remplacé le dollar mauricien en 1877, combien de roupies valait un dollar ?",
+    "unit_fr": "roupies"
   },
   {
     "id": "LIFE-034",
@@ -2713,7 +3099,9 @@
     "source": "Monetary history sources",
     "source_note": "The Mauritian rupee circulated as the Seychelles' currency until 1914, when it was replaced by the newly introduced Seychellois rupee.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Jusqu'à quelle année la roupie mauricienne a-t-elle également circulé aux Seychelles, avant d'y être remplacée par la roupie seychelloise ?",
+    "unit_fr": ""
   },
   {
     "id": "LIFE-035",
@@ -2727,7 +3115,9 @@
     "source": "Air Mauritius",
     "source_note": "Founded 14 June 1967, though scheduled flights only began in 1972.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année Air Mauritius, la compagnie aérienne nationale, a-t-elle été fondée ?",
+    "unit_fr": ""
   },
   {
     "id": "LIFE-036",
@@ -2741,7 +3131,9 @@
     "source": "Government of Mauritius minimum wage announcements (2023)",
     "source_note": "This is a specific historical snapshot figure, since Mauritius's national minimum wage is revised frequently, so it is kept as draft to avoid implying it is still current.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Quel était le salaire minimum mensuel national de Maurice, en roupies, pour l'année civile 2023 ?",
+    "unit_fr": "roupies"
   },
   {
     "id": "LIFE-037",
@@ -2755,7 +3147,9 @@
     "source": "Tourism accommodation statistics (Statista / CEIC, December 2024)",
     "source_note": "Mauritius's hotel room count is reported quarterly and has been rising steadily, so this is kept as draft as a point-in-time figure rather than a stable constant.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Combien de chambres d'hôtel Maurice avait-elle disponibles, selon les statistiques d'hébergement touristique de fin 2024 ?",
+    "unit_fr": "chambres"
   },
   {
     "id": "LIFE-038",
@@ -2769,7 +3163,9 @@
     "source": "Widely documented time zone data",
     "source_note": "The whole Republic uses a single UTC+4 time zone with no daylight saving.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de fuseaux horaires l'ensemble de la République de Maurice utilise-t-elle sur tous ses territoires (l'île principale, Rodrigues, Agalega et Saint-Brandon) ?",
+    "unit_fr": "fuseau horaire"
   },
   {
     "id": "LIFE-039",
@@ -2783,7 +3179,9 @@
     "source": "Stock Exchange of Mauritius",
     "source_note": "Incorporated 30 March 1989 under the Stock Exchange Act 1988; trading began in July 1989.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année la Bourse de Maurice (Stock Exchange of Mauritius) a-t-elle été constituée ?",
+    "unit_fr": ""
   },
   {
     "id": "LIFE-040",
@@ -2797,7 +3195,9 @@
     "source": "Airports of Mauritius (AML) — corporate history",
     "source_note": "Handed over for civil aviation use in 1946.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année le principal aéroport de Maurice, alors appelé RAF Plaisance, a-t-il été construit à l'origine comme aérodrome militaire britannique ?",
+    "unit_fr": ""
   },
   {
     "id": "LIFE-041",
@@ -2811,7 +3211,9 @@
     "source": "National Transport Corporation (Mauritius) fleet information",
     "source_note": "Sources give differing figures for the NTC fleet size (540 in more recent government material versus 430 in older references), so this is kept as draft pending reconciliation.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Combien de bus la National Transport Corporation (NTC) de Maurice exploite-t-elle dans sa flotte ?",
+    "unit_fr": "bus"
   },
   {
     "id": "SPO-001",
@@ -2825,7 +3227,9 @@
     "source": "Mauritius Turf Club",
     "source_note": "Inaugurated 25 June 1812, making it the world's second-oldest racecourse still in operation.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année l'hippodrome du Champ de Mars à Port-Louis — le plus vieil hippodrome de l'hémisphère Sud — a-t-il été inauguré ?",
+    "unit_fr": ""
   },
   {
     "id": "SPO-002",
@@ -2839,7 +3243,9 @@
     "source": "International Olympic Committee",
     "source_note": "Bronze medal in bantamweight boxing at the Beijing Olympics.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année le boxeur Bruno Julie a-t-il remporté la toute première — et à ce jour unique — médaille olympique de Maurice ?",
+    "unit_fr": ""
   },
   {
     "id": "SPO-003",
@@ -2853,7 +3259,9 @@
     "source": "Olympic boxing regulations (Beijing 2008)",
     "source_note": "56 kg is the standard upper weight limit of the Olympic bantamweight boxing division, the category Bruno Julie competed and won bronze in at Beijing 2008.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle était la limite de poids maximale, en kg, de la catégorie olympique des poids coq en boxe dans laquelle Bruno Julie a remporté le bronze à Pékin en 2008 ?",
+    "unit_fr": "kg"
   },
   {
     "id": "SPO-004",
@@ -2867,7 +3275,9 @@
     "source": "World Athletics",
     "source_note": "Set 21 July 2001 at the Jeux de la Francophonie in Ottawa.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En combien de secondes le sprinteur mauricien Stéphan Buckland a-t-il couru pour établir le record national mauricien du 100 m en 2001 — un record qui a tenu plus de deux décennies ?",
+    "unit_fr": "secondes"
   },
   {
     "id": "SPO-005",
@@ -2881,7 +3291,9 @@
     "source": "Mauritius Olympic Committee",
     "source_note": "Athletics was the only sport Mauritius competed in that year.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année Maurice a-t-elle participé pour la toute première fois aux Jeux olympiques, à Los Angeles ?",
+    "unit_fr": ""
   },
   {
     "id": "SPO-006",
@@ -2895,7 +3307,9 @@
     "source": "Commonwealth Games Federation results",
     "source_note": "Both silver: Marie Ranaivosoa (2018) and Roilya Ranaivosoa (2022).",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de médailles Maurice a-t-elle remportées aux Jeux du Commonwealth spécifiquement en haltérophilie (à l'issue des Jeux de Birmingham en 2022) ?",
+    "unit_fr": "médailles"
   },
   {
     "id": "SPO-007",
@@ -2909,7 +3323,9 @@
     "source": "Commonwealth Games Federation results",
     "source_note": "76 kg snatch + 96 kg clean and jerk.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quel poids total, en kg, Roilya Ranaivosoa a-t-elle soulevé (arraché + épaulé-jeté) pour remporter l'argent dans la catégorie des 49 kg femmes aux Jeux du Commonwealth 2022 ?",
+    "unit_fr": "kg"
   },
   {
     "id": "SPO-008",
@@ -2923,7 +3339,9 @@
     "source": "Commonwealth Games Federation historical records",
     "source_note": "2 gold, 11 silver, 9 bronze as of 2022; this total will have grown following the 2026 Glasgow Games, so kept as draft pending an updated count.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Combien de médailles Maurice avait-elle remportées au total aux Jeux du Commonwealth jusqu'aux Jeux de Birmingham en 2022 ?",
+    "unit_fr": "médailles"
   },
   {
     "id": "SPO-009",
@@ -2937,7 +3355,9 @@
     "source": "Mauritius Football Association",
     "source_note": "The Mauritius Football Association's own records give 1952 as its founding year.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année la Mauritius Football Association a-t-elle été fondée ?",
+    "unit_fr": ""
   },
   {
     "id": "SPO-010",
@@ -2951,7 +3371,9 @@
     "source": "Mauritian Premier League / Mauritius Football Association",
     "source_note": "The Mauritian Premier League has been run as a 10-team top division.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'équipes s'affrontent actuellement en Mauritian Premier League, la première division de football du pays ?",
+    "unit_fr": "équipes"
   },
   {
     "id": "SPO-011",
@@ -2965,7 +3387,9 @@
     "source": "Government Information Service (GIS) Mauritius",
     "source_note": "Students formed the Mauritian flag at Anjalay Stadium, Belle Vue Harel.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de personnes ont formé la plus grande image humaine d'un drapeau flottant au monde, un record du monde Guinness établi à Maurice en janvier 2023 ?",
+    "unit_fr": "personnes"
   },
   {
     "id": "SPO-012",
@@ -2979,7 +3403,9 @@
     "source": "Guinness World Records coverage (restaurants.mu)",
     "source_note": "Set on 27 October 2018, beating a previous record held by Poland.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'œufs ont été utilisés pour établir le record du monde Guinness du plus grand plat d'œufs brouillés, réalisé à Bagatelle, à Maurice, en 2018 ?",
+    "unit_fr": "œufs"
   },
   {
     "id": "SPO-013",
@@ -2993,7 +3419,9 @@
     "source": "Anjalay Stadium records",
     "source_note": "16,000 is the spectator capacity commonly recorded for Anjalay Stadium in football stadium databases.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la capacité d'accueil du stade Anjalay à Belle Vue Harel, le plus grand stade de football de Maurice ?",
+    "unit_fr": "sièges"
   },
   {
     "id": "SPO-014",
@@ -3007,7 +3435,9 @@
     "source": "Champ de Mars Racecourse track specifications",
     "source_note": "The tight right-handed oval track also has a 225 m home straight and is 12–14 m wide.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est la circonférence, en mètres, de la piste de l'hippodrome du Champ de Mars à Port-Louis ?",
+    "unit_fr": "m"
   },
   {
     "id": "SPO-015",
@@ -3021,7 +3451,9 @@
     "source": "Blue Ventures / Rodrigues Regional Assembly fisheries records",
     "source_note": "The closure covers August and September.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de mois par an la pêche au poulpe est-elle fermée au niveau national à Maurice, une mesure de conservation adoptée en 2016 ?",
+    "unit_fr": "mois"
   },
   {
     "id": "SPO-016",
@@ -3035,7 +3467,9 @@
     "source": "Rodrigues Regional Assembly (Octopus Closed Season) Regulations",
     "source_note": "Blue Ventures' published case study on Rodrigues records 2012 as the year the island introduced the Indian Ocean's first seasonal octopus fishery closure.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année Rodrigues a-t-elle instauré la toute première fermeture saisonnière de la pêche au poulpe dans l'océan Indien, plus tard adoptée au niveau national à Maurice ?",
+    "unit_fr": ""
   },
   {
     "id": "SPO-017",
@@ -3049,7 +3483,9 @@
     "source": "Mauritian Wildlife Foundation research publications",
     "source_note": "The tortoises were introduced as an ecological replacement for Mauritius's extinct native giant tortoises.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Au moins combien de bébés tortues géantes d'Aldabra le programme de réensauvagement de l'Île aux Aigrettes a-t-il produits au cours de ses onze premières années ?",
+    "unit_fr": "bébés tortues"
   },
   {
     "id": "SPO-018",
@@ -3063,7 +3499,9 @@
     "source": "Mauritian Wildlife Foundation research publications",
     "source_note": "More were added in subsequent years, and total introduced-population counts vary across sources (commonly 20–26); kept as draft pending reconciliation.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Combien de tortues géantes d'Aldabra ont été relâchées sur l'Île aux Aigrettes en l'an 2000, comme première étape de ce programme de remplacement écologique ?",
+    "unit_fr": "tortues"
   },
   {
     "id": "SPO-019",
@@ -3077,7 +3515,9 @@
     "source": "Natural History Museum, London",
     "source_note": "Roughly a metre tall, though build and posture are still debated by researchers.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Environ quelle taille, en centimètres, mesurait un dodo adulte ?",
+    "unit_fr": "cm"
   },
   {
     "id": "SPO-020",
@@ -3091,7 +3531,9 @@
     "source": "Subfossil research (widely cited in dodo literature)",
     "source_note": "Estimates range from about 10.6 to 17.5 kg depending on the specimen and method; kept as draft given the wide range.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Selon des études récentes sur des squelettes subfossiles de dodo, le poids réel de l'oiseau vivant pouvait descendre jusqu'à combien de kilogrammes — bien en dessous de l'estimation traditionnelle de 20 kg longtemps véhiculée par les illustrations ?",
+    "unit_fr": "kg"
   },
   {
     "id": "SPO-021",
@@ -3105,7 +3547,9 @@
     "source": "Historical ornithological record",
     "source_note": "A 2003 statistical re-analysis suggested extinction may have occurred as late as around 1690, so this remains debated; kept as draft.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Selon la date traditionnellement retenue, en quelle année le dodo a-t-il été observé de manière fiable pour la dernière fois avant son extinction ?",
+    "unit_fr": ""
   },
   {
     "id": "SPO-022",
@@ -3119,7 +3563,9 @@
     "source": "Mauritius Turf Club",
     "source_note": "The Mauritius Turf Club is widely documented as the world's second-oldest horse-racing club still in operation, after the Jockey Club in England.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À l'échelle mondiale, le Mauritius Turf Club n'est que le combientième plus ancien club hippique encore en activité, malgré son statut de plus ancien de l'hémisphère Sud ?",
+    "unit_fr": ""
   },
   {
     "id": "SPO-023",
@@ -3133,7 +3579,9 @@
     "source": "Indian Ocean Island Games records",
     "source_note": "The inaugural Jeux des Îles was held in Saint-Denis, Réunion, in 1979, per official Indian Ocean Island Games records.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année s'est tenue la toute première édition des Jeux des Îles de l'océan Indien, à Saint-Denis, à La Réunion ?",
+    "unit_fr": ""
   },
   {
     "id": "SPO-024",
@@ -3147,7 +3595,9 @@
     "source": "Blue Ventures fisheries case study on Mauritius and Rodrigues octopus fisheries",
     "source_note": "This is a single-year snapshot figure from before the closures took effect; catches have since more than doubled, so it is kept as draft.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Environ combien de tonnes de poulpe ont été pêchées à Maurice en 2014, un point bas qui a conduit à l'instauration de fermetures saisonnières de la pêche ?",
+    "unit_fr": "tonnes"
   },
   {
     "id": "SPO-025",
@@ -3161,7 +3611,9 @@
     "source": "Indian Ocean Island Games records",
     "source_note": "Mauritius hosted the 10th Indian Ocean Island Games in 2019, per official Games records.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En quelle année Maurice a-t-elle accueilli la 10e édition des Jeux des Îles de l'océan Indien ?",
+    "unit_fr": ""
   },
   {
     "id": "SPO-026",
@@ -3175,7 +3627,9 @@
     "source": "World Athletics",
     "source_note": "Set 7 July 2001; still the Mauritian national record.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En combien de secondes le sprinteur mauricien Eric Milazar a-t-il couru pour établir le record national mauricien du 400 m à Madrid en 2001 ?",
+    "unit_fr": "secondes"
   },
   {
     "id": "SPO-027",
@@ -3189,7 +3643,9 @@
     "source": "La Vanille Nature Park",
     "source_note": "Described by the park as 'more than 1,000' specimens.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de tortues géantes d'Aldabra en liberté le parc La Vanille Nature Park, dans le sud de Maurice, abrite-t-il — la plus grande collection en captivité au monde ?",
+    "unit_fr": "tortues"
   },
   {
     "id": "SPO-028",
@@ -3203,7 +3659,9 @@
     "source": "La Vanille Nature Park",
     "source_note": "Described by the park as 'more than 2,000' specimens.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de crocodiles du Nil le parc La Vanille Nature Park, dans le sud de Maurice, abrite-t-il ?",
+    "unit_fr": "crocodiles"
   },
   {
     "id": "SPO-029",
@@ -3217,7 +3675,9 @@
     "source": "La Vanille Nature Park",
     "source_note": "23,000 specimens is the figure given in La Vanille Nature Park's own description of its insectarium collection.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de spécimens d'insectes sont exposés dans l'insectarium du parc La Vanille Nature Park, dans le sud de Maurice ?",
+    "unit_fr": "spécimens"
   },
   {
     "id": "SPO-030",
@@ -3231,7 +3691,9 @@
     "source": "Grand Raid de la Réunion race organisers",
     "source_note": "Sources give a range of roughly 165–180 km depending on the year's course; kept as draft pending a single authoritative figure.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Environ combien de kilomètres mesure « La Diagonale des Fous », la légendaire course d'ultra-trail qui traverse La Réunion du nord au sud ?",
+    "unit_fr": "km"
   },
   {
     "id": "SPO-031",
@@ -3245,7 +3707,9 @@
     "source": "Game-fishing trade sources (fishtrack.com / fishbazaruto.com)",
     "source_note": "Cited as roughly 1,430 lb (~649 kg); sourced from specialist game-fishing publications rather than an official record body, so kept as draft.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Environ combien de kilogrammes pesait le plus gros marlin bleu « grander » jamais officiellement pesé au large de la côte de Black River, à Maurice ?",
+    "unit_fr": "kg"
   },
   {
     "id": "RND-001",
@@ -3259,7 +3723,9 @@
     "source": "Wikipedia / List of mammals of Mauritius",
     "source_note": "Every native terrestrial mammal on the island is a bat; every other mammal you'll meet there (deer, monkeys, mongooses, rats) was introduced by humans.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En dehors des chauves-souris, combien d'espèces de mammifères terrestres sont originaires de Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "RND-002",
@@ -3273,7 +3739,9 @@
     "source": "African Journal of Herpetology / EurekAlert research coverage",
     "source_note": "Both frog species found on the island today, including the guttural toad introduced in 1922 to fight cane beetles, are non-native.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien d'espèces d'amphibiens sont originaires de Maurice ?",
+    "unit_fr": "espèces"
   },
   {
     "id": "RND-003",
@@ -3287,7 +3755,9 @@
     "source": "Statistics Mauritius — 2014 Census of Agriculture (Rodrigues)",
     "source_note": "That's roughly three chickens for every person on the island.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Selon le recensement agricole de 2014, combien de volailles locales (poules, canards, etc.) ont été recensées à Rodrigues — une île qui ne compte pourtant qu'environ 40 000 habitants ?",
+    "unit_fr": "volailles"
   },
   {
     "id": "RND-004",
@@ -3301,7 +3771,9 @@
     "source": "Travel/geographic accounts of the Le Morne 'underwater waterfall' (aerial photography phenomenon)",
     "source_note": "Descriptive travel and photography sources consistently cite a drop from a shallow ~150 m shelf to over 4,000 m, but this is not from a formal bathymetric survey, so it is kept as draft.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Au bord du plateau continental qui crée la fameuse illusion d'optique de la « cascade sous-marine » au large du Morne, à Maurice, les fonds marins plongent à plus de combien de mètres ?",
+    "unit_fr": "m"
   },
   {
     "id": "RND-005",
@@ -3315,7 +3787,9 @@
     "source": "Volcanological press coverage of the February 2026 Piton de la Fournaise eruption",
     "source_note": "The lava flow crossed one of Réunion's main coastal roads on its way to the sea.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Lors de son éruption de février 2026, la lave du Piton de la Fournaise, à La Réunion, a atteint l'océan Indien après avoir parcouru combien de kilomètres — coupant une route côtière pour la première fois depuis 2007 ?",
+    "unit_fr": "km"
   },
   {
     "id": "RND-006",
@@ -3329,7 +3803,9 @@
     "source": "Kew Science, Plants of the World Online / Wikipedia (Ramosmania rodriguesii)",
     "source_note": "The entire wild population of this species has been a single individual since its rediscovery; all other plants are propagated cuttings.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de spécimens sauvages du « Café Marron » de Rodrigues — cet arbre qu'on croyait éteint jusqu'à ce qu'un écolier le retrouve en 1979 — survivent encore aujourd'hui à l'état sauvage ?",
+    "unit_fr": "plante"
   },
   {
     "id": "RND-007",
@@ -3343,7 +3819,9 @@
     "source": "IUCN Red List assessment / palm conservation sources (Hyophorbe lagenicaulis)",
     "source_note": "Despite being critically endangered in the wild, it is now one of the most popular ornamental palms grown worldwide.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de palmiers-bouteille adultes survivraient encore à l'état sauvage sur l'Île Ronde, le seul endroit au monde où cette espèce pousse naturellement ?",
+    "unit_fr": "arbres"
   },
   {
     "id": "RND-008",
@@ -3357,7 +3835,9 @@
     "source": "Historical account of Stanley Temple's tambalacoque/dodo experiment (widely cited in ornithological literature)",
     "source_note": "Ten of the seventeen fruits survived the turkeys' digestive tracts, and three of those went on to germinate.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Dans une célèbre expérience de 1977 visant à savoir si le tambalacoque, l'« arbre du dodo », avait besoin du gésier d'un dodo pour germer, le scientifique Stanley Temple a fait avaler de force combien de fruits de tambalacoque à des dindons sauvages ?",
+    "unit_fr": "fruits"
   },
   {
     "id": "RND-009",
@@ -3371,7 +3851,9 @@
     "source": "EDGE of Existence (Zoological Society of London) / IUCN",
     "source_note": "Conservation efforts have since helped the population recover to roughly 1,000 adults.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Le boa de l'Île Ronde — dernier représentant vivant de toute une famille de serpents — s'est effondré à une population de seulement combien d'individus dans les années 1970 ?",
+    "unit_fr": "boas"
   },
   {
     "id": "RND-010",
@@ -3385,7 +3867,9 @@
     "source": "BirdLife International species factsheet / ScienceDirect (Population recovery of the Rodrigues fody)",
     "source_note": "From that handful of pairs, reforestation helped the species recover to an estimated maximum of 8,000 individuals by 2010.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En 1968, les cyclones et la perte d'habitat avaient réduit toute la population du foudi de Rodrigues à seulement combien de couples reproducteurs ?",
+    "unit_fr": "couples"
   },
   {
     "id": "RND-011",
@@ -3399,7 +3883,9 @@
     "source": "Oxford University Museum of Natural History — 'The Oxford Dodo'",
     "source_note": "This is the only dodo specimen in the world to preserve any original soft tissue at all; the popular story that it was rescued from a bonfire is a later, debunked legend.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "En 1755, la décomposition a contraint le musée d'Oxford à détruire la majeure partie du dernier spécimen de dodo ayant conservé des tissus mous — combien de parties du corps (la tête et les deux pattes) ont été sauvées et cataloguées ?",
+    "unit_fr": "parties"
   },
   {
     "id": "RND-012",
@@ -3413,7 +3899,9 @@
     "source": "Journal of African Earth Sciences (2010) — 'The seven-coloured earth of Chamarel, Mauritius'",
     "source_note": "The study found continuous gradations of red, brown, grey and purple rather than seven discrete colours.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Malgré leur nom, une étude géologique de 2010 a montré que les « Terres des Sept Couleurs » de Chamarel ne présentent en réalité que combien de grandes catégories de couleurs ?",
+    "unit_fr": "couleurs"
   },
   {
     "id": "RND-013",
@@ -3427,7 +3915,9 @@
     "source": "Academic veterinary survey of Rusa deer in Mauritius (ResearchGate) / hunting industry sources",
     "source_note": "Estimates range up to around 70,000; 60,000 is used here as the more conservative, widely-repeated figure.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Maurice élèverait plus de combien de cerfs rusa de Java dans ses domaines de chasse privés — le deuxième animal de boucherie le plus important de l'île après le poulet ?",
+    "unit_fr": "cerfs"
   },
   {
     "id": "RND-014",
@@ -3441,7 +3931,9 @@
     "source": "Wikipedia (Mauritian flying fox) / general chiropterology references",
     "source_note": "The Mauritian flying fox is one of the two remaining native fruit bat species in the Republic of Mauritius.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est l'envergure, en centimètres, de la roussette de Maurice — cette chauve-souris frugivore qui est le plus grand mammifère terrestre indigène de l'île ?",
+    "unit_fr": "cm"
   },
   {
     "id": "RND-015",
@@ -3455,7 +3947,9 @@
     "source": "Peer-reviewed island restoration study (DOAJ) — reintroduced Telfair's skinks controlling invasive snails",
     "source_note": "The upper estimate from the study; the lower end of the range given was 37,300 snails.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À leur pic, en l'an 2000, environ combien d'escargots géants africains infestaient la minuscule réserve naturelle de 26 hectares de l'Île aux Aigrettes ?",
+    "unit_fr": "escargots"
   },
   {
     "id": "RND-016",
@@ -3469,7 +3963,9 @@
     "source": "Invasive species biology references (Animal Diversity Web / pest management sources)",
     "source_note": "Snails start laying at around 6 months old and can produce a new clutch every 2–3 months.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Un seul escargot géant africain — cette espèce invasive qui a envahi l'Île aux Aigrettes — peut pondre jusqu'à combien d'œufs par an ?",
+    "unit_fr": "œufs"
   },
   {
     "id": "RND-017",
@@ -3483,7 +3979,9 @@
     "source": "Government of Mauritius — National Flower page / botanical references",
     "source_note": "It is found only on the steep slopes of Le Morne Brabant and nowhere else on the planet.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "La fleur nationale de Maurice, Trochetia boutoniana, pousse à l'état sauvage dans combien d'endroits sur Terre ?",
+    "unit_fr": "endroit"
   },
   {
     "id": "RND-018",
@@ -3497,7 +3995,9 @@
     "source": "The Conversation / Science (AAAS) reporting on Mauritius's macaque export industry",
     "source_note": "More recent industry estimates put the true annual figure closer to 14,000.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Maurice exporte chaque année plus de combien de macaques crabiers vers des laboratoires de recherche biomédicale du monde entier, ce qui en fait l'un des plus gros fournisseurs mondiaux du secteur ?",
+    "unit_fr": "singes"
   },
   {
     "id": "RND-019",
@@ -3511,7 +4011,9 @@
     "source": "Adventure.com investigative feature on Mauritius beach access law",
     "source_note": "That works out to roughly 40% of the country's total coastline; kept as draft since it rests on a single detailed journalistic investigation rather than an official government audit.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Alors que la loi mauricienne garantit l'accès public à toutes les plages de l'île, une enquête journalistique a révélé que des hôtels et des villas privées ont loué à l'État environ combien de kilomètres de littoral ?",
+    "unit_fr": "km"
   },
   {
     "id": "RND-020",
@@ -3525,7 +4027,9 @@
     "source": "Department of Civil Aviation, Mauritius (via UAV Coach regulatory summary)",
     "source_note": "Violations can also carry up to 12 months' imprisonment.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est l'amende maximale, en roupies mauriciennes, en cas de non-respect de la réglementation sur les drones civils ?",
+    "unit_fr": "roupies"
   },
   {
     "id": "RND-021",
@@ -3539,7 +4043,9 @@
     "source": "Historical accounts of Pierre Poivre's spice-smuggling missions (Britannica / food-history scholarship)",
     "source_note": "Britannica and food-history scholarship both describe this as the decisive act that broke the Dutch spice monopoly.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Au XVIIIe siècle, le botaniste français Pierre Poivre a fait sortir clandestinement des îles aux Épices, alors contrôlées par les Hollandais, plus de combien de plants de muscadier, de giroflier et d'autres épices, pour briser leur monopole et les replanter à Maurice et à La Réunion ?",
+    "unit_fr": "plants"
   },
   {
     "id": "RND-022",
@@ -3553,7 +4059,9 @@
     "source": "Historical account of Poivre's spice mission rewards (18th-century French colonial records, cited in spice-trade scholarship)",
     "source_note": "This single search-sourced figure has not been cross-checked against a second independent source, so it is kept as draft.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Pour récompenser le coup de Poivre, le gouverneur général français des Indes aurait offert 20 000 piastres pour seulement combien de plants de muscadier et de giroflier de contrebande ?",
+    "unit_fr": "plants"
   },
   {
     "id": "RND-023",
@@ -3567,7 +4075,9 @@
     "source": "Royal Botanic Gardens, Kew — Victoria amazonica plant profile",
     "source_note": "Individual leaves are strong enough, when weight is spread evenly, to briefly support a small child.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Le nénuphar géant d'Amazonie qui pousse dans les bassins du Jardin botanique de Pamplemousses, à Maurice, peut produire des feuilles atteignant jusqu'à combien de mètres de diamètre — réputées assez solides pour porter un petit enfant ?",
+    "unit_fr": "m"
   },
   {
     "id": "RND-024",
@@ -3581,7 +4091,9 @@
     "source": "World Meteorological Organization — global weather and climate extremes archive",
     "source_note": "The WMO maintains this as the official global record for rainfall in a 24-hour period.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Le record du monde de précipitations en 24 heures, toujours en vigueur aujourd'hui, a été établi à La Réunion pendant le cyclone Denise en janvier 1966, avec combien de millimètres de pluie tombés sur la localité de Foc-Foc ?",
+    "unit_fr": "mm"
   },
   {
     "id": "RND-025",
@@ -3595,7 +4107,9 @@
     "source": "The Linnean Society of London — biographical profile of Edmond Albius",
     "source_note": "He made the discovery on the Bel-Air estate near Sainte-Suzanne, Réunion.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "À quel âge Edmond Albius, un jeune esclave de La Réunion, a-t-il inventé en 1841 la technique de pollinisation manuelle qui a donné naissance à toute l'industrie mondiale de la vanille ?",
+    "unit_fr": "ans"
   },
   {
     "id": "RND-026",
@@ -3609,7 +4123,9 @@
     "source": "Ornithological references on Pezophaps solitaria (Rodrigues solitaire)",
     "source_note": "Females measured up to 70 cm and weighed around 17 kg, versus males at up to 90 cm and 28 kg.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Le solitaire de Rodrigues — le plus proche parent éteint du dodo — pouvait peser jusqu'à combien de kilos chez les mâles, soit presque le double des femelles de l'espèce ?",
+    "unit_fr": "kg"
   },
   {
     "id": "RND-027",
@@ -3623,7 +4139,9 @@
     "source": "Guinness World Records — 'Most expensive dodo skeleton sold at auction' / contemporary auction press coverage",
     "source_note": "This scarcity is why a 95%-complete dodo skeleton sold at a UK auction in 2016 for over £346,000, the first such sale since 1914.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Combien de squelettes de dodo presque complets existerait-il encore aujourd'hui dans le monde, presque tous conservés dans des collections de musées ?",
+    "unit_fr": "squelettes"
   },
   {
     "id": "RND-028",
@@ -3637,7 +4155,9 @@
     "source": "Historical economic accounts of the Mauritian sugar industry (countrystudies.us / Wikipedia)",
     "source_note": "Production and factory numbers are drawn from the same historical sugar-economy sources describing Mauritius's 19th-century boom.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Au plus fort du boom sucrier mauricien du XIXe siècle, combien d'usines sucrières fonctionnaient sur l'île en 1858 — contre une poignée seulement aujourd'hui ?",
+    "unit_fr": "usines"
   },
   {
     "id": "RND-029",
@@ -3651,7 +4171,9 @@
     "source": "Historical economic accounts of the Mauritian sugar industry (countrystudies.us / Wikipedia)",
     "source_note": "By 1890, annual production had grown to roughly 140,000 tons, and by 1949 to about 415,000 tons.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Avant que son boom sucrier ne démarre, combien de tonnes de sucre Maurice a-t-elle produites au total en 1812 — contre des centaines de milliers de tonnes un siècle plus tard ?",
+    "unit_fr": "tonnes"
   },
   {
     "id": "RND-030",
@@ -3665,7 +4187,9 @@
     "source": "Government of Mauritius — Environment Protection (Banning of Plastic Bags) Regulations 2020",
     "source_note": "Smaller fines apply further down the chain: up to Rs 20,000 for selling them and up to Rs 2,000 for simply possessing or using one.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Quelle est l'amende maximale, en roupies mauriciennes, pour la fabrication, l'importation ou l'exportation de sacs plastiques interdits, selon la réglementation mauricienne sur la protection de l'environnement ?",
+    "unit_fr": "roupies"
   },
   {
     "id": "RND-031",
@@ -3679,7 +4203,9 @@
     "source": "Reptile translocation records cited in herpetological blog/academic coverage of Round Island conservation",
     "source_note": "Sourced from a single secondary account rather than a peer-reviewed release report, so kept as draft pending stronger corroboration.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "En 2007, combien de boas de l'Île Ronde ont été réintroduits sur l'îlot voisin de Gunner's Quoin, environ 150 ans après la disparition de l'espèce de cet îlot ?",
+    "unit_fr": "boas"
   },
   {
     "id": "RND-032",
@@ -3693,7 +4219,9 @@
     "source": "Mauritian Wildlife Foundation / Wikipedia (Île aux Aigrettes)",
     "source_note": "The reserve is a coralline-limestone islet about 850 m off Mauritius's south-east coast, in Mahebourg Bay.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "L'Île aux Aigrettes — refuge de pigeons roses réintroduits, de tortues géantes et de geckos rares — ne couvre que combien d'hectares ?",
+    "unit_fr": "ha"
   },
   {
     "id": "RND-033",
@@ -3707,7 +4235,9 @@
     "source": "Conservation research on the Rodrigues warbler, aided by habitat restoration at Grande Montagne",
     "source_note": "Habitat restoration on Rodrigues's Grande Montagne reserve was central to the species' recovery.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Presque anéantie par le cyclone Monique en 1968, la fauvette de Rodrigues avait retrouvé, en 2010, une population de plus de combien d'individus ?",
+    "unit_fr": "oiseaux"
   },
   {
     "id": "RND-034",
@@ -3721,7 +4251,9 @@
     "source": "Chester Zoo / San Diego Zoo species profiles (Rodrigues flying fox)",
     "source_note": "The species survives in the wild only on Rodrigues, making its habitat there especially critical to its future.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "La roussette de Rodrigues s'est effondrée à moins de combien d'individus dans les années 1970, avant qu'un programme d'élevage en captivité n'aide sa population à remonter à environ 20 000 aujourd'hui ?",
+    "unit_fr": "chauves-souris"
   },
   {
     "id": "RND-035",
@@ -3735,7 +4267,9 @@
     "source": "Durrell Wildlife Conservation Trust — Telfair's skink conservation programme",
     "source_note": "The recovery followed the eradication of introduced predators and competitors from Round Island.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Le scinque de Telfair de l'Île Ronde s'est effondré à environ 4 000 individus en 1976 — mais avait remonté, en 2011, à environ combien d'adultes sur l'île ?",
+    "unit_fr": "scinques"
   },
   {
     "id": "RND-036",
@@ -3749,7 +4283,9 @@
     "source": "François Leguat Giant Tortoise and Cave Reserve — historical account of Mascarene tortoise exploitation",
     "source_note": "This oft-repeated estimate comes from a single reserve/tourism-facing source rather than a peer-reviewed historical study, so it is kept as draft pending independent verification.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Selon des estimations historiques, entre 1730 et 1770 seulement, les marins auraient emporté ou tué environ combien de tortues géantes de Rodrigues pour leur viande et leur huile ?",
+    "unit_fr": "tortues"
   },
   {
     "id": "RND-037",
@@ -3763,7 +4299,9 @@
     "source": "Bat Conservation Trust / Nature journal news coverage of the 2015 Mauritius flying fox cull",
     "source_note": "A further 7,350 were culled in 2016, and the total killed since 2015 is estimated at over 50,000.",
     "active": true,
-    "status": "live"
+    "status": "live",
+    "question_fr": "Rien qu'en 2015, combien de roussettes de Maurice, une espèce menacée, ont été officiellement abattues par le gouvernement pour protéger les cultures fruitières commerciales, déclenchant un tollé international chez les défenseurs de l'environnement ?",
+    "unit_fr": "chauves-souris"
   },
   {
     "id": "RND-038",
@@ -3777,7 +4315,9 @@
     "source": "Botanical conservation source referencing Trochetia parviflora population counts",
     "source_note": "This single-source population figure has not been independently cross-checked, so it is kept as draft.",
     "active": false,
-    "status": "draft"
+    "status": "draft",
+    "question_fr": "Combien d'individus sauvages reste-t-il environ de Trochetia parviflora, l'un des arbres à fleurs endémiques les plus rares de Maurice et proche parent de la fleur nationale ?",
+    "unit_fr": "arbres"
   },
   {
     "id": "ENV-041",
@@ -3874,22 +4414,6 @@
     "source_note": "A GPS-tracking study of white-tailed tropicbirds in the Mascarenes found long foraging trips reaching a mean maximum distance of about 105 km from the colony, but the exact study colony (Round Island, Mauritius, versus another Mascarene site) could not be confirmed, so this is marked draft.",
     "active": false,
     "status": "draft"
-  },
-  {
-    "id": "GEO-041",
-    "category": "geography",
-    "question": "How many metres tall is Pieter Both, the second-highest mountain in Mauritius, famous for the boulder balanced on its summit?",
-    "question_fr": "Le Pieter Both, deuxième plus haut sommet de Maurice, connu pour le rocher en équilibre à son sommet, culmine à combien de mètres ?",
-    "answer": 820,
-    "unit": "m",
-    "unit_fr": "m",
-    "allow_decimal": false,
-    "difficulty": "easy",
-    "dodo_penalty": 5,
-    "source": "Wikipedia / general Mauritius geography references",
-    "source_note": "Pieter Both mountain is consistently listed at 820 metres in elevation, making it the second-highest peak on the island.",
-    "active": true,
-    "status": "live"
   },
   {
     "id": "GEO-042",
@@ -4148,22 +4672,6 @@
     "status": "live"
   },
   {
-    "id": "SPO-034",
-    "category": "sports_random",
-    "question": "What is the seating capacity of Anjalay Stadium in Belle Vue Harel, Mauritius's largest multi-purpose sports venue?",
-    "question_fr": "Quelle est la capacité d'accueil du stade Anjalay, à Belle Vue Harel, le plus grand complexe sportif polyvalent de Maurice ?",
-    "answer": 16000,
-    "unit": "people",
-    "unit_fr": "personnes",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "Wikipedia, 'Anjalay Stadium'",
-    "source_note": "Anjalay Stadium, renovated in 2003, is listed with a capacity of 16,000 spectators.",
-    "active": true,
-    "status": "live"
-  },
-  {
     "id": "SPO-035",
     "category": "sports_random",
     "question": "How many storeys does the Bank of Mauritius Tower in Port Louis, the tallest building in Mauritius, have?",
@@ -4208,22 +4716,6 @@
     "dodo_penalty": 5,
     "source": "General Mauritius administrative geography references",
     "source_note": "Mainland Mauritius is divided into nine districts: Flacq, Grand Port, Moka, Pamplemousses, Plaines Wilhems, Port Louis, Rivière du Rempart, Rivière Noire and Savanne.",
-    "active": true,
-    "status": "live"
-  },
-  {
-    "id": "ENV-100",
-    "category": "nature_environment",
-    "question": "What was the lowest number of pink pigeons ever recorded living in the wild, reached in 1990, before the species' dramatic recovery began?",
-    "question_fr": "Quel a été le plus petit nombre de pigeons roses jamais recensé à l'état sauvage, atteint en 1990, avant le spectaculaire redressement de l'espèce ?",
-    "answer": 9,
-    "unit": "birds",
-    "unit_fr": "oiseaux",
-    "allow_decimal": false,
-    "difficulty": "easy",
-    "dodo_penalty": 5,
-    "source": "BirdLife International / Durrell Wildlife Conservation Trust",
-    "source_note": "The wild pink pigeon population hit an all-time low of 9 birds in 1990, as documented by BirdLife International and Durrell, before intensive captive breeding, supplementary feeding and predator control reversed the decline.",
     "active": true,
     "status": "live"
   },
@@ -4452,22 +4944,6 @@
     "status": "live"
   },
   {
-    "id": "ENV-116",
-    "category": "nature_environment",
-    "question": "How many endemic land bird species still survive today on mainland Mauritius, not counting Rodrigues?",
-    "question_fr": "Combien d'espèces d'oiseaux terrestres endémiques survivent encore aujourd'hui sur l'île principale de Maurice, sans compter Rodrigues ?",
-    "answer": 9,
-    "unit": "species",
-    "unit_fr": "espèces",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "Conservation organisations (Mauritian Wildlife Foundation, CEPF)",
-    "source_note": "Mainland Mauritius today retains 9 endemic land bird species: pink pigeon, Mauritius kestrel, echo parakeet, Mauritius fody, Mauritius olive white-eye, Mauritius grey white-eye, Mauritius cuckoo-shrike, Mauritius bulbul and Mauritius paradise flycatcher.",
-    "active": true,
-    "status": "live"
-  },
-  {
     "id": "ENV-117",
     "category": "nature_environment",
     "question": "How many Mauritius fodies were released onto Ile aux Aigrettes between 2003 and 2006, founding what became the island's thriving population of this endangered bird?",
@@ -4500,22 +4976,6 @@
     "status": "live"
   },
   {
-    "id": "GEO-100",
-    "category": "geography",
-    "question": "What is the elevation, in metres, of Piton de la Petite Rivière Noire, the highest point in Mauritius?",
-    "question_fr": "Quelle est l'altitude, en mètres, du Piton de la Petite Rivière Noire, le point culminant de Maurice ?",
-    "answer": 828,
-    "unit": "m",
-    "unit_fr": "m",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "Wikipedia",
-    "source_note": "Piton de la Petite Rivière Noire, in the Black River mountain range, is listed at 828 m (2,717 ft), the highest summit on the island of Mauritius, ahead of Pieter Both (820 m) and Le Pouce (812 m).",
-    "active": true,
-    "status": "live"
-  },
-  {
     "id": "GEO-101",
     "category": "geography",
     "question": "What is the height, in metres, of Le Pouce mountain, the third-highest peak on the main island of Mauritius?",
@@ -4528,22 +4988,6 @@
     "dodo_penalty": 4,
     "source": "Wikipedia",
     "source_note": "Le Pouce, the thumb-shaped peak overlooking Port Louis, stands at 812 m (2,664 ft), making it Mauritius's third-highest mountain.",
-    "active": true,
-    "status": "live"
-  },
-  {
-    "id": "GEO-102",
-    "category": "geography",
-    "question": "How tall, in metres, is the Le Morne Brabant monolith at the UNESCO-listed Le Morne Cultural Landscape?",
-    "question_fr": "Quelle est la hauteur, en mètres, du Morne Brabant, le monolithe du site classé au patrimoine mondial de l'UNESCO ?",
-    "answer": 556,
-    "unit": "m",
-    "unit_fr": "m",
-    "allow_decimal": false,
-    "difficulty": "easy",
-    "dodo_penalty": 5,
-    "source": "Wikipedia",
-    "source_note": "Le Morne Brabant is a basaltic monolith 556 m (1,824 ft) high on the peninsula at Mauritius's south-western tip, inscribed by UNESCO in 2008.",
     "active": true,
     "status": "live"
   },
@@ -4580,38 +5024,6 @@
     "status": "draft"
   },
   {
-    "id": "GEO-105",
-    "category": "geography",
-    "question": "What is the elevation above sea level, in metres, of the rim of Trou aux Cerfs, the dormant volcanic crater in Curepipe?",
-    "question_fr": "Quelle est l'altitude au-dessus du niveau de la mer, en mètres, du rebord du Trou aux Cerfs, le cratère volcanique endormi de Curepipe ?",
-    "answer": 605,
-    "unit": "m",
-    "unit_fr": "m",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "Wikipedia",
-    "source_note": "Trou aux Cerfs, a dormant cinder-cone volcano in Curepipe, has its rim at 605 m (1,985 ft) above sea level.",
-    "active": true,
-    "status": "live"
-  },
-  {
-    "id": "GEO-106",
-    "category": "geography",
-    "question": "What is the area, in hectares, of Île aux Cerfs, the popular islet off the east coast of Mauritius?",
-    "question_fr": "Quelle est la superficie, en hectares, de l'Île aux Cerfs, l'îlot très prisé au large de la côte est de Maurice ?",
-    "answer": 87,
-    "unit": "ha",
-    "unit_fr": "ha",
-    "allow_decimal": false,
-    "difficulty": "easy",
-    "dodo_penalty": 5,
-    "source": "Wikipedia",
-    "source_note": "Île aux Cerfs, a privately-managed islet in the Flacq district known for its beaches and golf course, covers 87 hectares.",
-    "active": true,
-    "status": "live"
-  },
-  {
     "id": "GEO-107",
     "category": "geography",
     "question": "What is the area, in hectares, of Île Plate (Flat Island), off the north coast of Mauritius?",
@@ -4640,22 +5052,6 @@
     "dodo_penalty": 2,
     "source": "Key Biodiversity Areas factsheet",
     "source_note": "Coin de Mire, a cliff-bound nature reserve islet about 8 km north of Mauritius, is most commonly listed at 65 hectares, though a few publications give 76 ha. NOTE (uncertain, marked draft): Coin de Mire (Gunner's Quoin) area: competing figures in circulation (65ha vs. 76ha) -- flagged uncertain by the research agent, no official land-survey figure confirmed.",
-    "active": false,
-    "status": "draft"
-  },
-  {
-    "id": "GEO-109",
-    "category": "geography",
-    "question": "What is the area, in hectares, of Round Island (Île Ronde), the nature reserve islet north-east of Mauritius?",
-    "question_fr": "Quelle est la superficie, en hectares, de l'Île Ronde, l'îlot réserve naturelle au nord-est de Maurice ?",
-    "answer": 219,
-    "unit": "ha",
-    "unit_fr": "ha",
-    "allow_decimal": false,
-    "difficulty": "hard",
-    "dodo_penalty": 3,
-    "source": "Mauritian Wildlife Foundation",
-    "source_note": "The Mauritian Wildlife Foundation, which co-manages the reserve, gives Round Island's area as 219 hectares; Wikipedia's infobox conversion of 1.69 km² implies a slightly smaller ~169 ha. NOTE (uncertain, marked draft): Round Island area: competing figures in circulation (219ha vs. 169ha, a ~30% spread) -- flagged uncertain by the research agent, no official land-survey figure confirmed.",
     "active": false,
     "status": "draft"
   },
@@ -4704,54 +5100,6 @@
     "dodo_penalty": 4,
     "source": "ScienceDirect (Craig et al., Geomorphology)",
     "source_note": "The seven-coloured earth phenomenon, formed by weathered volcanic ash, is a small site of about 7,500 m² within the much larger managed geopark.",
-    "active": true,
-    "status": "live"
-  },
-  {
-    "id": "GEO-113",
-    "category": "geography",
-    "question": "What is the land area, in square kilometres, of the main island of Mauritius, excluding Rodrigues and the other outer islands?",
-    "question_fr": "Quelle est la superficie, en kilomètres carrés, de l'île Maurice proprement dite, sans compter Rodrigues et les autres îles éparses ?",
-    "answer": 1865,
-    "unit": "km²",
-    "unit_fr": "km²",
-    "allow_decimal": false,
-    "difficulty": "easy",
-    "dodo_penalty": 5,
-    "source": "Wikipedia (Geography of Mauritius)",
-    "source_note": "The main island of Mauritius covers 1,865 km², distinct from the 2,040 km² total area of the Republic once Rodrigues, Agalega and St Brandon are added.",
-    "active": true,
-    "status": "live"
-  },
-  {
-    "id": "GEO-114",
-    "category": "geography",
-    "question": "What is the total area, in square kilometres, of the Republic of Mauritius, including Rodrigues, Agalega and the other outer islands?",
-    "question_fr": "Quelle est la superficie totale, en kilomètres carrés, de la République de Maurice, en comptant Rodrigues, Agalega et les autres îles éparses ?",
-    "answer": 2040,
-    "unit": "km²",
-    "unit_fr": "km²",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "World Bank / Wikipedia",
-    "source_note": "The Republic of Mauritius has a total area of 2,040 km² (about 2,030 km² of land plus 10 km² of inland water), per World Bank data and Wikipedia.",
-    "active": true,
-    "status": "live"
-  },
-  {
-    "id": "GEO-115",
-    "category": "geography",
-    "question": "What is the total area, in square kilometres, of Rodrigues island?",
-    "question_fr": "Quelle est la superficie totale, en kilomètres carrés, de l'île Rodrigues ?",
-    "answer": 108,
-    "unit": "km²",
-    "unit_fr": "km²",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "Wikipedia / Mauritius Ports Authority",
-    "source_note": "Rodrigues, the volcanic outer island of the Republic of Mauritius, covers 108 km², consistently cited by Wikipedia and the Mauritius Ports Authority.",
     "active": true,
     "status": "live"
   },
@@ -5140,54 +5488,6 @@
     "status": "live"
   },
   {
-    "id": "HIS-100",
-    "category": "history",
-    "question": "For how many years was Mauritius ruled as a British colony?",
-    "question_fr": "Pendant combien d'années l'île Maurice a-t-elle été une colonie britannique ?",
-    "answer": 158,
-    "unit": "years",
-    "unit_fr": "ans",
-    "allow_decimal": false,
-    "difficulty": "easy",
-    "dodo_penalty": 5,
-    "source": "Wikipedia — British Mauritius",
-    "source_note": "Britain seized Mauritius from France on 3 December 1810 and it remained a British colony until independence on 12 March 1968, a span of 158 years.",
-    "active": true,
-    "status": "live"
-  },
-  {
-    "id": "HIS-101",
-    "category": "history",
-    "question": "In what year did Mauritius gain full independence from the United Kingdom?",
-    "question_fr": "En quelle année l'île Maurice a-t-elle obtenu son indépendance vis-à-vis du Royaume-Uni ?",
-    "answer": 1968,
-    "unit": "",
-    "unit_fr": "",
-    "allow_decimal": false,
-    "difficulty": "easy",
-    "dodo_penalty": 5,
-    "source": "Wikipedia — History of Mauritius",
-    "source_note": "Mauritius became an independent state within the Commonwealth on 12 March 1968, with Sir Seewoosagur Ramgoolam as first Prime Minister.",
-    "active": true,
-    "status": "live"
-  },
-  {
-    "id": "HIS-102",
-    "category": "history",
-    "question": "About how many indentured labourers in total are estimated to have passed through the Aapravasi Ghat immigration depot in Port Louis during the era of indentured labour?",
-    "question_fr": "Environ combien de travailleurs sous contrat au total sont estimés être passés par le dépôt d'immigration d'Aapravasi Ghat à Port-Louis durant l'époque de l'engagisme ?",
-    "answer": 462000,
-    "unit": "people",
-    "unit_fr": "personnes",
-    "allow_decimal": false,
-    "difficulty": "hard",
-    "dodo_penalty": 3,
-    "source": "UNESCO / press sources — draft, figures vary",
-    "source_note": "DRAFT: sources disagree on the exact headcount for 1834-1920 — UNESCO's own text rounds to 'almost half a million', a 2022 news figure cites 462,000, and GKToday/Grokipedia cite 'over 450,000'; no single authoritative figure was confirmed.",
-    "active": false,
-    "status": "draft"
-  },
-  {
     "id": "HIS-103",
     "category": "history",
     "question": "For how many years did the indentured labour system bring workers to Mauritius, from its start until it was formally ended?",
@@ -5236,22 +5536,6 @@
     "status": "live"
   },
   {
-    "id": "HIS-106",
-    "category": "history",
-    "question": "How many British sailors were killed during the Battle of Grand Port in 1810?",
-    "question_fr": "Combien de marins britanniques ont été tués lors de la bataille du Grand-Port en 1810 ?",
-    "answer": 105,
-    "unit": "people",
-    "unit_fr": "personnes",
-    "allow_decimal": false,
-    "difficulty": "very_hard",
-    "dodo_penalty": 2,
-    "source": "Wikipedia — Battle of Grand Port",
-    "source_note": "British losses in the battle's infobox are recorded as 105 killed and 163 wounded, against French losses of 37 killed and 112 wounded.",
-    "active": true,
-    "status": "live"
-  },
-  {
     "id": "HIS-107",
     "category": "history",
     "question": "By September 2026, how many different people had served as Prime Minister of independent Mauritius since 1968?",
@@ -5264,22 +5548,6 @@
     "dodo_penalty": 4,
     "source": "Wikipedia — List of Prime Ministers of Mauritius",
     "source_note": "The five individuals are Sir Seewoosagur Ramgoolam, Sir Anerood Jugnauth, Navin Ramgoolam, Paul Bérenger and Pravind Jugnauth; Navin Ramgoolam returned to office on 12 November 2024 and remained the incumbent as of this writing.",
-    "active": true,
-    "status": "live"
-  },
-  {
-    "id": "HIS-108",
-    "category": "history",
-    "question": "How many examples of each value of the famous 1847 Mauritius 'Post Office' stamp were originally printed?",
-    "question_fr": "Combien d'exemplaires de chaque valeur du célèbre timbre mauricien « Post Office » de 1847 ont été imprimés à l'origine ?",
-    "answer": 500,
-    "unit": "stamps",
-    "unit_fr": "timbres",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "Wikipedia — Mauritius \"Post Office\" stamps",
-    "source_note": "500 of the orange-red one penny and 500 of the deep blue two pence were printed from a single engraved plate and issued on 21 September 1847; only around two dozen are known to survive today.",
     "active": true,
     "status": "live"
   },
@@ -5364,22 +5632,6 @@
     "status": "live"
   },
   {
-    "id": "HIS-114",
-    "category": "history",
-    "question": "For how many years did Mahé de Labourdonnais serve as Governor of Isle de France (present-day Mauritius)?",
-    "question_fr": "Pendant combien d'années Mahé de Labourdonnais a-t-il été gouverneur de l'Isle de France, l'actuelle île Maurice ?",
-    "answer": 11,
-    "unit": "years",
-    "unit_fr": "ans",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "Wikipedia — Bertrand-François Mahé de La Bourdonnais",
-    "source_note": "Labourdonnais served as Governor-General of Isle de France and Bourbon from 4 June 1735 until 23 March 1746, roughly 11 years.",
-    "active": true,
-    "status": "live"
-  },
-  {
     "id": "HIS-115",
     "category": "history",
     "question": "How many years did the first Dutch settlement on Mauritius last before it was abandoned?",
@@ -5408,22 +5660,6 @@
     "dodo_penalty": 3,
     "source": "Wikipedia — Tromelin Island; Archaeology Magazine",
     "source_note": "The French ship Utile, carrying enslaved people bound for Isle de France, wrecked on Tromelin Island on 31 July 1761; the last survivors were not rescued until 29 November 1776, about 15 years later.",
-    "active": true,
-    "status": "live"
-  },
-  {
-    "id": "HIS-117",
-    "category": "history",
-    "question": "In what year was Aapravasi Ghat inscribed as a UNESCO World Heritage Site?",
-    "question_fr": "En quelle année le site d'Aapravasi Ghat a-t-il été inscrit au patrimoine mondial de l'UNESCO ?",
-    "answer": 2006,
-    "unit": "",
-    "unit_fr": "",
-    "allow_decimal": false,
-    "difficulty": "easy",
-    "dodo_penalty": 5,
-    "source": "UNESCO World Heritage Centre",
-    "source_note": "Aapravasi Ghat was inscribed on the UNESCO World Heritage List on 16 July 2006, becoming the first indentured-labour site in the world to receive the designation.",
     "active": true,
     "status": "live"
   },
@@ -5588,22 +5824,6 @@
     "status": "live"
   },
   {
-    "id": "SPO-108",
-    "category": "sports_random",
-    "question": "How many seats are there in the National Assembly of Mauritius?",
-    "question_fr": "Combien de sièges compte l'Assemblée nationale de Maurice ?",
-    "answer": 66,
-    "unit": "seats",
-    "unit_fr": "sièges",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "National Assembly of Mauritius; IPU Parline global parliamentary data",
-    "source_note": "The National Assembly of Mauritius has 66 members: 62 directly elected in multi-member constituencies plus up to 4 additional 'best loser' seats allocated by the Electoral Supervisory Commission to ensure minority representation.",
-    "active": true,
-    "status": "live"
-  },
-  {
     "id": "SPO-109",
     "category": "sports_random",
     "question": "How many public holidays does Mauritius officially observe each year?",
@@ -5616,22 +5836,6 @@
     "dodo_penalty": 5,
     "source": "Government of Mauritius official public holidays calendar",
     "source_note": "Mauritius observes 15 public holidays each year: 7 with fixed Gregorian dates and 8 set annually according to lunar or religious calendars.",
-    "active": true,
-    "status": "live"
-  },
-  {
-    "id": "SPO-110",
-    "category": "sports_random",
-    "question": "As of 2026, how many years has the Champ de Mars Racecourse in Port Louis been operating since its inauguration, making it the oldest racecourse in the Southern Hemisphere?",
-    "question_fr": "En 2026, depuis combien d'années l'hippodrome du Champ de Mars, à Port-Louis, est-il en activité depuis son inauguration, ce qui en fait le plus vieil hippodrome de l'hémisphère Sud ?",
-    "answer": 214,
-    "unit": "years",
-    "unit_fr": "ans",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "Mauritius Turf Club; Wikipedia — Champ de Mars Racecourse",
-    "source_note": "The Champ de Mars Racecourse was inaugurated on 25 June 1812 by the Mauritius Turf Club, founded earlier that same year, making it the oldest racecourse in the Southern Hemisphere and the second-oldest in the world. (1812 to 2026 = 214 years.)",
     "active": true,
     "status": "live"
   },
