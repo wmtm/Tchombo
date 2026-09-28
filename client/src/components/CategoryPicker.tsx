@@ -9,6 +9,9 @@ const EMOJI: Record<Category, string> = {
   mauritian_life: "🍛",
   sports_random: "🏆",
   random_facts: "🎲",
+  creole_slang: "🗣️",
+  weather_cyclones: "🌪️",
+  diaspora: "✈️",
 };
 
 interface Props {

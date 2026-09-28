@@ -592,22 +592,6 @@
     "unit_fr": ""
   },
   {
-    "id": "HIS-038",
-    "category": "history",
-    "question": "In which year did the French National Convention officially rename Île Bourbon (today's Réunion) as ‘La Réunion’?",
-    "answer": 1793,
-    "unit": "",
-    "allow_decimal": false,
-    "difficulty": "hard",
-    "dodo_penalty": 3,
-    "source": "Historical records of Réunion",
-    "source_note": "Decreed on 23 March 1793; the island later reverted to other names before permanently becoming 'La Réunion' in 1848.",
-    "active": true,
-    "status": "live",
-    "question_fr": "En quelle année la Convention nationale française a-t-elle officiellement rebaptisé l'Île Bourbon (aujourd'hui La Réunion) « La Réunion » ?",
-    "unit_fr": ""
-  },
-  {
     "id": "HIS-039",
     "category": "history",
     "question": "When Huguenot refugee François Leguat and his group were marooned on the then-uninhabited island of Rodrigues in 1691 to found a colony, how many companions (besides Leguat himself) were left there?",
@@ -1664,22 +1648,6 @@
     "unit_fr": "ha"
   },
   {
-    "id": "CUL-025",
-    "category": "culture_music",
-    "question": "How many core traditional instruments — the kayamb, roulèr and bobre — form the rhythmic foundation of Réunion's maloya music?",
-    "answer": 3,
-    "unit": "instruments",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "UNESCO Intangible Cultural Heritage documentation on maloya",
-    "source_note": "The kayamb (a rattle), roulèr (a large drum) and bobre (a musical bow) are consistently described as maloya's three foundational instruments.",
-    "active": true,
-    "status": "live",
-    "question_fr": "À ton avis, combien d'instruments traditionnels essentiels — le kayamb, le roulèr et le bobre — forment la base rythmique du maloya réunionnais ?",
-    "unit_fr": "instruments"
-  },
-  {
     "id": "CUL-026",
     "category": "culture_music",
     "question": "More than how many Chinese contract labourers arrived in Mauritius between 1840 and 1843, in an early wave of Chinese indentured immigration?",
@@ -1840,38 +1808,6 @@
     "unit_fr": "distilleries"
   },
   {
-    "id": "CUL-036",
-    "category": "culture_music",
-    "question": "In which year was Maloya, the traditional music and dance of Réunion born on the island's sugar plantations, inscribed on UNESCO's Intangible Cultural Heritage list?",
-    "answer": 2009,
-    "unit": "",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "UNESCO Intangible Cultural Heritage",
-    "source_note": "Inscribed on 1 October 2009.",
-    "active": true,
-    "status": "live",
-    "question_fr": "Selon toi, en quelle année le maloya, la musique et la danse traditionnelles de La Réunion nées dans les plantations sucrières de l'île, a-t-il été inscrit sur la liste du patrimoine culturel immatériel de l'UNESCO ?",
-    "unit_fr": ""
-  },
-  {
-    "id": "CUL-037",
-    "category": "culture_music",
-    "question": "In which year was Réunion's Sakifo Musik Festival, now one of the Indian Ocean's biggest music festivals, first held?",
-    "answer": 2004,
-    "unit": "",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "Sakifo Musik Festival",
-    "source_note": "Held annually in Saint-Pierre, Réunion, since 2004.",
-    "active": true,
-    "status": "live",
-    "question_fr": "Selon toi, en quelle année le Sakifo Musik Festival de La Réunion, aujourd'hui l'un des plus grands festivals de musique de l'océan Indien, a-t-il eu lieu pour la première fois ?",
-    "unit_fr": ""
-  },
-  {
     "id": "CUL-038",
     "category": "culture_music",
     "question": "How many seats does the Port Louis Municipal Theatre, the oldest theatre in the Indian Ocean, have across its three levels?",
@@ -1982,38 +1918,6 @@
     "status": "draft",
     "question_fr": "Quelle est la distance approximative à vol d'oiseau, en km, entre Maurice et Rodrigues ?",
     "unit_fr": "km"
-  },
-  {
-    "id": "GEO-005",
-    "category": "geography",
-    "question": "What is the height, in metres, of Piton des Neiges on Réunion — the highest point in the entire Indian Ocean?",
-    "answer": 3069,
-    "unit": "m",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "French geographic survey (IGN) / widely documented",
-    "source_note": "An extinct volcano, far taller than any peak in Mauritius.",
-    "active": true,
-    "status": "live",
-    "question_fr": "Quelle est la hauteur, en mètres, du Piton des Neiges à la Réunion, le point culminant de tout l'océan Indien ?",
-    "unit_fr": "m"
-  },
-  {
-    "id": "GEO-006",
-    "category": "geography",
-    "question": "What is the height, in metres, of Piton de la Fournaise, Réunion's active volcano?",
-    "answer": 2632,
-    "unit": "m",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "French geographic survey (IGN) / widely documented",
-    "source_note": "One of the most active volcanoes in the world.",
-    "active": true,
-    "status": "live",
-    "question_fr": "Quelle est la hauteur, en mètres, du Piton de la Fournaise, le volcan actif de la Réunion ?",
-    "unit_fr": "m"
   },
   {
     "id": "GEO-007",
@@ -2142,22 +2046,6 @@
     "status": "live",
     "question_fr": "À combien de kilomètres se trouve Saint-Brandon (les bancs de Cargados Carajos) au nord-est de l'île Maurice ?",
     "unit_fr": "km"
-  },
-  {
-    "id": "GEO-015",
-    "category": "geography",
-    "question": "What is the land area, in km², of Réunion island?",
-    "answer": 2512,
-    "unit": "km²",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "INSEE / French geographic sources",
-    "source_note": "The commonly cited INSEE/French administrative-geography figure for Réunion's total land area.",
-    "active": true,
-    "status": "live",
-    "question_fr": "Quelle est la superficie, en km², de l'île de la Réunion ?",
-    "unit_fr": "km²"
   },
   {
     "id": "GEO-016",
@@ -2400,22 +2288,6 @@
     "unit_fr": "km"
   },
   {
-    "id": "GEO-031",
-    "category": "geography",
-    "question": "How many natural cirques (giant volcanic amphitheatres) does Réunion Island have — Mafate, Salazie and Cilaos?",
-    "answer": 3,
-    "unit": "cirques",
-    "allow_decimal": false,
-    "difficulty": "easy",
-    "dodo_penalty": 5,
-    "source": "Widely documented geographic classification (Parc national de la Réunion)",
-    "source_note": "Mafate, Salazie and Cilaos are the three natural cirques universally recognised in descriptions of Réunion's mountainous interior, including by the Parc national de la Réunion.",
-    "active": true,
-    "status": "live",
-    "question_fr": "Combien de cirques naturels (immenses amphithéâtres volcaniques) compte l'île de la Réunion — Mafate, Salazie et Cilaos ?",
-    "unit_fr": "cirques"
-  },
-  {
     "id": "GEO-032",
     "category": "geography",
     "question": "Approximately how many kilometres long is Mauritius at its greatest length?",
@@ -2462,22 +2334,6 @@
     "status": "live",
     "question_fr": "Avec combien d'autres pays Maurice gère-t-elle conjointement une zone étendue de plateau continental sur le plateau des Mascareignes ?",
     "unit_fr": "pays"
-  },
-  {
-    "id": "GEO-035",
-    "category": "geography",
-    "question": "How many arrondissements (administrative districts) does Réunion island have?",
-    "answer": 4,
-    "unit": "arrondissements",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "INSEE / French administrative geography",
-    "source_note": "Saint-Denis, Saint-Paul, Saint-Benoît and Saint-Pierre.",
-    "active": true,
-    "status": "live",
-    "question_fr": "Combien d'arrondissements (districts administratifs) compte l'île de la Réunion ?",
-    "unit_fr": "arrondissements"
   },
   {
     "id": "GEO-036",
@@ -3568,22 +3424,6 @@
     "unit_fr": ""
   },
   {
-    "id": "SPO-023",
-    "category": "sports_random",
-    "question": "In which year was the first-ever Indian Ocean Island Games (Jeux des Îles) held, in Saint-Denis, Réunion?",
-    "answer": 1979,
-    "unit": "",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "Indian Ocean Island Games records",
-    "source_note": "The inaugural Jeux des Îles was held in Saint-Denis, Réunion, in 1979, per official Indian Ocean Island Games records.",
-    "active": true,
-    "status": "live",
-    "question_fr": "En quelle année s'est tenue la toute première édition des Jeux des Îles de l'océan Indien, à Saint-Denis, à La Réunion ?",
-    "unit_fr": ""
-  },
-  {
     "id": "SPO-024",
     "category": "sports_random",
     "question": "Approximately how many tonnes of octopus were caught in Mauritius in 2014, a low point that led to the introduction of seasonal fishery closures?",
@@ -3680,22 +3520,6 @@
     "unit_fr": "spécimens"
   },
   {
-    "id": "SPO-030",
-    "category": "sports_random",
-    "question": "Approximately how many kilometres long is 'La Diagonale des Fous', the legendary ultra-trail race that crosses Réunion from north to south?",
-    "answer": 180,
-    "unit": "km",
-    "allow_decimal": false,
-    "difficulty": "very_hard",
-    "dodo_penalty": 2,
-    "source": "Grand Raid de la Réunion race organisers",
-    "source_note": "Sources give a range of roughly 165–180 km depending on the year's course; kept as draft pending a single authoritative figure.",
-    "active": false,
-    "status": "draft",
-    "question_fr": "Environ combien de kilomètres mesure « La Diagonale des Fous », la légendaire course d'ultra-trail qui traverse La Réunion du nord au sud ?",
-    "unit_fr": "km"
-  },
-  {
     "id": "SPO-031",
     "category": "sports_random",
     "question": "Approximately how many kilograms did the largest 'grander' blue marlin ever officially weighed in off Mauritius's Black River coast weigh?",
@@ -3774,22 +3598,6 @@
     "status": "draft",
     "question_fr": "Au bord du plateau continental qui crée la fameuse illusion d'optique de la « cascade sous-marine » au large du Morne, à Maurice, les fonds marins plongent à plus de combien de mètres ?",
     "unit_fr": "m"
-  },
-  {
-    "id": "RND-005",
-    "category": "random_facts",
-    "question": "During its February 2026 eruption, lava from Réunion's Piton de la Fournaise volcano reached the Indian Ocean after flowing how many kilometres — cutting a coastal road for the first time since 2007?",
-    "answer": 7,
-    "unit": "km",
-    "allow_decimal": false,
-    "difficulty": "hard",
-    "dodo_penalty": 3,
-    "source": "Volcanological press coverage of the February 2026 Piton de la Fournaise eruption",
-    "source_note": "The lava flow crossed one of Réunion's main coastal roads on its way to the sea.",
-    "active": true,
-    "status": "live",
-    "question_fr": "Lors de son éruption de février 2026, la lave du Piton de la Fournaise, à La Réunion, a atteint l'océan Indien après avoir parcouru combien de kilomètres — coupant une route côtière pour la première fois depuis 2007 ?",
-    "unit_fr": "km"
   },
   {
     "id": "RND-006",
@@ -4078,38 +3886,6 @@
     "status": "live",
     "question_fr": "Le nénuphar géant d'Amazonie qui pousse dans les bassins du Jardin botanique de Pamplemousses, à Maurice, peut produire des feuilles atteignant jusqu'à combien de mètres de diamètre — réputées assez solides pour porter un petit enfant ?",
     "unit_fr": "m"
-  },
-  {
-    "id": "RND-024",
-    "category": "random_facts",
-    "question": "The world record for the most rainfall in 24 hours, still standing today, was set on Réunion during Cyclone Denise in January 1966, with how many millimetres of rain falling at the town of Foc-Foc?",
-    "answer": 1825,
-    "unit": "mm",
-    "allow_decimal": false,
-    "difficulty": "very_hard",
-    "dodo_penalty": 2,
-    "source": "World Meteorological Organization — global weather and climate extremes archive",
-    "source_note": "The WMO maintains this as the official global record for rainfall in a 24-hour period.",
-    "active": true,
-    "status": "live",
-    "question_fr": "Le record du monde de précipitations en 24 heures, toujours en vigueur aujourd'hui, a été établi à La Réunion pendant le cyclone Denise en janvier 1966, avec combien de millimètres de pluie tombés sur la localité de Foc-Foc ?",
-    "unit_fr": "mm"
-  },
-  {
-    "id": "RND-025",
-    "category": "random_facts",
-    "question": "At what age did Edmond Albius, an enslaved boy on Réunion, invent the hand-pollination technique in 1841 that created the entire global vanilla industry?",
-    "answer": 12,
-    "unit": "years old",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "The Linnean Society of London — biographical profile of Edmond Albius",
-    "source_note": "He made the discovery on the Bel-Air estate near Sainte-Suzanne, Réunion.",
-    "active": true,
-    "status": "live",
-    "question_fr": "À quel âge Edmond Albius, un jeune esclave de La Réunion, a-t-il inventé en 1841 la technique de pollinisation manuelle qui a donné naissance à toute l'industrie mondiale de la vanille ?",
-    "unit_fr": "ans"
   },
   {
     "id": "RND-026",
@@ -5150,22 +4926,6 @@
     "source_note": "Rodrigues lies about 560 km (350 mi) east of the main island of Mauritius, per Wikipedia; great-circle flight calculators give a close figure of roughly 598 km.",
     "active": true,
     "status": "live"
-  },
-  {
-    "id": "GEO-119",
-    "category": "geography",
-    "question": "Approximately how far apart, in kilometres, are Mauritius and Réunion?",
-    "question_fr": "Quelle distance, en kilomètres, sépare approximativement Maurice de la Réunion ?",
-    "answer": 175,
-    "unit": "km",
-    "unit_fr": "km",
-    "allow_decimal": false,
-    "difficulty": "medium",
-    "dodo_penalty": 4,
-    "source": "Wikipedia (Réunion)",
-    "source_note": "Réunion lies approximately 175 km (94 nmi) southwest of Mauritius per Wikipedia; other calculators give figures from about 150 to 226 km depending on which reference points (nearest coast vs. city centres) are used. NOTE (uncertain, marked draft): Mauritius-Reunion distance: sources genuinely range 150-226km depending on measurement method (nearest-point vs. city-to-city) -- too wide a spread to present as a single certain answer.",
-    "active": false,
-    "status": "draft"
   },
   {
     "id": "LIFE-100",

@@ -8,6 +8,9 @@ export const CATEGORIES = [
   "mauritian_life",
   "sports_random",
   "random_facts",
+  "creole_slang",
+  "weather_cyclones",
+  "diaspora",
 ] as const;
 
 export type Category = (typeof CATEGORIES)[number];
