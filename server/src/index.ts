@@ -267,7 +267,7 @@ io.on("connection", (socket) => {
       broadcastState(currentRoom);
     }
     // Explicit leave keeps the socket alive (unlike a real disconnect, which auto-leaves
-    // every room), so we must leave the Socket.IO room ourselves — otherwise this socket
+    // every room), so we must leave the Socket.IO room ourselves - otherwise this socket
     // keeps receiving state broadcasts for a room it just walked away from.
     socket.leave(currentRoom);
     currentRoom = null;

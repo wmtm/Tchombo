@@ -109,7 +109,7 @@ export function RevealScreen({ state, isHost, onLeave, onRestart }: Props) {
                 ? t("reveal.eliminated", { name: reveal.loserName! })
                 : `${t("reveal.loses", { name: reveal.loserName! })} ${reveal.dodosAwarded} ${
                     reveal.dodosAwarded === 1 ? t("reveal.dodo") : t("reveal.dodos")
-                  } — ${t("reveal.livesLeft", { count: loserLivesLeft })}`}
+                  } - ${t("reveal.livesLeft", { count: loserLivesLeft })}`}
           </span>
         </div>
 

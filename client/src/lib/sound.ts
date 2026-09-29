@@ -1,4 +1,4 @@
-// All sound effects here are synthesized at runtime with the Web Audio API —
+// All sound effects here are synthesized at runtime with the Web Audio API -
 // no audio files, so there is nothing to license and nothing to pay for.
 
 const STORAGE_KEY = "tchombo.soundEnabled";

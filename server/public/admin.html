@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>TCHOMBO — Question Admin</title>
+<title>TCHOMBO - Question Admin</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
   :root { color-scheme: light; }
@@ -32,7 +32,7 @@
 </head>
 <body>
 <header>
-  <h1>🦤 TCHOMBO — Question Admin</h1>
+  <h1>🦤 TCHOMBO - Question Admin</h1>
   <span class="count" id="count"></span>
 </header>
 <main>
@@ -129,7 +129,7 @@ function render() {
       <td>${q.difficulty}</td>
       <td>${q.dodo_penalty}</td>
       <td><span class="pill">${q.status}</span></td>
-      <td>${q.active ? "✅" : "—"}</td>
+      <td>${q.active ? "✅" : "-"}</td>
       <td class="actions">
         <button data-edit="${q.id}">Edit</button>
         <button data-toggle="${q.id}" class="secondary">${q.active ? "Deactivate" : "Activate"}</button>

@@ -6,19 +6,19 @@ A small, real-time multiplayer party game for 2–6 friends, built around factua
 questions about Mauritius and the Mascarene Islands. Players take turns naming
 increasing estimates until someone calls **TCHOMBO** on the previous player,
 betting they've gone over the true answer. Everyone starts with 15 dodos
-(displayed as life points); guess wrong and you lose some — missing an easy
+(displayed as life points); guess wrong and you lose some - missing an easy
 question costs more than missing a brutally hard one. Run out and you're
 eliminated: you can keep watching, but the game plays on without you until
 only one player is left standing.
 
-No accounts, no downloads, no payment — just a 4-digit room code shared over
+No accounts, no downloads, no payment - just a 4-digit room code shared over
 WhatsApp.
 
 ## Cost: €0
 
 - **Hosting**: one [Render](https://render.com) free Web Service (Node + Socket.IO
   serving the built React app). Sleeps after 15 minutes idle, wakes in a few
-  seconds — fine for a friends game.
+  seconds - fine for a friends game.
 - **Database**: none. Game state lives in server memory, keyed by room code.
   Questions live in a version-controlled JSON file.
 - **Everything else**: open-source npm packages, Google Fonts (free), and
@@ -71,7 +71,7 @@ few active players remain), and 2/4/6-player games.
 ## Deploying to Render (free)
 
 1. Push this repo to GitHub.
-2. In Render, "New +" → "Blueprint", point it at the repo — it will read
+2. In Render, "New +" → "Blueprint", point it at the repo - it will read
    `render.yaml` and create one free Web Service.
 3. Set the `ADMIN_PASSWORD` environment variable to something private.
 4. Done. Share `https://<your-app>.onrender.com` with friends.
@@ -90,17 +90,17 @@ Questions live in `server/data/questions.json`. Each entry:
   "allow_decimal": false,
   "difficulty": "hard",
   "dodo_penalty": 3,
-  "source": "Ministry of Agro-Industry, Mauritius — biodiversity report",
+  "source": "Ministry of Agro-Industry, Mauritius - biodiversity report",
   "source_note": "Figure from the ministry's national biodiversity synthesis.",
   "active": true,
   "status": "live"
 }
 ```
 
-- `dodo_penalty` must match `difficulty` — deliberately **inverted** from what you'd
+- `dodo_penalty` must match `difficulty` - deliberately **inverted** from what you'd
   expect: easy → 5, medium → 4, hard → 3, very_hard → 2. Missing something everyone
   should reasonably know stings more than missing an obscure one.
-- `status: "draft"` + `active: false` keeps a question out of live games — use this
+- `status: "draft"` + `active: false` keeps a question out of live games - use this
   for anything AI-generated or not yet fact-checked, until you've reviewed it.
 - Only `active: true, status: "live"` questions are ever served to players.
 
@@ -111,10 +111,10 @@ you add/edit/deactivate/delete questions without touching JSON by hand.
 Edits made through `/admin` on the live site can be lost when the service
 restarts. For anything you want to keep, edit `server/data/questions.json`
 locally (by hand or via `/admin` run locally against your checkout) and commit
-+ push — that's the durable path.
++ push - that's the durable path.
 
 ## What's deliberately not here
 
-No accounts, payments, chat, ads, analytics, or background music — see the
+No accounts, payments, chat, ads, analytics, or background music - see the
 game brief. The dodo is a small recurring character, not the whole visual
 identity.

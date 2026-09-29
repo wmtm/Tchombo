@@ -1,4 +1,4 @@
-// Shared types for TCHOMBO — used by both server and (indirectly) client via socket payloads.
+// Shared types for TCHOMBO - used by both server and (indirectly) client via socket payloads.
 
 export const CATEGORIES = [
   "history",
@@ -32,7 +32,7 @@ export const DODO_PENALTY: Record<Difficulty, number> = {
 // Every player starts a game with this many "lives" (displayed as dodos) and
 // loses dodo_penalty points each time they lose a TCHOMBO challenge. Reaching
 // 0 means you're out. Internally a player's score (Player.dodos) still counts
-// UP from 0 (dodos collected) — livesRemaining() is the display-facing flip.
+// UP from 0 (dodos collected) - livesRemaining() is the display-facing flip.
 export const DODOS_TO_LOSE = 15;
 
 export function livesRemaining(dodosCollected: number): number {
@@ -86,7 +86,7 @@ export interface RevealResult {
   entries: TurnEntry[];
   callerId: string;
   callerName: string;
-  // null only when this was a correct "call exact" — nobody loses dodos then.
+  // null only when this was a correct "call exact" - nobody loses dodos then.
   loserId: string | null;
   loserName: string | null;
   loserValue: number;

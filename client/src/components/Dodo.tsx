@@ -37,7 +37,7 @@ export function DodoCount({ count, size = "md", lowAt = 3 }: { count: number; si
   );
 }
 
-// A row of small Ayo icons matching a question's dodo_penalty — shows the stakes
+// A row of small Ayo icons matching a question's dodo_penalty - shows the stakes
 // (risk) of a question at a glance, before anyone answers.
 export function DodoPenaltyRow({ count, className = "" }: { count: number; className?: string }) {
   return (

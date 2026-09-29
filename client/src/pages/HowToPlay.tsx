@@ -1,6 +1,7 @@
 import tchomboMascot from "../assets/tchombo-mascot.png";
 import { Button } from "../components/Button";
 import { LanguageToggle } from "../components/LanguageToggle";
+import { AyoIcon } from "../components/Dodo";
 import { useT } from "../lib/i18n";
 
 interface Props {
@@ -11,11 +12,11 @@ export function HowToPlay({ onDone }: Props) {
   const t = useT();
 
   const steps = [
-    { emoji: "🦤", title: t("howto.step1Title"), body: t("howto.step1Body") },
-    { emoji: "📈", title: t("howto.step2Title"), body: t("howto.step2Body") },
-    { emoji: "🚨", title: t("howto.step3Title"), body: t("howto.step3Body") },
-    { emoji: "😅", title: t("howto.step4Title"), body: t("howto.step4Body") },
-    { emoji: "🎯", title: t("howto.step5Title"), body: t("howto.step5Body") },
+    { icon: <AyoIcon className="h-7 w-auto" />, title: t("howto.step1Title"), body: t("howto.step1Body") },
+    { icon: "📈", title: t("howto.step2Title"), body: t("howto.step2Body") },
+    { icon: "🚨", title: t("howto.step3Title"), body: t("howto.step3Body") },
+    { icon: "😅", title: t("howto.step4Title"), body: t("howto.step4Body") },
+    { icon: "🎯", title: t("howto.step5Title"), body: t("howto.step5Body") },
   ];
 
   return (
@@ -34,7 +35,7 @@ export function HowToPlay({ onDone }: Props) {
         <div className="w-full flex flex-col gap-3">
           {steps.map((step, i) => (
             <div key={i} className="bg-white rounded-xl2 shadow-card p-4 flex items-start gap-3 text-left">
-              <span className="text-2xl flex-shrink-0 leading-none mt-0.5">{step.emoji}</span>
+              <span className="text-2xl flex-shrink-0 leading-none mt-0.5 flex items-center">{step.icon}</span>
               <div>
                 <p className="font-semibold text-ink">{step.title}</p>
                 <p className="text-sm text-ink/60 mt-0.5 leading-snug">{step.body}</p>

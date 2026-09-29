@@ -132,7 +132,7 @@ describe("TCHOMBO resolution (RULE 5-7) and the boundary case", () => {
     game = submitNumber(game, "p0", 150); // Gaëlle
     game = submitNumber(game, "p1", 190); // Mathieu
     game = submitNumber(game, "p2", 220); // Alex
-    game = submitNumber(game, "p3", 250); // Florian — exceeds 226
+    game = submitNumber(game, "p3", 250); // Florian - exceeds 226
 
     // it's Gaëlle's turn again (wrapped around); she calls TCHOMBO on Florian
     expect(game.players[game.currentPlayerIndex].id).toBe("p0");
@@ -145,12 +145,12 @@ describe("TCHOMBO resolution (RULE 5-7) and the boundary case", () => {
     expect(game.players.find((p) => p.id === "p3")!.dodos).toBe(4);
   });
 
-  it("exact answer is SAFE — wrongly calling TCHOMBO penalizes the caller (spec example 2)", () => {
+  it("exact answer is SAFE - wrongly calling TCHOMBO penalizes the caller (spec example 2)", () => {
     let game = makeGame(["Gaëlle", "Mathieu", "Alex", "Florian"]);
     game = startGame(game, queuePicker([q({ answer: 226, difficulty: "hard", dodo_penalty: 4 })]));
 
     game = submitNumber(game, "p0", 150); // Gaëlle
-    game = submitNumber(game, "p1", 226); // Mathieu — exactly correct, still SAFE
+    game = submitNumber(game, "p1", 226); // Mathieu - exactly correct, still SAFE
     // Alex is next; Alex calls TCHOMBO believing 226 is too high
     game = callTchombo(game, "p2");
 
@@ -160,7 +160,7 @@ describe("TCHOMBO resolution (RULE 5-7) and the boundary case", () => {
     expect(game.players.find((p) => p.id === "p1")!.dodos).toBe(0); // Mathieu untouched
   });
 
-  it("boundary: answer=100, no decimals — 100 is safe, 101 is exceeded", () => {
+  it("boundary: answer=100, no decimals - 100 is safe, 101 is exceeded", () => {
     let g1 = makeGame(["A", "B"]);
     g1 = startGame(g1, queuePicker([q({ answer: 100, allow_decimal: false })]));
     g1 = submitNumber(g1, "p0", 100);
