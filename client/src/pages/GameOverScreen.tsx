@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import type { PublicGameState } from "@tchombo/shared";
 import { livesRemaining } from "@tchombo/shared";
 import { AyoMascot, DodoCount } from "../components/Dodo";
+import gagnTwaMascot from "../assets/gagn-twa-mascot.png";
 import { Button } from "../components/Button";
 import { HistoryButton } from "../components/HistoryPanel";
 import { LanguageToggle } from "../components/LanguageToggle";
@@ -37,7 +38,9 @@ export function GameOverScreen({ state, isHost, onRestart, onHome }: Props) {
           <LanguageToggle />
         </div>
 
-        {reason === "dodo_limit" ? (
+        {reason === "dodo_limit" && winner ? (
+          <img src={gagnTwaMascot} alt="" className="w-44 h-auto object-contain animate-pop-in" />
+        ) : reason === "dodo_limit" ? (
           <AyoMascot className="w-32 h-32 animate-pop-in" />
         ) : (
           <span className="text-5xl animate-pop-in">🦤</span>

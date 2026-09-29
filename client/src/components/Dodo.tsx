@@ -1,15 +1,19 @@
-import ayoIcon from "../assets/ayo-icon.png";
+import dodoLifeIcon from "../assets/dodo-lifepoint-icon.png";
 import ayoMascot from "../assets/ayo-mascot.png";
 
-// "Ayo!" is the life icon — a knocked-out chicken, Mauritian Creole for "ouch!".
-// It stands in for a dodo/life point everywhere one is shown: the small icon next
-// to a life count, the question's dodo-penalty row, and (as the bigger "mascot"
-// version with its "Ayo!" wordmark) the dramatic moment someone loses lives.
+// The dedicated dodo-head icon stands in for a dodo/life point everywhere one
+// is shown: the small icon next to a life count, the question's dodo-penalty
+// row, and the reveal screen's "X loses N dodos" banner. "Ayo!" (Mauritian
+// Creole for "ouch!") is the separate bigger mascot illustration used for the
+// dramatic moment someone loses lives on the reveal screen.
 
-// ayo-icon.png is a wide crop (~1.85:1), so size it by height with w-auto —
-// a fixed square box would letterbox it and it'd read smaller than intended.
+// dodo-lifepoint-icon.png is a wide crop (~1.5:1), so size it by height with
+// w-auto -- a fixed square box would letterbox it and it'd read smaller than
+// intended. Keeping the exported name AyoIcon since every call site already
+// treats it as "the small dodo/life-point glyph", regardless of which
+// artwork backs it.
 export function AyoIcon({ className = "h-6 w-auto" }: { className?: string }) {
-  return <img src={ayoIcon} alt="" className={`${className} object-contain flex-shrink-0`} />;
+  return <img src={dodoLifeIcon} alt="" className={`${className} object-contain flex-shrink-0`} />;
 }
 
 export function AyoMascot({ className = "w-24 h-24" }: { className?: string }) {
