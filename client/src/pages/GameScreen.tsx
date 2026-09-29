@@ -6,7 +6,6 @@ import { SoundToggle } from "../components/SoundToggle";
 import { LanguageToggle } from "../components/LanguageToggle";
 import { LeaveMenu } from "../components/LeaveMenu";
 import { HistoryButton } from "../components/HistoryPanel";
-import { ConfirmDialog } from "../components/ConfirmDialog";
 import { DodoCount, DodoPenaltyRow } from "../components/Dodo";
 import { CATEGORY_EMOJI } from "../components/CategoryPicker";
 import { useT, useLocale } from "../lib/i18n";
@@ -29,7 +28,6 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
   const { locale } = useLocale();
   const [value, setValue] = useState("");
   const [error, setError] = useState<string | null>(null);
-  const [confirmExactOpen, setConfirmExactOpen] = useState(false);
   const [busy, setBusy] = useState(false);
 
   const question = state.currentQuestion!;
@@ -93,7 +91,6 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
   }
 
   async function handleCallExact() {
-    setConfirmExactOpen(false);
     setBusy(true);
     const res = await onCallExact();
     setBusy(false);
@@ -233,7 +230,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
                 <Button variant="danger" className="px-3" disabled={busy} onClick={handleTchombo}>
                   {t("game.tchombo")}
                 </Button>
-                <Button variant="gold" className="px-3" disabled={busy} onClick={() => setConfirmExactOpen(true)}>
+                <Button variant="gold" className="px-3" disabled={busy} onClick={handleCallExact}>
                   🎯 {t("game.callExact")}
                 </Button>
               </div>
@@ -251,17 +248,6 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
           </div>
         )}
       </div>
-
-      {confirmExactOpen && previous && (
-        <ConfirmDialog
-          title={t("game.confirmExactTitle", { name: previous.playerName, value: previous.value, unit: localized.unit })}
-          body={t("game.confirmExactBody")}
-          confirmLabel={t("game.confirmExactAction")}
-          cancelLabel={t("game.cancel")}
-          onCancel={() => setConfirmExactOpen(false)}
-          onConfirm={handleCallExact}
-        />
-      )}
     </div>
   );
 }
