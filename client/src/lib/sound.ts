@@ -17,7 +17,7 @@ function getContext(): AudioContext | null {
 }
 
 // A one-sample silent WAV, used only to switch the page's audio session into
-// the "playback" category on iOS Safari -- see primeMobileAudio() below.
+// the "playback" category on iOS Safari -- see primeForGesture() below.
 const SILENT_WAV =
   "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=";
 
@@ -38,11 +38,16 @@ const SILENT_WAV =
 //    element at least once; after that, later Web Audio output on the same
 //    page inherits the same category and ignores the silent switch too.
 //
-// Both only work inside a genuine user gesture, and neither the fresh
-// Create/Join flow nor a reconnecting/rejoining player is guaranteed to hit
-// an explicit sound.unlock() call, so this listens for the very first tap or
-// keypress anywhere in the app and does both unconditionally.
-function primeMobileAudio() {
+// Both only work inside a genuine user gesture. The <audio> session-category
+// switch only needs to happen once per page life, but a suspended context can
+// apparently recur later on iOS (e.g. after the on-screen keyboard opens and
+// closes around a text input, which seems to interrupt whatever WebKit
+// considers the page's active audio session) -- a single global one-time
+// listener isn't enough to guard against that. So primeForGesture() is cheap
+// to call on every real tap in the app (see Button.tsx), not just the first.
+let audioSessionSwitched = false;
+
+export function primeForGesture() {
   const audio = getContext();
   if (audio) {
     try {
@@ -55,10 +60,16 @@ function primeMobileAudio() {
       // best-effort priming; playback below still runs without it
     }
   }
+  if (audioSessionSwitched) return;
   try {
     const el = new Audio(SILENT_WAV);
     el.volume = 0.01;
-    el.play().catch(() => {});
+    el.play().then(
+      () => {
+        audioSessionSwitched = true;
+      },
+      () => {}
+    );
   } catch {
     // Audio element unsupported/blocked -- nothing more we can do here
   }
@@ -66,7 +77,7 @@ function primeMobileAudio() {
 
 if (typeof window !== "undefined") {
   const unlockOnFirstInteraction = () => {
-    primeMobileAudio();
+    primeForGesture();
     window.removeEventListener("pointerdown", unlockOnFirstInteraction);
     window.removeEventListener("keydown", unlockOnFirstInteraction);
   };
@@ -184,7 +195,7 @@ const JUDGMENT_REACTIONS: GlideTone[][] = [
 
 export const sound = {
   unlock() {
-    primeMobileAudio();
+    primeForGesture();
   },
   turn() {
     playTones([{ freq: 720, start: 0, duration: 0.09, type: "sine", gain: 0.12 }, { freq: 980, start: 0.08, duration: 0.12, type: "sine", gain: 0.12 }]);

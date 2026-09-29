@@ -198,7 +198,7 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
                   {t("game.mustBeHigherThan", { value: previous.value, unit: localized.unit })}
                 </span>
               )}
-              <div className="flex items-center gap-2 bg-white rounded-2xl border-2 border-navy/10 focus-within:border-gold px-4 py-3.5">
+              <div className="flex items-center gap-1.5 bg-white rounded-2xl border-2 border-navy/10 focus-within:border-gold pl-4 pr-1.5 py-1.5">
                 <input
                   autoFocus
                   inputMode={question.allow_decimal ? "decimal" : "numeric"}
@@ -207,7 +207,19 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
                   placeholder={t("game.inputPlaceholder")}
                   className="flex-1 min-w-0 text-3xl font-display tabular-nums focus:outline-none bg-transparent"
                 />
-                <span className="text-navy/40 font-semibold flex-shrink-0">{localized.unit}</span>
+                <span className="text-navy/40 font-semibold flex-shrink-0 text-sm">{localized.unit}</span>
+                <Button
+                  variant="success"
+                  round
+                  disabled={busy || value.trim() === ""}
+                  onClick={handleSubmit}
+                  aria-label={previous ? t("game.increase") : t("game.guess")}
+                >
+                  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 19V5" />
+                    <path d="M5 12l7-7 7 7" />
+                  </svg>
+                </Button>
               </div>
               <span className="text-xs italic text-navy/40 pl-1">
                 {question.allow_decimal ? t("game.decimalsAllowed") : t("game.wholeNumbersOnly")}
@@ -216,20 +228,15 @@ export function GameScreen({ state, myPlayerId, isHost, onSubmit, onTchombo, onC
 
             {error && <p className="text-coral text-sm font-medium text-center">{error}</p>}
 
-            <Button variant="success" full disabled={busy || value.trim() === ""} onClick={handleSubmit}>
-              {previous ? `↑ ${t("game.increase")}` : t("game.guess")}
-            </Button>
-
             {previous && (
-              <Button variant="danger" full disabled={busy} onClick={handleTchombo}>
-                {t("game.tchombo")}
-              </Button>
-            )}
-
-            {previous && (
-              <Button variant="gold" full disabled={busy} onClick={() => setConfirmExactOpen(true)}>
-                🎯 {t("game.callExact")}
-              </Button>
+              <div className="grid grid-cols-2 gap-3">
+                <Button variant="danger" className="px-3" disabled={busy} onClick={handleTchombo}>
+                  {t("game.tchombo")}
+                </Button>
+                <Button variant="gold" className="px-3" disabled={busy} onClick={() => setConfirmExactOpen(true)}>
+                  🎯 {t("game.callExact")}
+                </Button>
+              </div>
             )}
           </div>
         ) : (
