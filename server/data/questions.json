@@ -27,8 +27,8 @@
     "dodo_penalty": 3,
     "source": "IIASA - The Demographic Discontinuities of Mauritius (Lutz & Wils)",
     "source_note": "This historical demographic working paper gives 63,821 as the island's population on the eve of the 1810 British takeover, a tiny fraction of today's population.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "À combien estimait-on la population de Maurice en 1810, juste avant la conquête britannique ?",
     "unit_fr": "personnes",
     "source_note_fr": "Ce document de travail démographique historique indique une population de 63 821 habitants sur l'île à la veille de la prise de contrôle britannique de 1810, soit une infime fraction de la population actuelle."
@@ -95,8 +95,8 @@
     "dodo_penalty": 3,
     "source": "Britannica / Royal Museums Greenwich",
     "source_note": "All four frigates of Commodore Pym's squadron were lost: two captured by the French and two scuttled to avoid capture.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Lors de la bataille de Grand Port (1810) - la seule victoire navale française inscrite sur l'Arc de Triomphe - combien de frégates britanniques l'escadre française a-t-elle capturées ou forcées à se saborder ?",
     "unit_fr": "frégates",
     "source_note_fr": "Les quatre frégates de l'escadre du commodore Pym ont toutes été perdues : deux capturées par les Français et deux sabordées pour éviter la capture."
@@ -214,8 +214,8 @@
     "dodo_penalty": 2,
     "source": "National Postal Museum (Smithsonian) / philatelic scholarship",
     "source_note": "As documented in philatelic records, only 27 of the original 1,000 printed stamps (both values combined) are known to still exist.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de timbres mauriciens « Post Office » de 1847 - parmi les plus rares et les plus précieux au monde - sont connus pour avoir survécu jusqu'à aujourd'hui ?",
     "unit_fr": "timbres",
     "source_note_fr": "Selon les archives philatéliques, seuls 27 exemplaires des 1 000 timbres imprimés à l'origine (les deux valeurs confondues) seraient encore connus à ce jour."
@@ -248,8 +248,8 @@
     "dodo_penalty": 3,
     "source": "Government of Mauritius - More History",
     "source_note": "Figure given on the Government of Mauritius's 'More History' page on the island's colonial-era economic development.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "En quelle année les premières sucreries ont-elles été installées à Maurice ?",
     "unit_fr": "",
     "source_note_fr": "Chiffre indiqué sur la page « More History » du gouvernement mauricien consacrée au développement économique de l'île à l'époque coloniale."
@@ -333,8 +333,8 @@
     "dodo_penalty": 3,
     "source": "National Assembly of Mauritius - Railway history document",
     "source_note": "Official National Assembly archive PDF on the history of Mauritius's railways.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de kilomètres mesurait la ligne nord de l'ancien réseau ferroviaire de Maurice ?",
     "unit_fr": "km",
     "source_note_fr": "PDF d'archives officiel de l'Assemblée nationale consacré à l'histoire des chemins de fer mauriciens."
@@ -384,8 +384,8 @@
     "dodo_penalty": 2,
     "source": "UNESCO World Heritage Centre",
     "source_note": "UNESCO states ‘more than 462,000’ indentured labourers passed through the depot; 462,000 is the documented minimum.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Selon l'UNESCO, au moins combien de travailleurs sous contrat sont passés par le dépôt d'immigration de l'Aapravasi Ghat entre 1834 et 1920 ?",
     "unit_fr": "personnes",
     "source_note_fr": "L'UNESCO indique que « plus de 462 000 » travailleurs sous contrat sont passés par ce dépôt ; 462 000 constitue donc le minimum attesté."
@@ -435,8 +435,8 @@
     "dodo_penalty": 3,
     "source": "Wikipedia (Battle of Grand Port) / naval history accounts",
     "source_note": "French losses are recorded as around 37 killed and 112 wounded, far lighter than the British side's casualties in the same battle.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de marins et de soldats français ont été tués lors de la bataille de Grand Port en 1810 ?",
     "unit_fr": "personnes",
     "source_note_fr": "Les pertes françaises sont recensées à environ 37 morts et 112 blessés, bien plus légères que celles du côté britannique lors de la même bataille."
@@ -452,8 +452,8 @@
     "dodo_penalty": 3,
     "source": "UNESCO World Heritage Centre",
     "source_note": "Figure given in UNESCO's official World Heritage listing for the Aapravasi Ghat.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Quelle est la superficie, en mètres carrés, du site du patrimoine mondial de l'UNESCO de l'Aapravasi Ghat lui-même ?",
     "unit_fr": "m²",
     "source_note_fr": "Chiffre donné dans la fiche officielle d'inscription au patrimoine mondial de l'UNESCO pour l'Aapravasi Ghat."
@@ -571,8 +571,8 @@
     "dodo_penalty": 3,
     "source": "National Archives Department",
     "source_note": "A single, often-cited summary figure covering the entire British colonial era in Mauritius.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Pendant combien d'années consécutives les Britanniques ont-ils gouverné Maurice, de la prise de l'île jusqu'à l'indépendance ?",
     "unit_fr": "ans",
     "source_note_fr": "Un chiffre global, souvent cité, couvrant l'ensemble de la période coloniale britannique à Maurice."
@@ -775,8 +775,8 @@
     "dodo_penalty": 3,
     "source": "Government of Mauritius - National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien d'espèces de reptiles endémiques de Maurice sont aujourd'hui confinées aux îlots au large, ayant disparu de l'île principale ?",
     "unit_fr": "espèces",
     "source_note_fr": "Chiffre donné dans le rapport de situation du National Clearing-House Mechanism du gouvernement mauricien sur la biodiversité terrestre."
@@ -843,8 +843,8 @@
     "dodo_penalty": 3,
     "source": "Government of Mauritius - National Clearing-House Mechanism",
     "source_note": "Official figure given as 'approximately 200'.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Environ combien d'espèces, sous-espèces et variétés de fougères et de plantes apparentées ont été recensées à Maurice ?",
     "unit_fr": "taxons",
     "source_note_fr": "Chiffre officiel donné comme étant « environ 200 »."
@@ -911,8 +911,8 @@
     "dodo_penalty": 2,
     "source": "Government of Mauritius - National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de genres de mousses ont été recensés à Maurice ?",
     "unit_fr": "genres",
     "source_note_fr": "Chiffre donné dans le rapport de situation du National Clearing-House Mechanism du gouvernement mauricien sur la biodiversité terrestre."
@@ -928,8 +928,8 @@
     "dodo_penalty": 2,
     "source": "Government of Mauritius - National Clearing-House Mechanism",
     "source_note": "Figure given in the Government of Mauritius's National Clearing-House Mechanism status report on terrestrial biodiversity.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de genres d'hépatiques ont été recensés à Maurice ?",
     "unit_fr": "genres",
     "source_note_fr": "Chiffre donné dans le rapport de situation du National Clearing-House Mechanism du gouvernement mauricien sur la biodiversité terrestre."
@@ -962,8 +962,8 @@
     "dodo_penalty": 3,
     "source": "Government of Mauritius - National Clearing-House Mechanism",
     "source_note": "Official figure given as 'approximately 2%'.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Environ quel pourcentage du territoire terrestre de Maurice est couvert de forêt indigène (native) de bonne qualité ?",
     "unit_fr": "%",
     "source_note_fr": "Chiffre officiel donné comme étant « environ 2 % »."
@@ -1183,8 +1183,8 @@
     "dodo_penalty": 3,
     "source": "Government of Mauritius - Offshore Islets",
     "source_note": "Official figure given as 'approximately 401 ha'.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Environ combien d'hectares de zones humides côtières sont recensés pour l'île principale de Maurice ?",
     "unit_fr": "ha",
     "source_note_fr": "Chiffre officiel donné comme étant « environ 401 ha »."
@@ -1217,8 +1217,8 @@
     "dodo_penalty": 3,
     "source": "Government of Mauritius - Offshore Islets",
     "source_note": "Sum of the two official figures published on the same government page.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "En additionnant les chiffres officiels d'îlots de Maurice et de Rodrigues, combien cela fait-il au total ?",
     "unit_fr": "îlots",
     "source_note_fr": "Somme de deux chiffres officiels publiés sur la même page gouvernementale."
@@ -1285,8 +1285,8 @@
     "dodo_penalty": 3,
     "source": "Government of Mauritius - Tourism Sector overview",
     "source_note": "Figure given in the official Tourism Sector overview published by the Government of Mauritius.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien d'espèces de papillons sont décrites comme propres aux îles mauriciennes dans cet aperçu officiel ?",
     "unit_fr": "espèces",
     "source_note_fr": "Chiffre donné dans le panorama officiel du secteur touristique publié par le gouvernement mauricien."
@@ -1302,8 +1302,8 @@
     "dodo_penalty": 2,
     "source": "Zoological Society of London (ZSL)",
     "source_note": "Only four known Mauritius kestrels remained in 1974, two in the wild and two in captivity, before a famous conservation recovery.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "En 1974, le faucon crécerelle de Maurice - alors l'oiseau le plus rare au monde - a atteint son plus bas niveau de population jamais enregistré. Combien d'individus restait-il, en comptant ceux à l'état sauvage et en captivité ?",
     "unit_fr": "oiseaux",
     "source_note_fr": "Il ne restait plus que quatre crécerelles de Maurice connues en 1974, deux à l'état sauvage et deux en captivité, avant un célèbre programme de sauvetage qui a permis leur rétablissement."
@@ -1387,8 +1387,8 @@
     "dodo_penalty": 3,
     "source": "Bibliographical and iconographical catalogue of 'Paul et Virginie' editions (1963), cited in literary scholarship",
     "source_note": "Roughly half of the cataloged editions were translations into other languages, reflecting the novel's status as one of the most-reprinted French novels ever.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "À ton avis, un catalogue bibliographique de 1963 a recensé plus de combien d'éditions de 'Paul et Virginie', le célèbre roman de Bernardin de Saint-Pierre qui se déroule sur l'Île de France ?",
     "unit_fr": "éditions",
     "source_note_fr": "Environ la moitié des éditions répertoriées sont des traductions en d'autres langues, ce qui reflète le statut de ce roman comme l'un des romans français les plus réédités de tous les temps."
@@ -1421,8 +1421,8 @@
     "dodo_penalty": 3,
     "source": "Literary scholarship on Malcolm de Chazal's 'Sens-Plastique'",
     "source_note": "Multiple literary sources describe the collection as containing 'over 2,000' short aphoristic entries.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "À ton avis, l'œuvre célèbre de Malcolm de Chazal, 'Sens-Plastique', est composée d'environ combien d'aphorismes, d'axiomes et d'allégories ?",
     "unit_fr": "aphorismes",
     "source_note_fr": "Plusieurs sources littéraires décrivent ce recueil comme comptant « plus de 2 000 » courtes maximes."
@@ -1574,8 +1574,8 @@
     "dodo_penalty": 3,
     "source": "2011 Population Census of Mauritius",
     "source_note": "Down from around 40% as recently as 1972, reflecting a major generational language shift.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Selon toi, d'après le recensement de 2011, quel pourcentage de la population mauricienne a déclaré le bhojpuri comme langue parlée à la maison ?",
     "unit_fr": "%",
     "source_note_fr": "En baisse par rapport à environ 40 % encore en 1972, ce qui traduit un important changement linguistique générationnel."
@@ -1591,8 +1591,8 @@
     "dodo_penalty": 3,
     "source": "2011 Population Census of Mauritius",
     "source_note": "French remains dominant in the media but is a home language for a small minority.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Selon toi, d'après le recensement de 2011, quel pourcentage de la population mauricienne a déclaré le français comme langue parlée à la maison ?",
     "unit_fr": "%",
     "source_note_fr": "Le français reste dominant dans les médias, mais n'est la langue parlée à la maison que pour une petite minorité."
@@ -1642,8 +1642,8 @@
     "dodo_penalty": 3,
     "source": "African rum trade export statistics (2024)",
     "source_note": "Mauritius accounted for roughly 62% of all African rum exports that year.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "À ton avis, combien de millions de litres de rhum Maurice a-t-elle exportés en 2024, ce qui en fait le premier exportateur de rhum d'Afrique ?",
     "unit_fr": "millions de litres",
     "source_note_fr": "Maurice représentait cette année-là environ 62 % de l'ensemble des exportations africaines de rhum."
@@ -1795,8 +1795,8 @@
     "dodo_penalty": 3,
     "source": "Academic literary sources (postcolonial literature studies)",
     "source_note": "First performed in London and translated into English in 1999.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Selon toi, en quelle année le dramaturge mauricien Dev Virahsawmy a-t-il écrit 'Toufann', sa célèbre réécriture en créole de 'La Tempête' de Shakespeare ?",
     "unit_fr": "",
     "source_note_fr": "Joué pour la première fois à Londres et traduit en anglais en 1999."
@@ -1948,8 +1948,8 @@
     "dodo_penalty": 3,
     "source": "National Library of Mauritius (natlibmu.govmu.org)",
     "source_note": "The library's own published breakdown lists 83,400 books, alongside periodicals and newspapers, within its wider holdings.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "À ton avis, combien de livres la Bibliothèque nationale de Maurice possède-t-elle dans ses collections, selon ses propres chiffres publiés ?",
     "unit_fr": "livres",
     "source_note_fr": "Le détail publié par la bibliothèque elle-même fait état de 83 400 livres, auxquels s'ajoutent des périodiques et des journaux, au sein d'un fonds plus large."
@@ -1965,8 +1965,8 @@
     "dodo_penalty": 3,
     "source": "Radical Translations project / literary-historical bibliography",
     "source_note": "Scholarship on the novel's reception records at least 17 distinct printings of this early English translation across England, France, Germany, Ireland and America in just four years.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "À ton avis, la traduction anglaise pionnière de 'Paul et Virginie' par Helen Maria Williams a été réimprimée sous au moins combien de formes imprimées différentes entre 1795 et 1799 seulement ?",
     "unit_fr": "éditions",
     "source_note_fr": "Les études sur la réception du roman recensent au moins 17 tirages distincts de cette première traduction anglaise, parus en Angleterre, en France, en Allemagne, en Irlande et en Amérique en seulement quatre ans."
@@ -1999,8 +1999,8 @@
     "dodo_penalty": 3,
     "source": "Statistics Mauritius / World Bank",
     "source_note": "Total area of the Republic including all outer island dependencies.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Quelle est la superficie totale, en km², de la République de Maurice, y compris Rodrigues, Agaléga et Saint-Brandon ?",
     "unit_fr": "km²",
     "source_note_fr": "Superficie totale de la République, y compris l'ensemble de ses îles extérieures."
@@ -2135,8 +2135,8 @@
     "dodo_penalty": 2,
     "source": "Government of Mauritius - Ocean Economy sources",
     "source_note": "Approximately 2.3 million km², including roughly 400,000 km² jointly managed with Seychelles on the Mascarene Plateau.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de kilomètres carrés couvre approximativement la Zone économique exclusive (ZEE) de Maurice, l'une des plus vastes zones maritimes au monde pour un territoire aussi petit ?",
     "unit_fr": "km²",
     "source_note_fr": "Environ 2,3 millions de km², dont environ 400 000 km² cogérés avec les Seychelles sur le plateau des Mascareignes."
@@ -2169,8 +2169,8 @@
     "dodo_penalty": 3,
     "source": "Widely documented geographic sources",
     "source_note": "The approximately 430 km figure, northeast of Mauritius, is consistently cited across geographic and tourism sources describing the Cargados Carajos archipelago.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "À combien de kilomètres se trouve Saint-Brandon (les bancs de Cargados Carajos) au nord-est de l'île Maurice ?",
     "unit_fr": "km",
     "source_note_fr": "Le chiffre d'environ 430 km au nord-est de Maurice est systématiquement cité dans les sources géographiques et touristiques décrivant l'archipel des Cargados Carajos."
@@ -2237,8 +2237,8 @@
     "dodo_penalty": 3,
     "source": "Widely documented geographic sources",
     "source_note": "Some sources cite a slightly lower figure of 389 m.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Quelle est la hauteur, en mètres, du Mont Limon, le point culminant de Rodrigues ?",
     "unit_fr": "m",
     "source_note_fr": "Certaines sources citent un chiffre légèrement inférieur, de 389 m."
@@ -2424,8 +2424,8 @@
     "dodo_penalty": 3,
     "source": "Key Biodiversity Areas database",
     "source_note": "The Key Biodiversity Areas database describes Round Island as lying 22.5 km north of mainland Mauritius.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "À combien de kilomètres au nord de l'île Maurice se trouve Round Island ?",
     "unit_fr": "km",
     "source_note_fr": "La base de données des Key Biodiversity Areas situe Round Island à 22,5 km au nord de l'île principale de Maurice."
@@ -2628,8 +2628,8 @@
     "dodo_penalty": 3,
     "source": "CEIC / Mauritius Chamber of Agriculture sugar statistics",
     "source_note": "Figure from CEIC economic data, compiled from Mauritius Chamber of Agriculture sugar industry statistics for the 2023 crop year.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de tonnes de sucre Maurice a-t-elle produites en 2023 ?",
     "unit_fr": "tonnes",
     "source_note_fr": "Chiffre issu des données économiques de CEIC, compilées à partir des statistiques de l'industrie sucrière de la Mauritius Chamber of Agriculture pour la campagne 2023."
@@ -2781,8 +2781,8 @@
     "dodo_penalty": 3,
     "source": "Government road infrastructure statistics",
     "source_note": "Figure from the same government road-infrastructure breakdown (2019) that also gives the 2,772 km total road network figure.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de kilomètres d'autoroute (voie express) compte Maurice ?",
     "unit_fr": "km",
     "source_note_fr": "Chiffre provenant du même bilan gouvernemental des infrastructures routières (2019) qui indique également le total de 2 772 km pour le réseau routier."
@@ -2798,8 +2798,8 @@
     "dodo_penalty": 3,
     "source": "World Bank (World Development Indicators)",
     "source_note": "Up from 79.87% in 1990.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Quel était le taux d'alphabétisation des adultes (15 ans et plus) à Maurice en 2023, selon les données de la Banque mondiale ?",
     "unit_fr": "%",
     "source_note_fr": "En hausse par rapport à 79,87 % en 1990."
@@ -2815,8 +2815,8 @@
     "dodo_penalty": 3,
     "source": "World Bank (World Development Indicators)",
     "source_note": "World Bank World Development Indicators figure for life expectancy at birth in Mauritius for 2023.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Quelle était l'espérance de vie moyenne à la naissance à Maurice en 2023, selon les données de la Banque mondiale ?",
     "unit_fr": "ans",
     "source_note_fr": "Chiffre des World Development Indicators de la Banque mondiale pour l'espérance de vie à la naissance à Maurice en 2023."
@@ -2832,8 +2832,8 @@
     "dodo_penalty": 3,
     "source": "Low-Carbon Power / IRENA statistical profile of Mauritius",
     "source_note": "574.4 GWh out of a total generation of roughly 3,265 GWh.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Quel pourcentage de l'électricité de Maurice était produit à partir de sources renouvelables en 2023 ?",
     "unit_fr": "%",
     "source_note_fr": "574,4 GWh sur une production totale d'environ 3 265 GWh."
@@ -2917,8 +2917,8 @@
     "dodo_penalty": 3,
     "source": "Skyscraper Center / architectural records",
     "source_note": "A 22-storey commercial office tower.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Quelle est la hauteur, en mètres, de la Bank of Mauritius Tower à Port-Louis - le plus haut bâtiment de Maurice (mesurée jusqu'à son sommet) ?",
     "unit_fr": "m",
     "source_note_fr": "Une tour de bureaux commerciale de 22 étages."
@@ -3376,8 +3376,8 @@
     "dodo_penalty": 3,
     "source": "Commonwealth Games Federation results",
     "source_note": "76 kg snatch + 96 kg clean and jerk.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Quel poids total, en kg, Roilya Ranaivosoa a-t-elle soulevé (arraché + épaulé-jeté) pour remporter l'argent dans la catégorie des 49 kg femmes aux Jeux du Commonwealth 2022 ?",
     "unit_fr": "kg",
     "source_note_fr": "76 kg à l'arraché + 96 kg à l'épaulé-jeté."
@@ -3444,8 +3444,8 @@
     "dodo_penalty": 2,
     "source": "Government Information Service (GIS) Mauritius",
     "source_note": "Students formed the Mauritian flag at Anjalay Stadium, Belle Vue Harel.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de personnes ont formé la plus grande image humaine d'un drapeau flottant au monde, un record du monde Guinness établi à Maurice en janvier 2023 ?",
     "unit_fr": "personnes",
     "source_note_fr": "Des élèves ont formé le drapeau mauricien au stade Anjalay, à Belle Vue Harel."
@@ -3461,8 +3461,8 @@
     "dodo_penalty": 2,
     "source": "Guinness World Records coverage (restaurants.mu)",
     "source_note": "Set on 27 October 2018, beating a previous record held by Poland.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien d'œufs ont été utilisés pour établir le record du monde Guinness du plus grand plat d'œufs brouillés, réalisé à Bagatelle, à Maurice, en 2018 ?",
     "unit_fr": "œufs",
     "source_note_fr": "Établi le 27 octobre 2018, battant un précédent record détenu par la Pologne."
@@ -3546,8 +3546,8 @@
     "dodo_penalty": 2,
     "source": "Mauritian Wildlife Foundation research publications",
     "source_note": "The tortoises were introduced as an ecological replacement for Mauritius's extinct native giant tortoises.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Au moins combien de bébés tortues géantes d'Aldabra le programme de réensauvagement de l'Île aux Aigrettes a-t-il produits au cours de ses onze premières années ?",
     "unit_fr": "bébés tortues",
     "source_note_fr": "Ces tortues ont été introduites pour remplacer écologiquement les tortues géantes indigènes de Maurice, aujourd'hui disparues."
@@ -3699,8 +3699,8 @@
     "dodo_penalty": 3,
     "source": "La Vanille Nature Park",
     "source_note": "Described by the park as 'more than 1,000' specimens.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de tortues géantes d'Aldabra en liberté le parc La Vanille Nature Park, dans le sud de Maurice, abrite-t-il - la plus grande collection en captivité au monde ?",
     "unit_fr": "tortues",
     "source_note_fr": "Décrit par le parc comme comptant « plus de 1 000 » spécimens."
@@ -3733,8 +3733,8 @@
     "dodo_penalty": 2,
     "source": "La Vanille Nature Park",
     "source_note": "23,000 specimens is the figure given in La Vanille Nature Park's own description of its insectarium collection.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de spécimens d'insectes sont exposés dans l'insectarium du parc La Vanille Nature Park, dans le sud de Maurice ?",
     "unit_fr": "spécimens",
     "source_note_fr": "23 000 spécimens est le chiffre avancé par La Vanille Nature Park dans sa propre description de la collection de son insectarium."
@@ -3835,8 +3835,8 @@
     "dodo_penalty": 2,
     "source": "Kew Science, Plants of the World Online / Wikipedia (Ramosmania rodriguesii)",
     "source_note": "The entire wild population of this species has been a single individual since its rediscovery; all other plants are propagated cuttings.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de spécimens sauvages du « Café Marron » de Rodrigues - cet arbre qu'on croyait éteint jusqu'à ce qu'un écolier le retrouve en 1979 - survivent encore aujourd'hui à l'état sauvage ?",
     "unit_fr": "plante",
     "source_note_fr": "Depuis sa redécouverte, la population sauvage totale de cette espèce s'est réduite à un seul individu ; tous les autres plants sont des boutures issues de propagation."
@@ -3852,8 +3852,8 @@
     "dodo_penalty": 3,
     "source": "IUCN Red List assessment / palm conservation sources (Hyophorbe lagenicaulis)",
     "source_note": "Despite being critically endangered in the wild, it is now one of the most popular ornamental palms grown worldwide.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de palmiers-bouteille adultes survivraient encore à l'état sauvage sur l'Île Ronde, le seul endroit au monde où cette espèce pousse naturellement ?",
     "unit_fr": "arbres",
     "source_note_fr": "Bien qu'en danger critique d'extinction à l'état sauvage, c'est aujourd'hui l'un des palmiers d'ornement les plus cultivés au monde."
@@ -3869,8 +3869,8 @@
     "dodo_penalty": 2,
     "source": "Historical account of Stanley Temple's tambalacoque/dodo experiment (widely cited in ornithological literature)",
     "source_note": "Ten of the seventeen fruits survived the turkeys' digestive tracts, and three of those went on to germinate.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Dans une célèbre expérience de 1977 visant à savoir si le tambalacoque, l'« arbre du dodo », avait besoin du gésier d'un dodo pour germer, le scientifique Stanley Temple a fait avaler de force combien de fruits de tambalacoque à des dindons sauvages ?",
     "unit_fr": "fruits",
     "source_note_fr": "Dix des dix-sept fruits ont survécu au passage dans le système digestif des dindons, et trois d'entre eux ont ensuite germé."
@@ -3920,8 +3920,8 @@
     "dodo_penalty": 2,
     "source": "Oxford University Museum of Natural History - 'The Oxford Dodo'",
     "source_note": "This is the only dodo specimen in the world to preserve any original soft tissue at all; the popular story that it was rescued from a bonfire is a later, debunked legend. The head and both legs were what survived.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "En 1755, la décomposition a contraint le musée d'Oxford à détruire la majeure partie du dernier spécimen de dodo ayant conservé des tissus mous - combien de parties du corps ont été sauvées et cataloguées ?",
     "unit_fr": "parties",
     "source_note_fr": "Il s'agit du seul spécimen de dodo au monde à avoir conservé des tissus mous d'origine ; l'histoire populaire selon laquelle il aurait été sauvé d'un bûcher est une légende ultérieure, depuis démentie. Seuls la tête et les deux pattes ont subsisté."
@@ -4005,8 +4005,8 @@
     "dodo_penalty": 3,
     "source": "Invasive species biology references (Animal Diversity Web / pest management sources)",
     "source_note": "Snails start laying at around 6 months old and can produce a new clutch every 2–3 months.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Un seul escargot géant africain - cette espèce invasive qui a envahi l'Île aux Aigrettes - peut pondre jusqu'à combien d'œufs par an ?",
     "unit_fr": "œufs",
     "source_note_fr": "Les escargots commencent à pondre vers l'âge de 6 mois et peuvent produire une nouvelle ponte tous les 2 à 3 mois."
@@ -4039,8 +4039,8 @@
     "dodo_penalty": 3,
     "source": "The Conversation / Science (AAAS) reporting on Mauritius's macaque export industry",
     "source_note": "More recent industry estimates put the true annual figure closer to 14,000.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Maurice exporte chaque année plus de combien de macaques crabiers vers des laboratoires de recherche biomédicale du monde entier, ce qui en fait l'un des plus gros fournisseurs mondiaux du secteur ?",
     "unit_fr": "singes",
     "source_note_fr": "Des estimations plus récentes du secteur situent le chiffre annuel réel plus près de 14 000."
@@ -4158,8 +4158,8 @@
     "dodo_penalty": 2,
     "source": "Guinness World Records - 'Most expensive dodo skeleton sold at auction' / contemporary auction press coverage",
     "source_note": "This scarcity is why a 95%-complete dodo skeleton sold at a UK auction in 2016 for over £346,000, the first such sale since 1914.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Combien de squelettes de dodo presque complets existerait-il encore aujourd'hui dans le monde, presque tous conservés dans des collections de musées ?",
     "unit_fr": "squelettes",
     "source_note_fr": "C'est cette rareté qui explique qu'un squelette de dodo complet à 95 % se soit vendu plus de 346 000 £ lors d'une vente aux enchères au Royaume-Uni en 2016, la première vente de ce type depuis 1914."
@@ -4175,8 +4175,8 @@
     "dodo_penalty": 3,
     "source": "Historical economic accounts of the Mauritian sugar industry (countrystudies.us / Wikipedia)",
     "source_note": "Production and factory numbers are drawn from the same historical sugar-economy sources describing Mauritius's 19th-century boom.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Au plus fort du boom sucrier mauricien du XIXe siècle, combien d'usines sucrières fonctionnaient sur l'île en 1858 - contre une poignée seulement aujourd'hui ?",
     "unit_fr": "usines",
     "source_note_fr": "Les chiffres de production et le nombre d'usines proviennent des mêmes sources historiques sur l'économie sucrière décrivant l'essor de Maurice au XIXe siècle."
@@ -4277,8 +4277,8 @@
     "dodo_penalty": 2,
     "source": "Chester Zoo / San Diego Zoo species profiles (Rodrigues flying fox)",
     "source_note": "The species survives in the wild only on Rodrigues, making its habitat there especially critical to its future.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "La roussette de Rodrigues s'est effondrée à moins de combien d'individus dans les années 1970, avant qu'un programme d'élevage en captivité n'aide sa population à remonter à environ 20 000 aujourd'hui ?",
     "unit_fr": "chauves-souris",
     "source_note_fr": "L'espèce ne subsiste à l'état sauvage qu'à Rodrigues, ce qui rend son habitat là-bas particulièrement crucial pour son avenir."
@@ -4328,8 +4328,8 @@
     "dodo_penalty": 3,
     "source": "Bat Conservation Trust / Nature journal news coverage of the 2015 Mauritius flying fox cull",
     "source_note": "A further 7,350 were culled in 2016, and the total killed since 2015 is estimated at over 50,000.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "question_fr": "Rien qu'en 2015, combien de roussettes de Maurice, une espèce menacée, ont été officiellement abattues par le gouvernement pour protéger les cultures fruitières commerciales, déclenchant un tollé international chez les défenseurs de l'environnement ?",
     "unit_fr": "chauves-souris",
     "source_note_fr": "7 350 autres ont été abattus en 2016, et le nombre total tué depuis 2015 est estimé à plus de 50 000."
@@ -4432,8 +4432,8 @@
     "dodo_penalty": 3,
     "source": "AnAge: The Animal Ageing and Longevity Database (genomics.senescence.info)",
     "source_note": "AnAge records a captive Aldabra giant tortoise that died accidentally after 152 verified years in captivity, noting it was likely considerably older since it was already an adult when first caught; this is a more rigorously documented figure than the disputed ages claimed for individuals like Jonathan or Adwaita.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "La base de données AnAge recense une tortue géante d'Aldabra en captivité, morte accidentellement après 152 années vérifiées de captivité, en précisant qu'elle était probablement bien plus âgée puisqu'elle était déjà adulte lors de sa capture ; ce chiffre est documenté de façon plus rigoureuse que les âges contestés avancés pour des individus comme Jonathan ou Adwaita."
   },
   {
@@ -4551,8 +4551,8 @@
     "dodo_penalty": 3,
     "source": "Statistics Mauritius, Economic and Social Indicators - Agricultural and Fish Production report",
     "source_note": "Statistics Mauritius' official agricultural production report gives 2025 sugar production as 220,305 tonnes, down 2.3% from 225,547 tonnes in 2024.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Le rapport officiel de Statistics Mauritius sur la production agricole fait état d'une production sucrière de 220 305 tonnes en 2025, en baisse de 2,3 % par rapport aux 225 547 tonnes de 2024."
   },
   {
@@ -4585,8 +4585,8 @@
     "dodo_penalty": 3,
     "source": "FAO, 'Alternative uses of sugarcane and its byproducts', citing Mauritius sugar-industry data",
     "source_note": "An FAO technical report on sugarcane by-products cites Mauritius data showing about 230 litres of rum (100° GL basis) can be distilled from one tonne of molasses.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Un rapport technique de la FAO sur les sous-produits de la canne à sucre cite des données mauriciennes selon lesquelles environ 230 litres de rhum (base 100° GL) peuvent être distillés à partir d'une tonne de mélasse."
   },
   {
@@ -4670,8 +4670,8 @@
     "dodo_penalty": 3,
     "source": "Wikipedia, 'History of rail transport in Mauritius'",
     "source_note": "In its heyday the Mauritius Government Railways is recorded as having operated 52 steam locomotives, 200 passenger carriages and 750 freight wagons.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "À son apogée, la Mauritius Government Railways exploitait, selon les archives, 52 locomotives à vapeur, 200 voitures de voyageurs et 750 wagons de marchandises."
   },
   {
@@ -4908,8 +4908,8 @@
     "dodo_penalty": 3,
     "source": "Mauritius park and climate references (Black River Gorges National Park)",
     "source_note": "Montagne Cocotte, on the Black River Gorges plateau, receives around 5,000 mm of rain a year, the highest recorded annual rainfall figure on Mauritius.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "La Montagne Cocotte, sur le plateau des Gorges de la Rivière Noire, reçoit environ 5 000 mm de pluie par an, le plus fort cumul annuel enregistré à Maurice."
   },
   {
@@ -4942,8 +4942,8 @@
     "dodo_penalty": 2,
     "source": "Convention on Biological Diversity - Ecologically or Biologically Significant Area submission for Mauritius",
     "source_note": "A CBD submission describing Blue Bay Marine Park as an Ecologically or Biologically Significant Area states that a 2012 inventory recorded 233 fish species there, alongside 108 coral species and 201 mollusc species.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Un rapport soumis à la Convention sur la diversité biologique, qui décrit le parc marin de Blue Bay comme une zone d'importance écologique ou biologique, indique qu'un inventaire de 2012 y a recensé 233 espèces de poissons, ainsi que 108 espèces de coraux et 201 espèces de mollusques."
   },
   {
@@ -4993,8 +4993,8 @@
     "dodo_penalty": 3,
     "source": "Mauritius Red Data Book",
     "source_note": "Mauritius's Red Data Book lists 311 endemic plant taxa, representing roughly 45% of the island's native flora.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Le Livre rouge de Maurice recense 311 taxons végétaux endémiques, soit environ 45 % de la flore indigène de l'île."
   },
   {
@@ -5027,8 +5027,8 @@
     "dodo_penalty": 3,
     "source": "Mauritian Wildlife Foundation reintroduction research",
     "source_note": "Ninety-three Mauritius fodies were released on Ile aux Aigrettes over three breeding seasons between November 2003 and March 2006, establishing a population that later grew into the hundreds.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Quatre-vingt-treize foudis de Maurice ont été relâchés sur l'Île aux Aigrettes au cours de trois saisons de reproduction entre novembre 2003 et mars 2006, donnant naissance à une population qui a ensuite atteint plusieurs centaines d'individus."
   },
   {
@@ -5112,8 +5112,8 @@
     "dodo_penalty": 3,
     "source": "Wikipedia",
     "source_note": "Île Plate lies about 11 km north of Cap Malheureux and covers 2.53 km² (253 hectares), one of the largest islets around Mauritius.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "L'Île Plate se trouve à environ 11 km au nord du Cap Malheureux et couvre 2,53 km² (253 hectares), ce qui en fait l'un des plus grands îlots des environs de Maurice."
   },
   {
@@ -5146,8 +5146,8 @@
     "dodo_penalty": 3,
     "source": "Ile Maurice / tourism references",
     "source_note": "Île aux Bénitiers is about 2 km long with a maximum width of 500 m and an area commonly given as 65 hectares; a competing figure of 500 ha circulating online is geometrically implausible for that footprint and appears to be a transcription error.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "L'Île aux Bénitiers mesure environ 2 km de long pour une largeur maximale de 500 m, avec une superficie généralement donnée à 65 hectares ; un chiffre concurrent de 500 ha, qui circule en ligne, est géométriquement invraisemblable pour cette emprise et semble résulter d'une erreur de transcription."
   },
   {
@@ -5265,8 +5265,8 @@
     "dodo_penalty": 3,
     "source": "Mauritius Sugar Syndicate, Annual Report 2023-24 (\"Sugar Spectrum\")",
     "source_note": "The Mauritius Sugar Syndicate's 2023-24 annual report records 8,206 registered planters (small and large growers combined) who supplied cane to the island's three mills that crop.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Le rapport annuel 2023-24 du Mauritius Sugar Syndicate recense 8 206 planteurs enregistrés (petits et grands confondus) ayant fourni de la canne aux trois sucreries de l'île cette année-là."
   },
   {
@@ -5333,8 +5333,8 @@
     "dodo_penalty": 2,
     "source": "Wikipedia (\"Grays & Co Ltd\"); excellencerhum.com",
     "source_note": "Grays & Co Ltd (today part of Terra) was created in 1931 when Harel Frères acquired the Mauritius OK Distillery in Pamplemousses. (1931 to 2026 = 95 years.).",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Grays & Co Ltd (aujourd'hui intégrée à Terra) a été créée en 1931 lorsque Harel Frères a racheté la Mauritius OK Distillery à Pamplemousses. (De 1931 à 2026, soit 95 ans.)"
   },
   {
@@ -5350,8 +5350,8 @@
     "dodo_penalty": 3,
     "source": "The Lone Caner (rum history blog)",
     "source_note": "Patrick Guimbeau began building Saint Aubin's first dedicated rhum agricole distillery, which opened in 2003, ahead of the island's 2006 rum-industry deregulation. (2003 to 2026 = 23 years.).",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Patrick Guimbeau a entrepris la construction de la première distillerie de rhum agricole dédiée de Saint Aubin, ouverte en 2003, avant la déréglementation de l'industrie du rhum de l'île en 2006. (De 2003 à 2026, soit 23 ans.)"
   },
   {
@@ -5367,8 +5367,8 @@
     "dodo_penalty": 3,
     "source": "Statistics Mauritius, Economic and Social Indicators -- Agricultural and Fish Production",
     "source_note": "Statistics Mauritius recorded 6,018 tonnes of tea produced in 2024, an 11% drop from the previous year, continuing a long decline from the industry's 1993 peak of over 31,000 tonnes.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Statistics Mauritius a enregistré une production de thé de 6 018 tonnes en 2024, en baisse de 11 % par rapport à l'année précédente, dans la continuité d'un long déclin depuis le pic de plus de 31 000 tonnes atteint par la filière en 1993."
   },
   {
@@ -5384,8 +5384,8 @@
     "dodo_penalty": 2,
     "source": "Statistics Mauritius, Economic and Social Indicators -- Agricultural and Fish Production",
     "source_note": "Statistics Mauritius reported 623 hectares under tea in 2025, down from 635 hectares in 2024, as the sector continues to contract.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Statistics Mauritius a rapporté 623 hectares consacrés à la culture du thé en 2025, contre 635 hectares en 2024, alors que le secteur continue de se contracter."
   },
   {
@@ -5469,8 +5469,8 @@
     "dodo_penalty": 3,
     "source": "Statistics Mauritius / CEIC Data",
     "source_note": "Local fish production in Mauritius reached 38,445 tonnes in 2024, up from 35,313 tonnes in 2023 and 33,226 tonnes in 2022.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "La production locale de poisson à Maurice a atteint 38 445 tonnes en 2024, contre 35 313 tonnes en 2023 et 33 226 tonnes en 2022."
   },
   {
@@ -5571,8 +5571,8 @@
     "dodo_penalty": 2,
     "source": "Platform Africa, \"Mauritius Rum: The Geographical Indication now officially established\", September 2026",
     "source_note": "The newly established Mauritius Rum GI caps added sugar at no more than 20 grams per litre and bans artificial colouring, among other production rules.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "L'indication géographique du Rhum de Maurice, tout juste instaurée, plafonne le sucre ajouté à 20 grammes par litre au maximum et interdit la coloration artificielle, parmi d'autres règles de production."
   },
   {
@@ -5707,8 +5707,8 @@
     "dodo_penalty": 3,
     "source": "Mauritius heritage/tourism historical records",
     "source_note": "Foundations for Fort Adelaide were laid on 8 December 1834 and construction was completed on 4 November 1840, a span of 6 years (work was interrupted for nearly three of those years by a labour shortage).",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Les fondations du Fort Adélaïde ont été posées le 8 décembre 1834 et les travaux se sont achevés le 4 novembre 1840, soit une durée de 6 ans (le chantier fut interrompu pendant près de trois de ces années en raison d'une pénurie de main-d'œuvre)."
   },
   {
@@ -5758,8 +5758,8 @@
     "dodo_penalty": 3,
     "source": "Wikipedia - Tromelin Island; Archaeology Magazine",
     "source_note": "The French ship Utile, carrying enslaved people bound for Isle de France, wrecked on Tromelin Island on 31 July 1761; the last survivors were not rescued until 29 November 1776, about 15 years later.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Le navire français Utile, qui transportait des personnes réduites en esclavage à destination de l'Isle de France, fit naufrage sur l'île Tromelin le 31 juillet 1761 ; les derniers survivants ne furent secourus que le 29 novembre 1776, soit environ 15 ans plus tard."
   },
   {
@@ -5809,8 +5809,8 @@
     "dodo_penalty": 3,
     "source": "Otayo.com venue database / AidData (Chinese government-funded construction project records)",
     "source_note": "The Côte d'Or Multisports Complex's Olympic Stadium, built with Chinese government funding and inaugurated in July 2019, is listed with a seating capacity of 15,000; it is separate from the complex's smaller 5,000-seat Stade de Côte d'Or football ground.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Le Stade olympique du Complexe multisports de Côte d'Or, construit grâce à un financement du gouvernement chinois et inauguré en juillet 2019, affiche une capacité de 15 000 places ; il est distinct du Stade de Côte d'Or, terrain de football plus petit du complexe, d'une capacité de 5 000 places."
   },
   {
@@ -5911,8 +5911,8 @@
     "dodo_penalty": 3,
     "source": "Wikipedia - Metro Express (Mauritius) infobox",
     "source_note": "After the final construction phase (2B) opened in October 2022 linking Rose Hill to the University of Mauritius at Réduit, the full Metro Express network totals 22 stations across its main line and branch.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Depuis l'ouverture, en octobre 2022, de la dernière phase de construction (2B) reliant Rose Hill à l'Université de Maurice à Réduit, le réseau complet du Metro Express compte 22 stations réparties entre sa ligne principale et son embranchement."
   },
   {
@@ -5928,8 +5928,8 @@
     "dodo_penalty": 3,
     "source": "Mauritius beach directories (Sandee, BeachAtlas)",
     "source_note": "Trou aux Biches beach, a lagoon beach on the north-west coast, is most commonly cited across beach guides as approximately 2 km long (some sources round up to 2.1 km).",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "La plage de Trou aux Biches, plage de lagon sur la côte nord-ouest, est le plus souvent citée par les guides de plages comme mesurant environ 2 km de long (certaines sources arrondissent à 2,1 km)."
   },
   {
@@ -5996,8 +5996,8 @@
     "dodo_penalty": 2,
     "source": "Statistics Mauritius / National Land Transport Authority vehicle fleet data",
     "source_note": "According to Statistics Mauritius/NTA figures reported in early 2025, Mauritius's registered vehicle fleet stood at 710,605 at the end of December 2024, up 5.1% (34,164 vehicles) from 676,441 a year earlier.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Selon les chiffres de Statistics Mauritius/NTA publiés début 2025, le parc automobile immatriculé de Maurice s'élevait à 710 605 véhicules fin décembre 2024, en hausse de 5,1 % (34 164 véhicules) par rapport aux 676 441 véhicules recensés un an plus tôt."
   },
   {
@@ -6013,8 +6013,8 @@
     "dodo_penalty": 3,
     "source": "Statistics Mauritius - 2022 Population and Housing Census, Main Results",
     "source_note": "The 2022 Population and Housing Census recorded 140,403 residents in Port Louis, the capital and most populous city of Mauritius.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Le recensement de la population et de l'habitat de 2022 a dénombré 140 403 habitants à Port-Louis, capitale et ville la plus peuplée de Maurice."
   },
   {
@@ -6064,8 +6064,8 @@
     "dodo_penalty": 2,
     "source": "Mauritius Beach Authority / Government Gazette",
     "source_note": "As of the August 2022 Government Gazette listing, the Beach Authority has officially proclaimed 134 public beaches across Mauritius, covering roughly 328 hectares of the island's coastline.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Selon la liste publiée dans la Government Gazette d'août 2022, la Beach Authority a officiellement proclamé 134 plages publiques à Maurice, couvrant environ 328 hectares du littoral de l'île."
   },
   {
@@ -6081,8 +6081,8 @@
     "dodo_penalty": 2,
     "source": "Statistics Mauritius / Ministry of Education - Education Statistics, Year 2023",
     "source_note": "Official education statistics report 325 primary schools operating in Mauritius as at March 2023, with 89,001 pupils enrolled.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Les statistiques officielles de l'éducation recensent 325 écoles primaires en activité à Maurice en mars 2023, pour 89 001 élèves inscrits."
   },
   {
@@ -6149,8 +6149,8 @@
     "dodo_penalty": 3,
     "source": "Charles Baissac, Étude sur le patois créole mauricien (Nancy)",
     "source_note": "Baissac, a native Mauritian professor of French, published this pioneering grammar and lexical study of the island's Creole, later described as the first serious book on any French-derived Creole.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Baissac, professeur de français mauricien de naissance, a publié cette étude pionnière de grammaire et de lexique du créole de l'île, qualifiée plus tard de premier ouvrage sérieux consacré à un créole d'origine française."
   },
   {
@@ -6183,8 +6183,8 @@
     "dodo_penalty": 3,
     "source": "Arnaud Carpooran, Diksioner Morisien",
     "source_note": "Library and publisher records list the dictionary at this length, reflecting its scope as a full monolingual reference work for the language.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Les notices de bibliothèques et de l'éditeur indiquent cette longueur pour le dictionnaire, reflet de son ampleur en tant qu'ouvrage de référence monolingue complet pour la langue."
   },
   {
@@ -6234,8 +6234,8 @@
     "dodo_penalty": 2,
     "source": "Philip Baker, lexical-origin study of Mauritian Creole (1982)",
     "source_note": "Baker traced this number of the non-French-origin words to Indic languages, mostly dating from 19th-century indentured immigration to Mauritius.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Baker a fait remonter ce nombre de mots d'origine non française à des langues indiennes, datant pour la plupart de l'immigration sous contrat du XIXe siècle vers Maurice."
   },
   {
@@ -6268,8 +6268,8 @@
     "dodo_penalty": 3,
     "source": "United Nations population data, as compiled in linguistic surveys of Mauritian Creole",
     "source_note": "This is the commonly cited estimate of native (first-language) speakers, separate from a larger figure that also counts second-language speakers.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Il s'agit de l'estimation couramment citée du nombre de locuteurs natifs (langue maternelle), distincte d'un chiffre plus élevé qui inclut aussi les locuteurs de langue seconde."
   },
   {
@@ -6353,8 +6353,8 @@
     "dodo_penalty": 3,
     "source": "UNESCO International Literacy Prizes",
     "source_note": "LPT was recognised by UNESCO that year for its work promoting adult literacy and mother-tongue education using Kreol Morisien.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "La LPT a été distinguée par l'UNESCO cette année-là pour son action en faveur de l'alphabétisation des adultes et de l'éducation en langue maternelle grâce au kreol morisien."
   },
   {
@@ -6438,8 +6438,8 @@
     "dodo_penalty": 3,
     "source": "Dev Virahsawmy literary bibliography",
     "source_note": "'Zeneral Makbef' recast Shakespeare's tragedy as a satire of Mauritian political life, written during Virahsawmy's especially prolific decade of Kreol playwriting.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "« Zeneral Makbef » transpose la tragédie de Shakespeare en une satire de la vie politique mauricienne, écrite durant la décennie particulièrement prolifique de Virahsawmy en tant que dramaturge en kreol."
   },
   {
@@ -6506,8 +6506,8 @@
     "dodo_penalty": 3,
     "source": "Akademi Kreol Morisien, Lortograf Kreol Morisien",
     "source_note": "This spelling guide, endorsed by the Akademi Kreol Morisien, received government approval that year, ahead of its use in schools from 2012.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Ce guide orthographique, approuvé par l'Akademi Kreol Morisien, a reçu l'aval du gouvernement cette année-là, avant son utilisation dans les écoles à partir de 2012."
   },
   {
@@ -6574,8 +6574,8 @@
     "dodo_penalty": 3,
     "source": "Mauritian press coverage of the Kreol Morisien secondary rollout",
     "source_note": "Reporting on the subject's first year at Grade 7 noted that only this many of Mauritius's secondary colleges offered it.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Les articles consacrés à la première année de la matière en classe de septième (Grade 7) notaient que seul ce nombre de collèges secondaires mauriciens la proposait."
   },
   {
@@ -6659,8 +6659,8 @@
     "dodo_penalty": 2,
     "source": "Historical cyclone archives (1959-60 South-West Indian Ocean cyclone season)",
     "source_note": "Cyclone Carol's central pressure was measured at 943 hPa as it passed close to Mauritius in February 1960.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "La pression centrale du cyclone Carol a été mesurée à 943 hPa lors de son passage près de Maurice en février 1960."
   },
   {
@@ -6727,8 +6727,8 @@
     "dodo_penalty": 3,
     "source": "Historical cyclone archives (1974-75 South-West Indian Ocean cyclone season)",
     "source_note": "Cyclone Gervaise is estimated in historical records to have caused about US$200 million in damage to Mauritius in 1975.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Selon les archives historiques, le cyclone Gervaise aurait causé environ 200 millions de dollars US de dégâts à Maurice en 1975."
   },
   {
@@ -6778,8 +6778,8 @@
     "dodo_penalty": 3,
     "source": "ReliefWeb situation reports on Cyclone Dina (2002)",
     "source_note": "During Cyclone Dina in January 2002, the Mauritius Meteorological Services recorded a peak gust of 206 km/h in Port Louis.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Lors du cyclone Dina en janvier 2002, les Mauritius Meteorological Services ont enregistré une rafale maximale de 206 km/h à Port-Louis."
   },
   {
@@ -6914,8 +6914,8 @@
     "dodo_penalty": 3,
     "source": "News reports on Cyclone Belal (January 2024)",
     "source_note": "News coverage of Cyclone Belal's flooding in January 2024 reported that more than 1,000 people were evacuated from low-lying parts of Port Louis.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "La couverture médiatique des inondations provoquées par le cyclone Belal en janvier 2024 a rapporté que plus de 1 000 personnes avaient été évacuées des zones basses de Port-Louis."
   },
   {
@@ -7033,8 +7033,8 @@
     "dodo_penalty": 3,
     "source": "Mauritius Meteorological Services historical records",
     "source_note": "Astronomer Charles Meldrum founded the Mauritius Meteorological Society in 1851, the starting point of organised meteorology on the island.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "L'astronome Charles Meldrum a fondé la Mauritius Meteorological Society en 1851, marquant le point de départ de la météorologie organisée sur l'île."
   },
   {
@@ -7050,8 +7050,8 @@
     "dodo_penalty": 3,
     "source": "Mauritius Meteorological Services (regional meteorological centre presentation)",
     "source_note": "A Mauritius Meteorological Services presentation to the regional meteorological centre lists 21 automatic weather stations in its observation network.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Une présentation des Mauritius Meteorological Services au centre météorologique régional dénombre 21 stations météorologiques automatiques dans son réseau d'observation."
   },
   {
@@ -7084,8 +7084,8 @@
     "dodo_penalty": 3,
     "source": "News wire reports on the 1999 Mauritius drought",
     "source_note": "Contemporary news reporting on Mauritius's 1999 drought, described as the worst since 1904, put the expected cost to the sugar industry at US$160 million versus the previous year's revenue.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "La presse de l'époque, couvrant la sécheresse de 1999 à Maurice, qualifiée de pire depuis 1904, a chiffré le coût attendu pour l'industrie sucrière à 160 millions de dollars US par rapport aux revenus de l'année précédente."
   },
   {
@@ -7118,8 +7118,8 @@
     "dodo_penalty": 3,
     "source": "Historical records of the Great Mauritius Cyclone of 1892",
     "source_note": "Historical accounts of the Great Cyclone of April 1892 state that about 50,000 people were left homeless on Mauritius.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Les récits historiques du Grand Cyclone d'avril 1892 indiquent qu'environ 50 000 personnes se sont retrouvées sans abri à Maurice."
   },
   {
@@ -7135,8 +7135,8 @@
     "dodo_penalty": 3,
     "source": "UN DESA, International Migrant Stock 2019",
     "source_note": "The UN's International Migrant Stock 2019 revision put the total Mauritius-born population living abroad worldwide at 188,406.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "La révision 2019 de l'International Migrant Stock des Nations unies évaluait à 188 406 le nombre total de personnes nées à Maurice vivant à l'étranger dans le monde."
   },
   {
@@ -7254,8 +7254,8 @@
     "dodo_penalty": 2,
     "source": "UK Office for National Statistics, 2011 Census",
     "source_note": "The 2011 Census recorded 571 Mauritius-born usual residents in Scotland.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Le recensement de 2011 dénombrait 571 résidents habituels nés à Maurice en Écosse."
   },
   {
@@ -7288,8 +7288,8 @@
     "dodo_penalty": 3,
     "source": "UN DESA, International Migrant Stock 2019",
     "source_note": "The UN's 2019 International Migrant Stock estimates placed the Mauritius-born population of South Africa at 14,883, with the largest waves of arrival in the 1960s and 1980s.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Les estimations 2019 de l'International Migrant Stock des Nations unies évaluaient à 14 883 la population née à Maurice résidant en Afrique du Sud, les vagues d'arrivée les plus importantes ayant eu lieu dans les années 1960 et 1980."
   },
   {
@@ -7322,8 +7322,8 @@
     "dodo_penalty": 3,
     "source": "Australian Bureau of Statistics, 2021 Census",
     "source_note": "ABS 2021 Census QuickStats reported that 81.2% of Mauritius-born people in Australia held Australian citizenship.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Les QuickStats du recensement 2021 de l'ABS indiquaient que 81,2 % des personnes nées à Maurice en Australie détenaient la citoyenneté australienne."
   },
   {
@@ -7339,8 +7339,8 @@
     "dodo_penalty": 2,
     "source": "Australian Bureau of Statistics, 2021 Census",
     "source_note": "ABS 2021 Census QuickStats reported that 51.6% of Mauritius-born residents in Australia were female (48.4% male).",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Les QuickStats du recensement 2021 de l'ABS indiquaient que 51,6 % des résidents nés à Maurice en Australie étaient des femmes (48,4 % d'hommes)."
   },
   {
@@ -7424,8 +7424,8 @@
     "dodo_penalty": 3,
     "source": "World Bank, Personal Remittances Received (% of GDP)",
     "source_note": "World Bank data recorded remittances received by Mauritius at 1.94% of GDP in 2023, down from 2.12% the previous year.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Selon les données de la Banque mondiale, les transferts de fonds reçus par Maurice représentaient 1,94 % du PIB en 2023, en baisse par rapport à 2,12 % l'année précédente."
   },
   {
@@ -7475,8 +7475,8 @@
     "dodo_penalty": 3,
     "source": "International Organization for Migration (IOM)",
     "source_note": "IOM reported that a pilot cohort of 100 Mauritian workers and their families were the first to take part in this labour migration programme to Canada, with a longer-term goal of placing up to 500.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "L'OIM a indiqué qu'une cohorte pilote de 100 travailleurs mauriciens et de leurs familles a été la première à participer à ce programme de migration de travail vers le Canada, avec un objectif à plus long terme de placer jusqu'à 500 personnes."
   },
   {
@@ -7594,8 +7594,8 @@
     "dodo_penalty": 3,
     "source": "French Football Federation records",
     "source_note": "Vikash Dhorasoo, born in France to Mauritian parents, earned 18 caps for the French national team, including an appearance in the 2006 World Cup final.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Vikash Dhorasoo, né en France de parents mauriciens, a été sélectionné 18 fois en équipe de France, y compris lors de la finale de la Coupe du monde 2006."
   },
   {
@@ -7611,8 +7611,8 @@
     "dodo_penalty": 3,
     "source": "Author biography, France Alumni / publisher records",
     "source_note": "Nathacha Appanah, born in 1973 in Mahébourg, Mauritius, moved to France in 1998 to train as a journalist before becoming a novelist.",
-    "active": true,
-    "status": "live",
+    "active": false,
+    "status": "draft",
     "source_note_fr": "Nathacha Appanah, née en 1973 à Mahébourg, à Maurice, s'est installée en France en 1998 pour se former au journalisme avant de devenir romancière."
   },
   {
