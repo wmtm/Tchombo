@@ -12,6 +12,8 @@ const EMOJI: Record<Category, string> = {
   creole_slang: "🗣️",
   weather_cyclones: "🌪️",
   diaspora: "✈️",
+  funny: "🤣",
+  marine: "🐠",
 };
 
 interface Props {

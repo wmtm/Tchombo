@@ -11,6 +11,8 @@ export const CATEGORIES = [
   "creole_slang",
   "weather_cyclones",
   "diaspora",
+  "funny",
+  "marine",
 ] as const;
 
 export type Category = (typeof CATEGORIES)[number];
