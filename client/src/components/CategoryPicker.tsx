@@ -14,6 +14,8 @@ const EMOJI: Record<Category, string> = {
   diaspora: "✈️",
   funny: "🤣",
   marine: "🐠",
+  food: "🍲",
+  festivals: "🎉",
 };
 
 interface Props {

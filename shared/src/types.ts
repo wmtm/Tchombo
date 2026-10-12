@@ -13,6 +13,8 @@ export const CATEGORIES = [
   "diaspora",
   "funny",
   "marine",
+  "food",
+  "festivals",
 ] as const;
 
 export type Category = (typeof CATEGORIES)[number];
